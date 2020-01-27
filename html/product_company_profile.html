@@ -1,0 +1,1759 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    
+<head>
+
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="apple-touch-icon" sizes="76x76" href="../assets/images/logos/leadslogo.png">
+        <link rel="icon" type="image/png" href="../assets/images/logos/leadslogo.png">
+        <title>Leadstracer</title>
+        <!-- STYLESHEETS -->
+        <style type="text/css">
+            [raz-cloak],
+            .raz-cloak {
+                display: none !important;
+            }
+        </style>
+
+        <!-- Icons.css -->
+        <link type="text/css" rel="stylesheet" href="../assets/icons/raz-icon-font/style.css">
+
+        <!-- Animate.css -->
+        <link type="text/css" rel="stylesheet" href="../assets/vendor/animate.css/animate.min.css">
+
+        <!-- PNotify -->
+        <link type="text/css" rel="stylesheet" href="../assets/vendor/pnotify/pnotify.custom.min.css">
+
+        <!-- Nvd3 - D3 Charts -->
+        <link type="text/css" rel="stylesheet" href="../assets/vendor/nvd3/build/nv.d3.min.css"/>
+
+        <!-- Perfect Scrollbar -->
+        <link type="text/css" rel="stylesheet" href="../assets/vendor/perfect-scrollbar/css/perfect-scrollbar.min.css"/>
+
+        <!-- raz Html -->
+        <link type="text/css" rel="stylesheet" href="../assets/vendor/raz-html/raz-html.min.css"/>
+
+        <!-- Main CSS -->
+        <link type="text/css" rel="stylesheet" href="../assets/css/main.css">
+        <!-- / STYLESHEETS -->
+
+        <!-- JAVASCRIPT -->
+
+        <!-- jQuery -->
+        <script type="text/javascript" src="../assets/vendor/jquery/dist/jquery.min.js"></script>
+
+        <!-- Mobile Detect -->
+        <script type="text/javascript" src="../assets/vendor/mobile-detect/mobile-detect.min.js"></script>
+
+        <!-- Perfect Scrollbar -->
+        <script type="text/javascript"
+                src="../assets/vendor/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js"></script>
+
+        <!-- Popper.js -->
+        <script type="text/javascript" src="../assets/vendor/popper.js/index.js"></script>
+
+        <!-- Bootstrap -->
+        <script type="text/javascript" src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+        <!-- Nvd3 - D3 Charts -->
+        <script type="text/javascript" src="../assets/vendor/d3/d3.min.js"></script>
+        <script type="text/javascript" src="../assets/vendor/nvd3/build/nv.d3.min.js"></script>
+
+        <!-- Data tables -->
+        <script type="text/javascript" src="../assets/vendor/datatables.net/js/jquery.dataTables.min.js"></script>
+
+        <script type="text/javascript"
+                src="../assets/vendor/datatables-responsive/js/dataTables.responsive.js"></script>
+
+        <!-- PNotify -->
+        <script type="text/javascript" src="../assets/vendor/pnotify/pnotify.custom.min.js"></script>
+
+        <!-- raz Html -->
+        <script type="text/javascript" src="../assets/vendor/raz-html/raz-html.min.js"></script>
+
+        <!-- Main JS -->
+        <script type="text/javascript" src="../assets/js/main.js"></script>
+
+        <!-- / JAVASCRIPT -->
+    </head>
+
+    <body class="layout layout-vertical layout-left-navigation layout-below-toolbar">
+
+        <div id="wrapper">
+
+            <aside id="aside" class="aside aside-left"
+            data-raz-bar="aside" data-raz-bar-media-step="md"
+            data-raz-bar-position="left">
+         <div class="aside-content-wrapper">
+
+             <div class="aside-content">
+
+                 <div class="aside-toolbar">
+
+                     <div class="logo">
+                         <span class="logo-icon">L</span><span class="logo-text">Leadstracer</span>
+                     </div>
+
+                     <button id="toggle-fold-aside-button" type="button" class="btn btn-icon d-none d-lg-block"
+                             data-raz-aside-toggle-fold>
+                         <i class="icon icon-backburger"></i>
+                     </button>
+
+                 </div>
+
+                 <ul class="nav flex-column custom-scrollbar" id="sidenav" data-children=".nav-item">
+
+                     <li class="subheader">
+                         <span>Cinzac Sales & Services</span>
+                     </li>
+
+                     <li class="nav-item">
+                         <a class="nav-link ripple " href="dashboard.html"
+                            data-page-url="">
+                             <i class="icon s-5 icon-home"></i>
+                             <span>Dashboard</span>
+                         </a>
+                     </li>
+
+                     <li class="nav-item" role="tab" id="heading-Prospect-management">
+
+                         <a class="nav-link ripple with-arrow collapsed"
+                            data-toggle="collapse"
+                            data-target="#collapse-Prospect-management"
+                            href="#"
+                            aria-expanded="false"
+                            aria-controls="collapse-Prospect-management">
+                             <i class="icon s-5 icon-contacts"></i>
+                             <span>Leads Management</span>
+                         </a>
+
+                         <ul id="collapse-Prospect-management"
+                             class="collapse"
+                             role="tabpanel"
+                             aria-labelledby="heading-Prospect-management"
+                             data-children=".nav-item">
+
+                             <li class="nav-item">
+                                 <a class="nav-link ripple " href="leads_card.html"
+                                    data-page-url="#">
+
+                                     <span>All Leads</span>
+                                 </a>
+                             </li>
+
+                             <li class="nav-item">
+                                 <a class="nav-link ripple " href="lead_new.html"
+                                    data-page-url="#">
+
+                                     <span>New Lead</span>
+                                 </a>
+                             </li>
+
+                         </ul>
+                     </li>
+
+                     <li class="nav-item" role="tab" id="heading-SalesCall-management">
+
+                         <a class="nav-link ripple with-arrow collapsed"
+                            data-toggle="collapse"
+                            data-target="#collapse-SalesCall-management"
+                            href="#"
+                            aria-expanded="false"
+                            aria-controls="collapse-SalesCall-management">
+                             <i class="icon s-5 icon-phone-forward"></i>
+                             <span>Sales Call Management</span>
+                         </a>
+
+                         <ul id="collapse-SalesCall-management"
+                             class="collapse"
+                             role="tabpanel"
+                             aria-labelledby="heading-SalesCall-management"
+                             data-children=".nav-item">
+
+                             <li class="nav-item">
+                                 <a class="nav-link ripple " href="sales_calls_card.html"
+                                    data-page-url="#">
+
+                                     <span>All Sales Calls</span>
+                                 </a>
+                             </li>
+
+                             <li class="nav-item">
+                                 <a class="nav-link ripple " href="#"
+                                    data-page-url="#">
+
+                                     <span>New Sales Call</span>
+                                 </a>
+                             </li>
+
+                         </ul>
+                     </li>
+
+                     <li class="nav-item" role="tab" id="heading-Machine-management">
+
+                         <a class="nav-link ripple with-arrow collapsed"
+                            data-toggle="collapse"
+                            data-target="#collapse-Machine-management"
+                            href="#"
+                            aria-expanded="false"
+                            aria-controls="collapse-Machine-management">
+                             <i class="icon s-5 icon-robot"></i>
+                             <span>Machine Management</span>
+                         </a>
+
+                         <ul id="collapse-Machine-management"
+                             class="collapse"
+                             role="tabpanel"
+                             aria-labelledby="heading-Machine-management"
+                             data-children=".nav-item">
+
+                             <li class="nav-item">
+                                 <a class="nav-link ripple " href="machines.html"
+                                    data-page-url="#">
+
+                                     <span>All Machines</span>
+                                 </a>
+                             </li>
+
+                             <li class="nav-item">
+                                 <a class="nav-link ripple " href="machine_new.html"
+                                    data-page-url="#">
+
+                                     <span>New MAchine (style 1)</span>
+                                 </a>
+                             </li>
+
+                             <li class="nav-item">
+                                <a class="nav-link ripple " href="machine_new_alt.html"
+                                   data-page-url="#">
+
+                                    <span>New Machine (style 2)</span>
+                                </a>
+                            </li>
+
+                         </ul>
+                     </li>
+                     
+                     <li class="nav-item" role="tab" id="heading-ServiceCall-management">
+
+                         <a class="nav-link ripple with-arrow collapsed"
+                            data-toggle="collapse"
+                            data-target="#collapse-ServiceCall-management"
+                            href="#"
+                            aria-expanded="false"
+                            aria-controls="collapse-ServiceCall-management">
+                             <i class="icon s-5 icon-wrench"></i>
+                             <span>Service Call Management</span>
+                         </a>
+
+                         <ul id="collapse-ServiceCall-management"
+                             class="collapse"
+                             role="tabpanel"
+                             aria-labelledby="heading-ServiceCall-management"
+                             data-children=".nav-item">
+
+                             <li class="nav-item">
+                                 <a class="nav-link ripple " href="service_calls_card.html"
+                                    data-page-url="#">
+
+                                     <span>All Service Calls</span>
+                                 </a>
+                             </li>
+
+                             <li class="nav-item">
+                                 <a class="nav-link ripple " href="servicecall_new.html"
+                                    data-page-url="#">
+
+                                     <span>New Service Call</span>
+                                 </a>
+                             </li>
+                             <li class="nav-item">
+                                <a class="nav-link ripple active" href="app_scheduler.html"
+                                   data-page-url="#">
+
+                                    <span>Service Scheduler</span>
+                                </a>
+                            </li>
+
+                         </ul>
+                     </li>
+
+                     <li class="nav-item" role="tab" id="heading-Quotation-management">
+
+                         <a class="nav-link ripple with-arrow collapsed"
+                            data-toggle="collapse"
+                            data-target="#collapse-Quotation-management"
+                            href="#"
+                            aria-expanded="false"
+                            aria-controls="collapse-Quotation-management">
+                             <i class="icon s-5 icon-file-document"></i>
+                             <span>Quotation Management</span>
+                         </a>
+
+                         <ul id="collapse-Quotation-management"
+                             class="collapse"
+                             role="tabpanel"
+                             aria-labelledby="heading-Quotation-management"
+                             data-children=".nav-item">
+
+                             <li class="nav-item">
+                                 <a class="nav-link ripple " href="quotations_app.html"
+                                    data-page-url="#">
+
+                                     <span>All Quotations</span>
+                                 </a>
+                             </li>
+
+                             <li class="nav-item">
+                                 <a class="nav-link ripple " href="quotation_new.html"
+                                    data-page-url="#">
+
+                                     <span>New Quotation</span>
+                                 </a>
+                             </li>
+
+                         </ul>
+                     </li>
+
+                     <li class="nav-item" role="tab" id="heading-Billing-management">
+
+                         <a class="nav-link ripple with-arrow collapsed"
+                            data-toggle="collapse"
+                            data-target="#collapse-Billing-management"
+                            href="#"
+                            aria-expanded="false"
+                            aria-controls="collapse-Billing-management">
+                             <i class="icon s-5 icon-receipt"></i>
+                             <span>Billing Management</span>
+                         </a>
+
+                         <ul id="collapse-Billing-management"
+                             class="collapse"
+                             role="tabpanel"
+                             aria-labelledby="heading-Billing-management"
+                             data-children=".nav-item">
+
+                             <li class="nav-item">
+                                 <a class="nav-link ripple " href="#"
+                                    data-page-url="#">
+
+                                     <span>Child one</span>
+                                 </a>
+                             </li>
+
+                             <li class="nav-item">
+                                 <a class="nav-link ripple " href="#"
+                                    data-page-url="#">
+
+                                     <span>child two</span>
+                                 </a>
+                             </li>
+
+                         </ul>
+                     </li>
+
+                     <li class="nav-item" role="tab" id="heading-Product-management">
+                        <a class="nav-link active ripple with-arrow collapsed"
+                           data-toggle="collapse"
+                           data-target="#collapse-Product-management"
+                           href="#"
+                           aria-expanded="false"
+                           aria-controls="collapse-Product-management">
+                            <i class="icon s-5 icon-tile-four"></i>
+                            <span>Product Management</span>
+                        </a>
+
+                        <ul id="collapse-Product-management"
+                            class="collapse"
+                            role="tabpanel"
+                            aria-labelledby="heading-Product-management"
+                            data-children=".nav-item">
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="products.html"
+                                   data-page-url="#">
+                                    <span>Products</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="product_new.html"
+                                   data-page-url="#">
+                                    <span>New Product</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="product_categories.html"
+                                   data-page-url="#">
+                                    <span>Product Categories</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="product_category_new.html"
+                                   data-page-url="#">
+                                    <span>New Product Category</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ripple active" href="product_companies.html"
+                                   data-page-url="#">
+                                    <span>Product Companies</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="product_company_new.html"
+                                   data-page-url="#">
+                                    <span>New Product Company</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                           <a class="nav-link ripple " href="stock.html"
+                              data-page-url="">
+                               <i class="icon s-5 icon-view-module"></i>
+                               <span>Stock Management</span>
+                           </a>
+                       </li>
+                    
+                    <li class="nav-item" role="tab" id="heading-Supplier-management">
+
+                        <a class="nav-link ripple with-arrow collapsed"
+                           data-toggle="collapse"
+                           data-target="#collapse-Supplier-management"
+                           href="#"
+                           aria-expanded="false"
+                           aria-controls="collapse-Supplier-management">
+                            <i class="icon s-5 icon-truck-delivery"></i>
+                            <span>Supplier Management</span>
+                        </a>
+
+                        <ul id="collapse-Supplier-management"
+                            class="collapse"
+                            role="tabpanel"
+                            aria-labelledby="heading-Supplier-management"
+                            data-children=".nav-item">
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="suppliers.html"
+                                   data-page-url="#">
+
+                                    <span>Suppliers</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="supplier_new.html"
+                                   data-page-url="#">
+
+                                    <span>New Supplier</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item" role="tab" id="heading-Staff-management">
+
+                         <a class="nav-link ripple with-arrow collapsed"
+                            data-toggle="collapse"
+                            data-target="#collapse-Staff-management"
+                            href="#"
+                            aria-expanded="false"
+                            aria-controls="collapse-Staff-management">
+                             <i class="icon s-5 icon-people"></i>
+                             <span>Staff Management</span>
+                         </a>
+
+                         <ul id="collapse-Staff-management"
+                             class="collapse"
+                             role="tabpanel"
+                             aria-labelledby="heading-Staff-management"
+                             data-children=".nav-item">
+
+                             <li class="nav-item">
+                                 <a class="nav-link ripple " href="staff_all.html"
+                                    data-page-url="#">
+
+                                     <span>All Staffs</span>
+                                 </a>
+                             </li>
+
+                             <li class="nav-item">
+                                 <a class="nav-link ripple " href="staff_new.html"
+                                    data-page-url="#">
+
+                                     <span>New Staff</span>
+                                 </a>
+                             </li>
+
+                             <li class="nav-item">
+                                 <a class="nav-link ripple " href="staff_group_new.html"
+                                    data-page-url="#">
+
+                                     <span>New Staff Group</span>
+                                 </a>
+                             </li>
+
+                             <li class="nav-item">
+                                 <a class="nav-link ripple " href="staff_rolls.html"
+                                    data-page-url="#">
+
+                                     <span>Staff Rolls & Permissions</span>
+                                 </a>
+                             </li>
+
+                         </ul>
+                     </li>
+                     <li class="nav-item" role="tab" id="heading-Company-management">
+
+                         <a class="nav-link ripple with-arrow collapsed"
+                            data-toggle="collapse"
+                            data-target="#collapse-Company-management"
+                            href="#"
+                            aria-expanded="false"
+                            aria-controls="collapse-Company-management">
+                             <i class="icon s-5 icon-nature-people"></i>
+                             <span>Company Management</span>
+                         </a>
+
+                         <ul id="collapse-Company-management"
+                             class="collapse"
+                             role="tabpanel"
+                             aria-labelledby="heading-Company-management"
+                             data-children=".nav-item">
+
+                             <li class="nav-item">
+                                 <a class="nav-link ripple " href="staff_departments.html"
+                                    data-page-url="#">
+
+                                     <span>All Departments</span>
+                                 </a>
+                             </li>
+
+                             <li class="nav-item">
+                                 <a class="nav-link ripple " href="staff_departments_new.html"
+                                    data-page-url="#">
+
+                                     <span>New Department</span>
+                                 </a>
+                             </li>
+
+                         </ul>
+                     </li>
+
+                     <li class="nav-item">
+                        <a class="nav-link ripple " href="tasks_app.html"
+                           data-page-url="">
+                            <i class="icon s-5 icon-message-bulleted"></i>
+                            <span>Tasks Management</span>
+                        </a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link ripple " href="location_app.html"
+                           data-page-url="">
+                            <i class="icon s-5 icon-map-marker-radius"></i>
+                            <span>Location Management</span>
+                        </a>
+                     </li>
+
+                     <li class="nav-item">
+                         <a class="nav-link ripple " href="staff_profile.html"
+                            data-page-url="">
+                             <i class="icon s-5 icon-account"></i>
+                             <span>My Profile</span>
+                         </a>
+                     </li>
+
+                     <li class="nav-item" role="tab" id="heading-Reports-management">
+
+                         <a class="nav-link ripple with-arrow collapsed"
+                            data-toggle="collapse"
+                            data-target="#collapse-Reports-management"
+                            href="#"
+                            aria-expanded="false"
+                            aria-controls="collapse-Reports-management">
+                             <i class="icon s-5 icon-note-multiple"></i>
+                             <span>Reports Management</span>
+                         </a>
+
+                         <ul id="collapse-Reports-management"
+                             class="collapse"
+                             role="tabpanel"
+                             aria-labelledby="heading-Reports-management"
+                             data-children=".nav-item">
+
+                             <li class="nav-item">
+                                 <a class="nav-link ripple " href="#"
+                                    data-page-url="#">
+
+                                     <span>Child one</span>
+                                 </a>
+                             </li>
+
+                             <li class="nav-item">
+                                 <a class="nav-link ripple " href="#"
+                                    data-page-url="#">
+
+                                     <span>child two</span>
+                                 </a>
+                             </li>
+
+                         </ul>
+                     </li>
+
+                     <li class="nav-item">
+                         <a class="nav-link ripple " href=""
+                            data-page-url="">
+                             <i class="icon s-5 icon-settings"></i>
+                             <span>Settings</span>
+                         </a>
+                     </li>
+
+                 </ul>
+             </div>
+         </div>
+     </aside>
+
+            <div class="content-wrapper">
+
+                <nav id="toolbar" class="fixed-top bg-white">
+                    
+                    <div class="row no-gutters align-items-center flex-nowrap">
+                        
+                        <div class="col">
+
+                            <div class="row no-gutters align-items-center flex-nowrap">
+
+                                <button type="button" class="toggle-aside-button btn btn-icon d-block d-lg-none"
+                                        data-raz-bar-toggle="aside">
+                                    <i class="icon icon-menu"></i>
+                                </button>
+
+                                <div class="toolbar-separator d-block d-lg-none"></div>
+                                
+                                <div class="shortcuts-wrapper row no-gutters align-items-center px-0 px-sm-2">
+
+                                    <div class="shortcuts row no-gutters align-items-center d-none d-md-flex">
+
+                                        <a href="location_app.html" class="shortcut-button btn btn-icon mx-1">
+                                            <i class="icon icon-map-marker-radius"></i>
+                                        </a>
+                                        <a href="tasks_app.html" class="shortcut-button btn btn-icon mx-1">
+                                            <i class="icon icon-message-bulleted"></i>
+                                        </a>
+                                        <a href="settings.html" class="shortcut-button btn btn-icon mx-1">
+                                            <i class="icon icon-settings"></i>
+                                        </a>
+
+                                        <a href="staff_profile.html" class="shortcut-button btn btn-icon mx-1">
+                                            <i class="icon icon-account-box"></i>
+                                        </a>
+
+
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="toolbar-separator"></div>
+                        
+                            </div>
+                        </div>
+
+                        <div class="col-auto">
+
+                            <div class="row no-gutters align-items-center justify-content-end">
+
+                                <div class="user-menu-button dropdown">
+
+                                    <div class="dropdown-toggle ripple row align-items-center no-gutters px-2 px-sm-4"
+                                            role="button"
+                                            id="dropdownUserMenu"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <div class="avatar-wrapper">
+                                            <img class="avatar" src="../assets/images/avatars/profile.jpg">
+                                            <i class="status text-green icon-checkbox-marked-circle s-4"></i>
+                                        </div>
+                                        <span class="username mx-3 d-none d-md-block">Riyas Abdul SAlam</span>
+                                    </div>
+
+                                    <div class="dropdown-menu" aria-labelledby="dropdownUserMenu">
+
+                                        <a class="dropdown-item" href="staff_profile.html">
+                                            <div class="row no-gutters align-items-center flex-nowrap">
+                                                <i class="icon-account"></i>
+                                                <span class="px-3">My Profile</span>
+                                            </div>
+                                        </a>
+
+                                        <div class="dropdown-divider"></div>
+
+                                        <a class="dropdown-item" href="#">
+                                            <div class="row no-gutters align-items-center flex-nowrap">
+                                                <i class="icon-logout"></i>
+                                                <span class="px-3">Logout</span>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                </div>
+
+                                <div class="toolbar-separator"></div>
+
+                                <button type="button" class="search-button btn btn-icon">
+                                    <i class="icon icon-magnify"></i>
+                                </button>
+                                
+                                <div class="toolbar-separator"></div>
+
+                                <button type="button" class="quick-panel-button btn btn-icon"
+                                        data-raz-bar-toggle="quick-panel-sidebar">
+                                    <i class="icon icon-format-list-bulleted"></i>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="content">
+                    <div class="doc toolpage-doc page-layout carded left-sidebar">
+
+                        <div class="top-bg bg-primary"></div>
+
+                        <div class="page-content-wrapper">
+
+                            <aside class="page-sidebar" data-raz-bar="demo-sidebar" data-raz-bar-media-step="md">
+
+                                <!-- HEADER -->
+                                <div class="header d-flex flex-column justify-content-between p-6 bg-indigo-400 text-auto">
+
+                                    <div class="logo d-flex align-items-center pt-5">
+                                        <i class="icon-tile-four mr-4"></i>
+                                        <span class="logo-text h5">Product Companies</span>
+                                    </div>
+                                    <div class="account">
+                                        <div class="title">10 Companies</div>
+                                    </div>
+
+                                </div>
+                                <!-- / HEADER -->
+
+                                <!-- DEMO CONTENT -->
+                                <div class="demo-sidebar">
+
+                                    <ul class="nav flex-column">
+
+                                        <li class="nav-item">
+                                            <a class="nav-link">
+                                                <i class="icon s-4 icon-view-headline"></i>
+                                                <span>All Companies</span>
+                                            </a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li class="nav-item">
+                                                <a class="nav-link ripple  active">
+                                                <i class="icon s-4 icon-label"></i>                                                
+                                                <span>Sany</span></a>
+                                            </li>
+    
+                                            <md-divider></md-divider>
+                                        <li class="nav-item">
+                                            <a class="nav-link ripple">
+                                            <i class="icon s-4 icon-label"></i>                                                
+                                            <span>Jcb</span></a>
+                                        </li>
+
+                                        <md-divider></md-divider>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link ripple">
+                                            <i class="icon s-4 icon-label"></i>                                                
+                                            <span>Bobcat</span></a>
+                                                
+                                        </li>
+
+                                        <md-divider></md-divider>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link ripple">
+                                            <i class="icon s-4 icon-label"></i>                                                
+                                            <span>Komastu Limited</span>
+                                            </a>
+                                        </li>
+
+                                        <md-divider></md-divider>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link ripple">
+                                            <i class="icon s-4 icon-label"></i>                                                
+                                            <span>Hitachi</span>
+                                            </a>
+                                        </li>
+
+                                        <md-divider></md-divider>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link ripple">
+                                            <i class="icon s-4 icon-label"></i>                                                
+                                            <span>Volvo</span>
+                                            </a>
+                                        </li>
+
+                                        <md-divider></md-divider>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link ripple">
+                                            <i class="icon s-4 icon-label"></i>                                                
+                                            <span>Terex</span>
+                                            </a>
+                                        </li>
+
+                                        <md-divider></md-divider>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link ripple">
+                                            <i class="icon s-4 icon-label"></i>                                                
+                                            <span>Kubota</span>
+                                            </a>
+                                        </li>
+
+                                        <md-divider></md-divider>
+
+                                    </ul>
+                                </div>
+                                <!-- / DEMO CONTENT -->
+
+                            </aside>
+
+                            <!-- CONTENT -->
+                            <div class="page-content">
+
+                                 <!-- HEADER -->
+                            <div
+                                class="header bg-primary text-auto row no-gutters align-items-center justify-content-between">
+
+                                <!-- APP TITLE -->
+                                <div class="col-12 col-sm">
+
+                                    <div class="logo row no-gutters align-items-start pl-md-5">
+                                            <button type="button"
+                                            class="sidebar-toggle-button btn btn-icon d-block d-lg-none mr-2"
+                                            data-raz-bar-toggle="demo-sidebar">
+                                        <i class="icon icon-menu"></i>
+                                    </button>
+                                        <div class="logo-icon mr-3 mt-1">
+                                            <i class="icon-cube-outline s-6"></i>
+                                        </div>
+                                        <div class="logo-text">
+                                            <div class="h4">SANY </div>
+                                            <div class="">Products: 10</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- / APP TITLE -->
+
+                                <!-- SEARCH -->
+                                <div class="col search-wrapper px-2">
+
+                                    <div class="input-group hidden" id="products-search-input-group">
+                                        <span class="input-group-btn">
+                                            <button type="button" class="btn btn-icon">
+                                                <i class="icon icon-magnify"></i>
+                                            </button>
+                                        </span>
+                                        <input id="products-search-input" type="text" class="form-control"
+                                               placeholder="Search"
+                                               aria-label="Search"/>
+                                    </div>
+
+                                </div>
+                                <!-- / SEARCH -->
+
+                                <div class="col-auto">
+                                    <a href="" class="btn btn-secondary">NEW PRODUCT</a>
+                                </div>
+
+                            </div>
+                            <!-- / HEADER -->
+
+                                <div class="page-content-card">
+                                    <!-- CONTENT TOOLBAR -->
+                                   <ul class="nav nav-tabs" id="myTab" role="tablist">
+
+                                        <li class="nav-item">
+                                            <a class="nav-link btn active" id="profile-tab" data-toggle="tab" href="#profile"
+                                            role="tab"
+                                            aria-controls="profile" aria-expanded="true">Profile</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link btn" id="products-tab" data-toggle="tab" href="#products"
+                                            role="tab"
+                                            aria-controls="products">Products</a>
+                                        </li>
+
+                                    </ul>
+                                    <!-- / CONTENT TOOLBAR -->
+
+                                    <div class="p-2 p-sm-3 p-md-6">
+                                        <!--  CONTENT -->
+                                        <div class="tab-content" id="myTabContent">
+
+                                            <div role="tabpanel" class="tab-pane fade show active" id="profile"
+                                                aria-labelledby="products-tab">
+                                                
+                                                <!-- div with edit option starts-->
+                                                <div class="">
+                                                    <!--contacts-->
+                                                        <div class="example example-parent">
+                                                            <div class="description">
+                                                                <div class="description-text">
+                                                                    <h4 id="">Contact</h4>
+                                                                </div>
+                                                                <div class="toggle-source-preview toggle-source-preview-parent">
+                                                                    <i class="icon icon-lead-pencil" data-toggle="tooltip" data-placement="left" title="Edit Details"></i>
+                                                                    <i class="icon icon-close"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="source-preview-wrapper">
+                                                                <div class="preview">
+                                                                    <div class="preview-elements ripple">
+                                                                       <div class="content p-4">
+                                                                        <div class="row">
+                                                                            <div class="col-sm-12 col-md-6 col-lg-6">
+                                                                                <div class="info-line mb-6">
+                                                                                    <div class="title font-weight-bold mb-1">Address</div>
+                                                                                    <div class="info">SANY Industrial Park, Economic and Technological Development Zone, Changsha, Hunan,China
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="info-line mb-6">
+                                                                                        <div class="title font-weight-bold mb-1">Website</div>
+        
+                                                                                        <div class="info">
+                                                                                            <span>www.sanyglobal.com</span>
+                                                                                        </div>
+        
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-sm-12 col-md-6 col-lg-6">
+                                                                                <div class="info-line mb-6">
+                                                                                    <div class="title font-weight-bold mb-1">Contact Details</div>
+                                                                                    <table class="info jobs">
+                            
+                                                                                        <tr class="job">
+                                                                                            <td class="company font-weight-bold pr-4">
+                                                                                                Name
+                                                                                            </td>
+                                                                                            <td class="date">Rakesh Ramanadhan</td>
+                                                                                        </tr>
+                            
+                                                                                        <tr class="job">
+                                                                                            <td class="company font-weight-bold pr-4">Mob</td>
+                                                                                            <td class="date">91 8754613212</td>
+                                                                                        </tr>
+
+                                                                                        <tr class="job">
+                                                                                            <td class="company font-weight-bold pr-4">Email</td>
+                                                                                            <td class="date">rakesh@sanyglobal.com</td>
+                                                                                        </tr>
+
+                                                                                        <tr class="job">
+                                                                                            <td class="company font-weight-bold pr-4">Fax</td>
+                                                                                            <td class="date">0086-731-84031999</td>
+                                                                                        </tr>
+                            
+                                                                                    </table>
+                                                                            </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- @formatter:off -->
+                                                                <div class="source">
+                                                                
+                                                                    <div class="container pt-6 pb-8">
+                                                                        <form>
+                                                                            <div class="form-group">
+                                                                                <label for="aaa" class="col-form-label">Company Name</label>
+                                                                                <input type="text" class="form-control" id="aaa"
+                                                                                value="SANY"/>
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                    <label for="exampleTextarea">Address</label>
+                                                                                    <textarea class="form-control" id="AddressTextarea" rows="4" placeholder="">SANY Industrial Park, Economic and Technological Development Zone, Changsha, Hunan,China</textarea>
+                                                                                    
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                    <div class="form-group col-md-8">
+                                                                                        <label for="inputWebsite" class="col-form-label">Website</label>
+                                                                                        <input type="text" class="form-control" id="inputWebsite" value="www.sanyglobal.com"/>
+                                                                                    </div>
+                                                                                    
+                                                                                    <button type="button" class="btn btn-primary btn-fab btn-sm add-new-btn" data-toggle="tooltip" title="New Website">
+                                                                                            <i class="icon-plus"></i>
+                                                                                    </button>
+                                                                            </div>
+                                                                            <h5 class="pt-2 pt-sm-3 pt-md-5">Contact Details</h5>
+                                                                            <div class="row">
+                                                                                    <div class="form-group col-md-8">
+                                                                                        <label for="inputWebsite" class="col-form-label">Name</label>
+                                                                                        <input type="text" class="form-control" id="inputWebsite" value=""/>
+                                                                                    </div>
+                                                                                 
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <div class="form-group col-md-8">
+                                                                                    <label for="inputTel" class="col-form-label">Tel</label>
+                                                                                    <input type="text" class="form-control" id="inputTel" value="0086-731-84031888"/>
+                                                                                </div>
+                                                                                
+                                                                                <button type="button" class="btn btn-primary btn-fab btn-sm add-new-btn" data-toggle="tooltip" title="New tel. no.">
+                                                                                        <i class="icon-plus"></i>
+                                                                                </button>
+                                                                                
+                                                                                <div class="form-group col-md-8">
+                                                                                    <input type="text" class="form-control" id="inputTel" value="0086-731-85835199"/>
+                                                                                </div>
+                                                                                <div class="col-md-4">
+                                                                                    <button type="button" class="btn btn-secondary btn-fab btn-sm delete-this-btn">
+                                                                                        <i class="icon-minus"></i>
+                                                                                </button>
+                                                                                </div>
+                                                                                <div class="form-group col-md-8">
+                                                                                        <input type="text" class="form-control" id="inputTel" value="4006098318/010-69739318"/>
+                                                                                    </div>
+                                                                                    <div class="col-md-4">
+                                                                                        <button type="button" class="btn btn-secondary btn-fab btn-sm delete-this-btn">
+                                                                                            <i class="icon-minus"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                            </div>
+
+                                                                            <div class="row">
+                                                                                    <div class="form-group col-md-8">
+                                                                                        <label for="inputFax" class="col-form-label">Fax</label>
+                                                                                        <input type="text" class="form-control" id="inputFax" value="0086-731-84031999"/>
+                                                                                    </div>
+                                                                                    
+                                                                                    <button type="button" class="btn btn-primary btn-fab btn-sm add-new-btn" data-toggle="tooltip" title="New fax">
+                                                                                            <i class="icon-plus"></i>
+                                                                                    </button>
+                                                                                    
+                                                                                    <div class="form-group col-md-8">
+                                                                                        <input type="text" class="form-control" id="inputFax2"/>
+                                                                                    </div>
+                                                                                    <div class="col-md-4">
+                                                                                        <button type="button" class="btn btn-secondary btn-fab btn-sm delete-this-btn">
+                                                                                            <i class="icon-delete"></i>
+                                                                                    </button>
+                                                                                    </div>
+                                                                            </div>
+                                                                            
+                                                                            <div class="row">
+                                                                                    <div class="form-group col-md-8">
+                                                                                        <label for="inputEmail" class="col-form-label">Email</label>
+                                                                                        <input type="text" class="form-control" id="inputEmail" value="sales31@sanygroup.cn"/>
+                                                                                    </div>
+                                                                                    
+                                                                                    <button type="button" class="btn btn-primary btn-fab btn-sm add-new-btn" data-toggle="tooltip" title="New Email">
+                                                                                            <i class="icon-plus"></i>
+                                                                                    </button>
+                                                                                    
+                                                                                    <div class="form-group col-md-8">
+                                                                                        <input type="text" class="form-control" id="inputEmail2" value="mail@sanyglobal.com"/>
+                                                                                    </div>
+                                                                                    <div class="col-md-4">
+                                                                                        <button type="button" class="btn btn-secondary btn-fab btn-sm delete-this-btn">
+                                                                                            <i class="icon-delete"></i>
+                                                                                    </button>
+                                                                                    </div>
+                                                                            </div>
+                                                                            <button type="submit" class="btn btn-primary mt-5">Submit</button>
+                                                                        </form>
+                                                                    </div>
+                                                                </div>
+                                        <!-- @formatter:on --></div>
+                                                        </div>
+                                                        <!--departments contacts-->
+                                                        <div class="example example-parent example-add mt-5">
+                                                                <div class="description">
+                                                                    <div class="description-text">
+                                                                        <h4 id="">Departments</h4>
+                                                                    </div>
+                                                                    <div class="toggle-source-preview toggle-source-preview-parent">
+                                                                        <i class="icon icon-plus-circle-outline" data-toggle="tooltip" title="Add New Department" data-placement="left"></i>
+                                                                        <i class="icon icon-close"></i>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="source-preview-wrapper">
+                                                                    <div class="preview">
+                                                                        <div class="preview-elements">
+                                                                           <div class="content p-1 p-sm-2 p-md-4">
+                                                                            <div class="">
+                                                                                <!-- departsments div -->
+                                                                                <!--departments one-->
+                                                                                    <div class="example example-child mt-5">
+                                                                                            <div class="description">
+                                                                                                <div class="description-text">
+                                                                                                    <h6 >Sales Department</h6>
+                                                                                                </div>
+                                                                                                <div class="toggle-source-preview toggle-source-preview-child">
+                                                                                                    <i class="icon icon-lead-pencil" data-toggle="tooltip" title="Edit Department Details" data-placement="left"></i>
+                                                                                                    <i class="icon icon-close"></i>
+                                                                                                </div>
+                                                                                                <a class="btn-sm ripple"  data-toggle="tooltip" title="Delete Department" data-placement="left">
+                                                                                                    <i class="icon icon-delete"></i>
+                                                                                                </a>
+                                                                                            </div>
+                                                                                            <div class="source-preview-wrapper">
+                                                                                                <div class="preview">
+                                                                                                    <div class="preview-elements">
+                                                                                                    <div class="content">
+                                                                                                        <div class="row">
+                                                                                                            <div class="col-sm-6 col-md-6 col-lg-4">
+                                                                                                                    <ul class="list-group list-group-highlight">
+                                                                                                                            <li class="list-group-item two-line">
+                                                                                                                                <i class="icon icon-account"></i>
+                                                                                                                                <div class="list-item-content">
+                                                                                                                                    <h3>Rakesh Ramanadhan</h3>
+                                                                                                                                    <p>Sales Manager</p>
+                                                                                                                                </div>
+                                                                                                                            </li>
+                                                                                                                    </ul>
+                                                                                                            </div>
+                                                                                                            <div class="inline-div">
+                                                                                                                    <ul class="list-group">
+                                                                                                                            <li class="list-group-item two-line">
+                                                                                                                                <i class="icon icon-cellphone-android"></i>
+                                                                                                                                <div class="list-item-content">
+                                                                                                                                    <h3>+91 9876543210</h3>
+                                                                                                                                    <p>Mobile</p>
+                                                                                                                                </div>
+                                                                                                                            </li>
+                                                                                                                    </ul>
+                                                                                                            </div>
+                                                                                                            <div class="inline-div">
+                                                                                                                    <ul class="list-group">
+                                                                                                                            <li class="list-group-item two-line">
+                                                                                                                                <i class="icon icon-email-open-outline"></i>
+                                                                                                                                <div class="list-item-content">
+                                                                                                                                    <h3>rakesh@sanyglobal.com</h3>
+                                                                                                                                    <p>email</p>
+                                                                                                                                </div>
+                                                                                                                            </li>
+                                                                                                                    </ul>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <!-- @formatter:off -->
+                                                                                                <div class="source">
+                                                                                                
+                                                                                                    <div class="container pt-6 pb-8">
+                                                                                                        <form>
+                                                                                                            <div class="row">
+                                                                                                                <div class="form-group col-md-6">
+                                                                                                                    <label for="inputTel" class="col-form-label">Department Name</label>
+                                                                                                                    <input type="text" class="form-control" id="inputTel" value=""/>
+                                                                                                                </div>
+                                                                                                                
+                                                                                                                <div class="form-group col-md-6">
+                                                                                                                        <label for="inputTel" class="col-form-label">Contact Person</label>
+                                                                                                                        <input type="text" class="form-control" id="inputTel" value=""/>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="row">
+                                                                                                                <div class="form-group col-md-4">
+                                                                                                                    <label for="inputTel" class="col-form-label">Contact Person Position</label>
+                                                                                                                    <input type="text" class="form-control" id="inputTel" value=""/>
+                                                                                                                </div>
+                                                                                                                
+                                                                                                                <div class="form-group col-md-4">
+                                                                                                                        <label for="inputTel" class="col-form-label">Contact Number</label>
+                                                                                                                        <input type="text" class="form-control" id="inputTel" value=""/>
+                                                                                                                </div>
+                                                                                                                <div class="form-group col-md-4">
+                                                                                                                        <label for="inputTel" class="col-form-label">Contact Email</label>
+                                                                                                                        <input type="text" class="form-control" id="inputTel" value=""/>
+                                                                                                                </div>
+                                                                                                            </div>
+                                
+                                                                                                            <button type="" class="btn btn-primary mt-5">Submit</button>
+                                                                                                        </form>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                        <!-- @formatter:on --></div>
+                                                                                        </div>
+                                                                                    <!--departments one ends here-->
+                                                                                    <!--departments two-->
+                                                                                    <div class="example example-child mt-5">
+                                                                                            <div class="description">
+                                                                                                <div class="description-text">
+                                                                                                    <h6 >Service Department</h6>
+                                                                                                </div>
+                                                                                                <div class="toggle-source-preview toggle-source-preview-child">
+                                                                                                    <i class="icon icon-lead-pencil" data-toggle="tooltip" title="Edit Department Details" data-placement="left"></i>
+                                                                                                    <i class="icon icon-close"></i>
+                                                                                                </div>
+                                                                                                <a class="btn-sm ripple"  data-toggle="tooltip" title="Delete Department" data-placement="left">
+                                                                                                    <i class="icon icon-delete"></i>
+                                                                                                </a>
+                                                                                            </div>
+                                                                                            <div class="source-preview-wrapper">
+                                                                                                <div class="preview">
+                                                                                                    <div class="preview-elements">
+                                                                                                    <div class="content">
+                                                                                                        <div class="row">
+                                                                                                            <div class="col-sm-6 col-md-6 col-lg-4">
+                                                                                                                    <ul class="list-group list-group-highlight">
+                                                                                                                            <li class="list-group-item two-line">
+                                                                                                                                <i class="icon icon-account"></i>
+                                                                                                                                <div class="list-item-content">
+                                                                                                                                    <h3>Ratheesh </h3>
+                                                                                                                                    <p>Service Manager</p>
+                                                                                                                                </div>
+                                                                                                                            </li>
+                                                                                                                    </ul>
+                                                                                                            </div>
+                                                                                                            <div class="inline-div">
+                                                                                                                    <ul class="list-group">
+                                                                                                                            <li class="list-group-item two-line">
+                                                                                                                                <i class="icon icon-cellphone-android"></i>
+                                                                                                                                <div class="list-item-content">
+                                                                                                                                    <h3>+91 9876543210</h3>
+                                                                                                                                    <p>Mobile</p>
+                                                                                                                                </div>
+                                                                                                                            </li>
+                                                                                                                    </ul>
+                                                                                                            </div>
+                                                                                                            <div class="inline-div">
+                                                                                                                    <ul class="list-group">
+                                                                                                                            <li class="list-group-item two-line">
+                                                                                                                                <i class="icon icon-email-open-outline"></i>
+                                                                                                                                <div class="list-item-content">
+                                                                                                                                    <h3>ratheesh@sanyglobal.com</h3>
+                                                                                                                                    <p>email</p>
+                                                                                                                                </div>
+                                                                                                                            </li>
+                                                                                                                    </ul>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <!-- @formatter:off -->
+                                                                                                <div class="source">
+                                                                                                
+                                                                                                    <div class="container pt-6 pb-8">
+                                                                                                        <form>
+                                                                                                            <div class="row">
+                                                                                                                <div class="form-group col-md-6">
+                                                                                                                    <label for="inputTel" class="col-form-label">Department Name</label>
+                                                                                                                    <input type="text" class="form-control" id="inputTel" value=""/>
+                                                                                                                </div>
+                                                                                                                
+                                                                                                                <div class="form-group col-md-6">
+                                                                                                                        <label for="inputTel" class="col-form-label">Contact Person</label>
+                                                                                                                        <input type="text" class="form-control" id="inputTel" value=""/>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="row">
+                                                                                                                <div class="form-group col-md-4">
+                                                                                                                    <label for="inputTel" class="col-form-label">Contact Person Position</label>
+                                                                                                                    <input type="text" class="form-control" id="inputTel" value=""/>
+                                                                                                                </div>
+                                                                                                                
+                                                                                                                <div class="form-group col-md-4">
+                                                                                                                        <label for="inputTel" class="col-form-label">Contact Number</label>
+                                                                                                                        <input type="text" class="form-control" id="inputTel" value=""/>
+                                                                                                                </div>
+                                                                                                                <div class="form-group col-md-4">
+                                                                                                                        <label for="inputTel" class="col-form-label">Contact Email</label>
+                                                                                                                        <input type="text" class="form-control" id="inputTel" value=""/>
+                                                                                                                </div>
+                                                                                                            </div>
+                                
+                                                                                                            <button type="" class="btn btn-primary mt-5">Submit</button>
+                                                                                                        </form>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                        <!-- @formatter:on --></div>
+                                                                                        </div>
+                                                                                    <!--departments two ends here-->
+                                                                                <!--departsments div ends-->
+                                                                            </div>
+                                                                            
+    
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!-- @formatter:off -->
+                                                                    <div class="source">
+                                                                    
+                                                                        <div class="container pt-6 pb-8">
+                                                                                <form>
+                                                                                        <div class="row">
+                                                                                            <div class="form-group col-md-6">
+                                                                                                <label for="inputTel" class="col-form-label">Department Name</label>
+                                                                                                <input type="text" class="form-control" id="inputTel" value=""/>
+                                                                                            </div>
+                                                                                            
+                                                                                            <div class="form-group col-md-6">
+                                                                                                    <label for="inputTel" class="col-form-label">Contact Person</label>
+                                                                                                    <input type="text" class="form-control" id="inputTel" value=""/>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="row">
+                                                                                            <div class="form-group col-md-4">
+                                                                                                <label for="inputTel" class="col-form-label">Contact Person Position</label>
+                                                                                                <input type="text" class="form-control" id="inputTel" value=""/>
+                                                                                            </div>
+                                                                                            
+                                                                                            <div class="form-group col-md-4">
+                                                                                                    <label for="inputTel" class="col-form-label">Contact Number</label>
+                                                                                                    <input type="text" class="form-control" id="inputTel" value=""/>
+                                                                                            </div>
+                                                                                            <div class="form-group col-md-4">
+                                                                                                    <label for="inputTel" class="col-form-label">Contact Email</label>
+                                                                                                    <input type="text" class="form-control" id="inputTel" value=""/>
+                                                                                            </div>
+                                                                                        </div>
+            
+                                                                                        <button type="" class="btn btn-primary mt-5">Submit</button>
+                                                                                    </form>
+                                                                        </div>
+                                                                    </div>
+                                            <!-- @formatter:on --></div>
+                                                            </div>
+                                                        <!--departments contacts ends here-->
+                                                    </div>
+                                                <!--div with edit option ends-->
+                                            </div>
+
+                                            <div class="tab-pane fade" id="products" role="tabpanel" aria-labelledby="products-tab">
+                                                <!--table starts here-->
+                                                <table id="leads_products_table" class="table dataTable ">
+
+                                                    <thead>
+
+                                                        <tr>
+
+                                                            <th>
+                                                                <div class="table-header">
+                                                                    <span class="column-title">ID</span>
+                                                                </div>
+                                                            </th>
+
+                                                            <th>
+                                                                <div class="table-header">
+                                                                    <span class="column-title">Image</span>
+                                                                </div>
+                                                            </th>
+
+                                                            <th>
+                                                                <div class="table-header">
+                                                                    <span class="column-title">Name</span>
+                                                                </div>
+                                                            </th>
+
+                                                            <th>
+                                                                <div class="table-header">
+                                                                    <span class="column-title">Category</span>
+                                                                </div>
+                                                            </th>
+
+                                                            <th>
+                                                                <div class="table-header">
+                                                                    <span class="column-title">Price</span>
+                                                                </div>
+                                                            </th>
+
+                                                            <th>
+                                                                <div class="table-header">
+                                                                    <span class="column-title">Actions</span>
+                                                                </div>
+                                                            </th>
+
+                                                        </tr>
+                                                    </thead>
+
+                                                    <tbody>
+
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td><img class="product-image"
+                                                                    src="../assets/images/backgrounds/january.jpg"></td>
+                                                            <td>HIDROMEK MG 330 BSIII</td>
+                                                            <td>EQUIPMENTS</td>
+                                                            <td>10.24</td>
+                                                            <td>
+                                                                <a  class="btn btn-icon" aria-label="" data-toggle="tooltip"
+                                                                title="Edit Details" data-placement="top" href="">
+                                                                    <i class="icon icon-pencil s-5"></i>
+                                                                </a>
+                                                                <a  class="btn btn-icon" aria-label="" data-toggle="tooltip"
+                                                                title="Delete Product" data-placement="top">
+                                                                    <i class="icon icon-delete s-5"></i>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td><img class="product-image"
+                                                                    src="../assets/images/backgrounds/january.jpg"></td>
+                                                            <td>Swing Bearing</td>
+                                                            <td>EQUIPMENTS</td>
+                                                            <td>24.62</td>
+                                                            <td>
+                                                                <a  class="btn btn-icon" aria-label="" data-toggle="tooltip"
+                                                                title="Edit Details" data-placement="top" href="">
+                                                                    <i class="icon icon-pencil s-5"></i>
+                                                                </a>
+                                                                <a  class="btn btn-icon" aria-label="" data-toggle="tooltip"
+                                                                title="Delete Product" data-placement="top">
+                                                                    <i class="icon icon-delete s-5"></i>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td><img class="product-image"
+                                                                    src="../assets/images/backgrounds/january.jpg"></td>
+                                                            <td>SHANTUI SD32W</td>
+                                                            <td>EQUIPMENTS</td>
+                                                            <td>49.29</td>
+                                                            <td>
+                                                                <a  class="btn btn-icon" aria-label="" data-toggle="tooltip"
+                                                                title="Edit Details" data-placement="top" href="">
+                                                                    <i class="icon icon-pencil s-5"></i>
+                                                                </a>
+                                                                <a  class="btn btn-icon" aria-label="" data-toggle="tooltip"
+                                                                title="Delete Product" data-placement="top">
+                                                                    <i class="icon icon-delete s-5"></i>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>4</td>
+                                                            <td><img class="product-image"
+                                                                    src="../assets/images/backgrounds/january.jpg"></td>
+                                                            <td>SHANTUI SD23</td>
+                                                            <td>EQUIPMENTS</td>
+                                                            <td>69.11</td>
+                                                            <td>
+                                                                <a  class="btn btn-icon" aria-label="" data-toggle="tooltip"
+                                                                title="Edit Details" data-placement="top" href="">
+                                                                    <i class="icon icon-pencil s-5"></i>
+                                                                </a>
+                                                                <a  class="btn btn-icon" aria-label="" data-toggle="tooltip"
+                                                                title="Delete Product" data-placement="top">
+                                                                    <i class="icon icon-delete s-5"></i>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>5</td>
+                                                            <td><img class="product-image"
+                                                                    src="../assets/images/backgrounds/january.jpg"></td>
+                                                            <td>SHANTUI DH17</td>
+                                                            <td>EQUIPMENTS</td>
+                                                            <td>10.24</td>
+                                                            <td>
+                                                                <a  class="btn btn-icon" aria-label="" data-toggle="tooltip"
+                                                                title="Edit Details" data-placement="top" href="">
+                                                                    <i class="icon icon-pencil s-5"></i>
+                                                                </a>
+                                                                <a  class="btn btn-icon" aria-label="" data-toggle="tooltip"
+                                                                title="Delete Product" data-placement="top">
+                                                                    <i class="icon icon-delete s-5"></i>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>6</td>
+                                                            <td><img class="product-image"
+                                                                    src="../assets/images/backgrounds/january.jpg"></td>
+                                                            <td>SHANTUI SD16E</td>
+                                                            <td>EQUIPMENTS</td>
+                                                            <td>59.36</td>
+                                                            <td>
+                                                                <a  class="btn btn-icon" aria-label="" data-toggle="tooltip"
+                                                                title="Edit Details" data-placement="top" href="">
+                                                                    <i class="icon icon-pencil s-5"></i>
+                                                                </a>
+                                                                <a  class="btn btn-icon" aria-label="" data-toggle="tooltip"
+                                                                title="Delete Product" data-placement="top">
+                                                                    <i class="icon icon-delete s-5"></i>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>7</td>
+                                                            <td><img class="product-image"
+                                                                    src="../assets/images/backgrounds/january.jpg"></td>
+                                                            <td>SHANTUI SD13</td>
+                                                            <td>EQUIPMENTS</td>
+                                                            <td>64.21</td>
+                                                            <td>
+                                                                <a  class="btn btn-icon" aria-label="" data-toggle="tooltip"
+                                                                title="Edit Details" data-placement="top" href="">
+                                                                    <i class="icon icon-pencil s-5"></i>
+                                                                </a>
+                                                                <a  class="btn btn-icon" aria-label="" data-toggle="tooltip"
+                                                                title="Delete Product" data-placement="top">
+                                                                    <i class="icon icon-delete s-5"></i>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>8</td>
+                                                            <td><img class="product-image"
+                                                                    src="../assets/images/backgrounds/january.jpg"></td>
+                                                            <td>YANMAR VIO20-3-P</td>
+                                                            <td>ROCK BREAKER</td>
+                                                            <td>69.73</td>
+                                                            <td>
+                                                                <a  class="btn btn-icon" aria-label="" data-toggle="tooltip"
+                                                                title="Edit Details" data-placement="top" href="">
+                                                                    <i class="icon icon-pencil s-5"></i>
+                                                                </a>
+                                                                <a  class="btn btn-icon" aria-label="" data-toggle="tooltip"
+                                                                title="Delete Product" data-placement="top">
+                                                                    <i class="icon icon-delete s-5"></i>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>9</td>
+                                                            <td><img class="product-image"
+                                                                    src="../assets/images/backgrounds/january.jpg"></td>
+                                                            <td>YANMAR VIO25-6</td>
+                                                            <td>ROCK BREAKER</td>
+                                                            <td>57.37</td>
+                                                            <td>
+                                                                <a  class="btn btn-icon" aria-label="" data-toggle="tooltip"
+                                                                title="Edit Details" data-placement="top" href="">
+                                                                    <i class="icon icon-pencil s-5"></i>
+                                                                </a>
+                                                                <a  class="btn btn-icon" aria-label="" data-toggle="tooltip"
+                                                                title="Delete Product" data-placement="top">
+                                                                    <i class="icon icon-delete s-5"></i>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>10</td>
+                                                            <td><img class="product-image"
+                                                                    src="../assets/images/backgrounds/january.jpg"></td>
+                                                            <td>Chisel</td>
+                                                            <td>PARTS</td>
+                                                            <td>68.4</td>
+                                                            <td>
+                                                                <a  class="btn btn-icon" aria-label="" data-toggle="tooltip"
+                                                                title="Edit Details" data-placement="top" href="">
+                                                                    <i class="icon icon-pencil s-5"></i>
+                                                                </a>
+                                                                <a  class="btn btn-icon" aria-label="" data-toggle="tooltip"
+                                                                title="Delete Product" data-placement="top">
+                                                                    <i class="icon icon-delete s-5"></i>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>11</td>
+                                                            <td><img class="product-image"
+                                                                    src="../assets/images/backgrounds/january.jpg"></td>
+                                                            <td>YANMAR VIO35-6B-P</td>
+                                                            <td>ROCK BREAKER</td>
+                                                            <td>53.6</td>
+                                                            <td>
+                                                                <a  class="btn btn-icon" aria-label="" data-toggle="tooltip"
+                                                                title="Edit Details" data-placement="top" href="">
+                                                                    <i class="icon icon-pencil s-5"></i>
+                                                                </a>
+                                                                <a  class="btn btn-icon" aria-label="" data-toggle="tooltip"
+                                                                title="Delete Product" data-placement="top">
+                                                                    <i class="icon icon-delete s-5"></i>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>12</td>
+                                                            <td><img class="product-image"
+                                                                    src="../assets/images/backgrounds/january.jpg"></td>
+                                                            <td>Swing Bearing</td>
+                                                            <td>PARTS</td>
+                                                            <td>10.24</td>
+                                                            <td>
+                                                                <a  class="btn btn-icon" aria-label="" data-toggle="tooltip"
+                                                                title="Edit Details" data-placement="top" href="">
+                                                                    <i class="icon icon-pencil s-5"></i>
+                                                                </a>
+                                                                <a  class="btn btn-icon" aria-label="" data-toggle="tooltip"
+                                                                title="Delete Product" data-placement="top">
+                                                                    <i class="icon icon-delete s-5"></i>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                                <!--table ends here-->
+                                            </div>
+
+                                        </div>
+                                        <!-- / CONTENT -->
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- / CONTENT -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="quick-panel-sidebar custom-scrollbar raz-bar position-right ps ps--theme_default raz-bar-open ps--active-y" raz-cloak data-raz-bar="quick-panel-sidebar"
+            data-raz-bar-position="right">
+           <div class="list-group" class="date">
+
+               <div class="list-group-item subheader">TODAY</div>
+
+               <div class="list-group-item two-line">
+
+                   <div class="text-muted">
+
+                       <div class="h1"> Monday</div>
+
+                       <div class="h2 row no-gutters align-items-start">
+                           <span> 12</span>
+                           <span class="h6">th</span>
+                           <span> Jun</span>
+                       </div>
+
+                   </div>
+               </div>
+           </div>
+
+           <div class="divider"></div>
+
+           <div class="list-group">
+
+               <div class="list-group-item subheader">Todays Activities</div>
+
+               <div class="list-group-item two-line">
+
+                   <div class="list-item-content">
+
+                       <h3>Group Meeting</h3>
+
+                       <p>In 32 Minutes, Room 1B</p>
+                   </div>
+
+               </div>
+
+               <div class="list-group-item two-line">
+
+                   <div class="list-item-content">
+
+                       <h3>Meeting with Client name</h3>
+
+                       <p>11:00 PM</p>
+                   </div>
+
+               </div>
+
+               <div class="list-group-item two-line">
+
+                   <div class="list-item-content">
+
+                       <h3>Meeting with David</h3>
+
+                       <p>At Location, 17:30 PM</p>
+                   </div>
+
+               </div>
+
+               <div class="list-group-item two-line">
+
+                   <div class="list-item-content">
+
+                       <h3>Q&A Session</h3>
+
+                       <p>20:30 PM</p>
+                   </div>
+
+               </div>
+
+           </div>
+
+           <div class="divider"></div>
+
+           <div class="list-group">
+
+               <div class="list-group-item subheader">Notifications</div>
+
+               <div class="list-group-item two-line">
+
+                   <div class="list-item-content">
+
+                       <h3>Best songs to listen while working</h3>
+
+                       <p>At Location, 17:30 PM</p>
+                   </div>
+
+               </div>
+
+               <div class="list-group-item two-line">
+
+                   <div class="list-item-content">
+
+                       <h3>Useful subreddits</h3>
+
+                       <p>At Location, 17:30 PM</p>
+                   </div>
+
+               </div>
+
+           </div>
+
+           <div class="divider"></div>
+
+       
+       </div>
+
+        </div>
+
+    </body>
+    <script type="text/javascript" src="../assets/js/apps/products/products_company.js"></script>
+    <script>
+        $('a[data-toggle="tab"]').on('shown.bs.tab', function(e){
+            if($("#products").hasClass("active")){
+                $("#products-search-input-group").removeClass("hidden");
+            }
+            else{
+                $("#products-search-input-group").addClass("hidden");
+            }
+        });
+    </script>
+</html>
