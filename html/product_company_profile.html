@@ -106,514 +106,428 @@
 
                  <ul class="nav flex-column custom-scrollbar" id="sidenav" data-children=".nav-item">
 
-                     <li class="subheader">
-                         <span>Cinzac Sales & Services</span>
-                     </li>
+                    <li class="subheader">
+                        <span>puerflames Sales & Services</span>
+                    </li>
 
-                     <li class="nav-item">
-                         <a class="nav-link ripple " href="dashboard.html"
-                            data-page-url="">
-                             <i class="icon s-5 icon-home"></i>
-                             <span>Dashboard</span>
-                         </a>
-                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link active ripple " href="dashboard.html"
+                           data-page-url="">
+                            <i class="icon s-5 icon-home"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" role="tab" id="heading-ServiceCall-management">
 
-                     <li class="nav-item" role="tab" id="heading-Prospect-management">
+                       <a class="nav-link ripple with-arrow collapsed"
+                          data-toggle="collapse"
+                          data-target="#collapse-ServiceCall-management"
+                          href="#"
+                          aria-expanded="false"
+                          aria-controls="collapse-ServiceCall-management">
+                           <i class="icon s-5 icon-wrench"></i>
+                           <span>Service Call Management</span>
+                       </a>
 
-                         <a class="nav-link ripple with-arrow collapsed"
-                            data-toggle="collapse"
-                            data-target="#collapse-Prospect-management"
-                            href="#"
-                            aria-expanded="false"
-                            aria-controls="collapse-Prospect-management">
-                             <i class="icon s-5 icon-contacts"></i>
-                             <span>Leads Management</span>
-                         </a>
+                       <ul id="collapse-ServiceCall-management"
+                           class="collapse"
+                           role="tabpanel"
+                           aria-labelledby="heading-ServiceCall-management"
+                           data-children=".nav-item">
 
-                         <ul id="collapse-Prospect-management"
-                             class="collapse"
-                             role="tabpanel"
-                             aria-labelledby="heading-Prospect-management"
-                             data-children=".nav-item">
+                           <li class="nav-item">
+                               <a class="nav-link ripple " href="service_calls_card.html"
+                                  data-page-url="#">
 
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="leads_card.html"
-                                    data-page-url="#">
+                                   <span>All Service Calls</span>
+                               </a>
+                           </li>
 
-                                     <span>All Leads</span>
-                                 </a>
-                             </li>
+                           <li class="nav-item">
+                               <a class="nav-link ripple " href="servicecall_new.html"
+                                  data-page-url="#">
 
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="lead_new.html"
-                                    data-page-url="#">
+                                   <span>New Service Call</span>
+                               </a>
+                           </li>
 
-                                     <span>New Lead</span>
-                                 </a>
-                             </li>
+                       </ul>
+                   </li>
+                   <li class="nav-item" role="tab" id="heading-SalesCall-management">
 
-                         </ul>
-                     </li>
+                       <a class="nav-link ripple with-arrow collapsed"
+                          data-toggle="collapse"
+                          data-target="#collapse-SalesCall-management"
+                          href="#"
+                          aria-expanded="false"
+                          aria-controls="collapse-SalesCall-management">
+                           <i class="icon s-5 icon-phone-forward"></i>
+                           <span>Sales Call Management</span>
+                       </a>
 
-                     <li class="nav-item" role="tab" id="heading-SalesCall-management">
+                       <ul id="collapse-SalesCall-management"
+                           class="collapse"
+                           role="tabpanel"
+                           aria-labelledby="heading-SalesCall-management"
+                           data-children=".nav-item">
 
-                         <a class="nav-link ripple with-arrow collapsed"
-                            data-toggle="collapse"
-                            data-target="#collapse-SalesCall-management"
-                            href="#"
-                            aria-expanded="false"
-                            aria-controls="collapse-SalesCall-management">
-                             <i class="icon s-5 icon-phone-forward"></i>
-                             <span>Sales Call Management</span>
-                         </a>
+                           <li class="nav-item">
+                               <a class="nav-link ripple " href="sales_calls_card.html"
+                                  data-page-url="#">
 
-                         <ul id="collapse-SalesCall-management"
-                             class="collapse"
-                             role="tabpanel"
-                             aria-labelledby="heading-SalesCall-management"
-                             data-children=".nav-item">
+                                   <span>All Sales Calls</span>
+                               </a>
+                           </li>
 
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="sales_calls_card.html"
-                                    data-page-url="#">
+                           <li class="nav-item">
+                               <a class="nav-link ripple " href="#"
+                                  data-page-url="#">
 
-                                     <span>All Sales Calls</span>
-                                 </a>
-                             </li>
+                                   <span>New Sales Call</span>
+                               </a>
+                           </li>
 
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="#"
-                                    data-page-url="#">
+                       </ul>
+                   </li>
+                    <li class="nav-item" role="tab" id="heading-Prospect-management">
 
-                                     <span>New Sales Call</span>
-                                 </a>
-                             </li>
-
-                         </ul>
-                     </li>
-
-                     <li class="nav-item" role="tab" id="heading-Machine-management">
-
-                         <a class="nav-link ripple with-arrow collapsed"
-                            data-toggle="collapse"
-                            data-target="#collapse-Machine-management"
-                            href="#"
-                            aria-expanded="false"
-                            aria-controls="collapse-Machine-management">
-                             <i class="icon s-5 icon-robot"></i>
-                             <span>Machine Management</span>
-                         </a>
-
-                         <ul id="collapse-Machine-management"
-                             class="collapse"
-                             role="tabpanel"
-                             aria-labelledby="heading-Machine-management"
-                             data-children=".nav-item">
-
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="machines.html"
-                                    data-page-url="#">
-
-                                     <span>All Machines</span>
-                                 </a>
-                             </li>
-
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="machine_new.html"
-                                    data-page-url="#">
-
-                                     <span>New MAchine (style 1)</span>
-                                 </a>
-                             </li>
-
-                             <li class="nav-item">
-                                <a class="nav-link ripple " href="machine_new_alt.html"
-                                   data-page-url="#">
-
-                                    <span>New Machine (style 2)</span>
-                                </a>
-                            </li>
-
-                         </ul>
-                     </li>
-                     
-                     <li class="nav-item" role="tab" id="heading-ServiceCall-management">
-
-                         <a class="nav-link ripple with-arrow collapsed"
-                            data-toggle="collapse"
-                            data-target="#collapse-ServiceCall-management"
-                            href="#"
-                            aria-expanded="false"
-                            aria-controls="collapse-ServiceCall-management">
-                             <i class="icon s-5 icon-wrench"></i>
-                             <span>Service Call Management</span>
-                         </a>
-
-                         <ul id="collapse-ServiceCall-management"
-                             class="collapse"
-                             role="tabpanel"
-                             aria-labelledby="heading-ServiceCall-management"
-                             data-children=".nav-item">
-
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="service_calls_card.html"
-                                    data-page-url="#">
-
-                                     <span>All Service Calls</span>
-                                 </a>
-                             </li>
-
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="servicecall_new.html"
-                                    data-page-url="#">
-
-                                     <span>New Service Call</span>
-                                 </a>
-                             </li>
-                             <li class="nav-item">
-                                <a class="nav-link ripple active" href="app_scheduler.html"
-                                   data-page-url="#">
-
-                                    <span>Service Scheduler</span>
-                                </a>
-                            </li>
-
-                         </ul>
-                     </li>
-
-                     <li class="nav-item" role="tab" id="heading-Quotation-management">
-
-                         <a class="nav-link ripple with-arrow collapsed"
-                            data-toggle="collapse"
-                            data-target="#collapse-Quotation-management"
-                            href="#"
-                            aria-expanded="false"
-                            aria-controls="collapse-Quotation-management">
-                             <i class="icon s-5 icon-file-document"></i>
-                             <span>Quotation Management</span>
-                         </a>
-
-                         <ul id="collapse-Quotation-management"
-                             class="collapse"
-                             role="tabpanel"
-                             aria-labelledby="heading-Quotation-management"
-                             data-children=".nav-item">
-
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="quotations_app.html"
-                                    data-page-url="#">
-
-                                     <span>All Quotations</span>
-                                 </a>
-                             </li>
-
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="quotation_new.html"
-                                    data-page-url="#">
-
-                                     <span>New Quotation</span>
-                                 </a>
-                             </li>
-
-                         </ul>
-                     </li>
-
-                     <li class="nav-item" role="tab" id="heading-Billing-management">
-
-                         <a class="nav-link ripple with-arrow collapsed"
-                            data-toggle="collapse"
-                            data-target="#collapse-Billing-management"
-                            href="#"
-                            aria-expanded="false"
-                            aria-controls="collapse-Billing-management">
-                             <i class="icon s-5 icon-receipt"></i>
-                             <span>Billing Management</span>
-                         </a>
-
-                         <ul id="collapse-Billing-management"
-                             class="collapse"
-                             role="tabpanel"
-                             aria-labelledby="heading-Billing-management"
-                             data-children=".nav-item">
-
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="#"
-                                    data-page-url="#">
-
-                                     <span>Child one</span>
-                                 </a>
-                             </li>
-
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="#"
-                                    data-page-url="#">
-
-                                     <span>child two</span>
-                                 </a>
-                             </li>
-
-                         </ul>
-                     </li>
-
-                     <li class="nav-item" role="tab" id="heading-Product-management">
-                        <a class="nav-link active ripple with-arrow collapsed"
+                        <a class="nav-link ripple with-arrow collapsed"
                            data-toggle="collapse"
-                           data-target="#collapse-Product-management"
+                           data-target="#collapse-Prospect-management"
                            href="#"
                            aria-expanded="false"
-                           aria-controls="collapse-Product-management">
-                            <i class="icon s-5 icon-tile-four"></i>
-                            <span>Product Management</span>
+                           aria-controls="collapse-Prospect-management">
+                            <i class="icon s-5 icon-contacts"></i>
+                            <span>Customer Management</span>
                         </a>
 
-                        <ul id="collapse-Product-management"
+                        <ul id="collapse-Prospect-management"
                             class="collapse"
                             role="tabpanel"
-                            aria-labelledby="heading-Product-management"
+                            aria-labelledby="heading-Prospect-management"
                             data-children=".nav-item">
 
                             <li class="nav-item">
-                                <a class="nav-link ripple " href="products.html"
+                                <a class="nav-link ripple " href="leads_card.html"
                                    data-page-url="#">
-                                    <span>Products</span>
+
+                                    <span>All Customers</span>
                                 </a>
                             </li>
+
                             <li class="nav-item">
-                                <a class="nav-link ripple " href="product_new.html"
+                                <a class="nav-link ripple " href="lead_new.html"
                                    data-page-url="#">
+
+                                    <span>New Customer</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item" role="tab" id="heading-Prospect-management">
+
+                       <a class="nav-link ripple with-arrow collapsed"
+                          data-toggle="collapse"
+                          data-target="#collapse-Prospect-management"
+                          href="#"
+                          aria-expanded="false"
+                          aria-controls="collapse-Prospect-management">
+                           <i class="icon s-5 icon-group"></i>
+                           <span>Agent Management</span>
+                       </a>
+
+                       <ul id="collapse-Prospect-management"
+                           class="collapse"
+                           role="tabpanel"
+                           aria-labelledby="heading-Prospect-management"
+                           data-children=".nav-item">
+
+                           <li class="nav-item">
+                               <a class="nav-link ripple " href="leads_card.html"
+                                  data-page-url="#">
+
+                                   <span>All Agents</span>
+                               </a>
+                           </li>
+
+                           <li class="nav-item">
+                               <a class="nav-link ripple " href="lead_new.html"
+                                  data-page-url="#">
+
+                                   <span>New Agent</span>
+                               </a>
+                           </li>
+
+                       </ul>
+                   </li>
+                    
+                   <li class="nav-item" role="tab" id="heading-Prospect-management">
+
+                       <a class="nav-link ripple with-arrow collapsed"
+                          data-toggle="collapse"
+                          data-target="#collapse-Prospect-management"
+                          href="#"
+                          aria-expanded="false"
+                          aria-controls="collapse-Prospect-management">
+                           <i class="icon s-5 icon-sitemap"></i>
+                           <span>Dealer Management</span>
+                       </a>
+
+                       <ul id="collapse-Prospect-management"
+                           class="collapse"
+                           role="tabpanel"
+                           aria-labelledby="heading-Prospect-management"
+                           data-children=".nav-item">
+
+                           <li class="nav-item">
+                               <a class="nav-link ripple " href="leads_card.html"
+                                  data-page-url="#">
+
+                                   <span>All Dealers</span>
+                               </a>
+                           </li>
+
+                           <li class="nav-item">
+                               <a class="nav-link ripple " href="lead_new.html"
+                                  data-page-url="#">
+
+                                   <span>New Dealer</span>
+                               </a>
+                           </li>
+
+                       </ul>
+                   </li>
+                    <li class="nav-item" role="tab" id="heading-Machine-management">
+
+                        <a class="nav-link ripple with-arrow collapsed"
+                           data-toggle="collapse"
+                           data-target="#collapse-Machine-management"
+                           href="#"
+                           aria-expanded="false"
+                           aria-controls="collapse-Machine-management">
+                            <i class="icon s-5 icon-robot"></i>
+                            <span>Product Management</span>
+                        </a>
+
+                        <ul id="collapse-Machine-management"
+                            class="collapse"
+                            role="tabpanel"
+                            aria-labelledby="heading-Machine-management"
+                            data-children=".nav-item">
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="machines.html"
+                                   data-page-url="#">
+
+                                    <span>All Products</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="machine_new.html"
+                                   data-page-url="#">
+
                                     <span>New Product</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link ripple " href="product_categories.html"
-                                   data-page-url="#">
-                                    <span>Product Categories</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link ripple " href="product_category_new.html"
-                                   data-page-url="#">
-                                    <span>New Product Category</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link ripple active" href="product_companies.html"
-                                   data-page-url="#">
-                                    <span>Product Companies</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link ripple " href="product_company_new.html"
-                                   data-page-url="#">
-                                    <span>New Product Company</span>
-                                </a>
-                            </li>
+                               <a class="nav-link ripple " href="machine_new.html"
+                                  data-page-url="#">
+
+                                   <span>Product Catogeries</span>
+                               </a>
+                           </li>
+                           <li class="nav-item">
+                               <a class="nav-link ripple " href="machine_new.html"
+                                  data-page-url="#">
+
+                                   <span>New Product Catogery</span>
+                               </a>
+                           </li>
 
                         </ul>
                     </li>
-                    <li class="nav-item">
-                           <a class="nav-link ripple " href="stock.html"
-                              data-page-url="">
-                               <i class="icon s-5 icon-view-module"></i>
-                               <span>Stock Management</span>
-                           </a>
-                       </li>
                     
-                    <li class="nav-item" role="tab" id="heading-Supplier-management">
+                    
+
+                    <li class="nav-item" role="tab" id="heading-Quotation-management">
 
                         <a class="nav-link ripple with-arrow collapsed"
                            data-toggle="collapse"
-                           data-target="#collapse-Supplier-management"
+                           data-target="#collapse-Quotation-management"
                            href="#"
                            aria-expanded="false"
-                           aria-controls="collapse-Supplier-management">
-                            <i class="icon s-5 icon-truck-delivery"></i>
-                            <span>Supplier Management</span>
+                           aria-controls="collapse-Quotation-management">
+                            <i class="icon s-5 icon-file-document"></i>
+                            <span>Inventory Management</span>
                         </a>
 
-                        <ul id="collapse-Supplier-management"
+                        <ul id="collapse-Quotation-management"
                             class="collapse"
                             role="tabpanel"
-                            aria-labelledby="heading-Supplier-management"
+                            aria-labelledby="heading-Quotation-management"
                             data-children=".nav-item">
 
                             <li class="nav-item">
-                                <a class="nav-link ripple " href="suppliers.html"
+                                <a class="nav-link ripple " href="quotations_app.html"
                                    data-page-url="#">
 
-                                    <span>Suppliers</span>
+                                    <span>Live List</span>
                                 </a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link ripple " href="supplier_new.html"
+                                <a class="nav-link ripple " href="quotation_new.html"
                                    data-page-url="#">
 
-                                    <span>New Supplier</span>
+                                    <span>New Item</span>
                                 </a>
                             </li>
 
                         </ul>
                     </li>
 
-                    <li class="nav-item" role="tab" id="heading-Staff-management">
+               
+                   <li class="nav-item">
+                          <a class="nav-link ripple " href="stock.html"
+                             data-page-url="">
+                              <i class="icon s-5 icon-view-module"></i>
+                              <span>Stock Management</span>
+                          </a>
+                      </li>
+                   
+                   
+                   <li class="nav-item" role="tab" id="heading-Staff-management">
 
-                         <a class="nav-link ripple with-arrow collapsed"
-                            data-toggle="collapse"
-                            data-target="#collapse-Staff-management"
-                            href="#"
-                            aria-expanded="false"
-                            aria-controls="collapse-Staff-management">
-                             <i class="icon s-5 icon-people"></i>
-                             <span>Staff Management</span>
-                         </a>
-
-                         <ul id="collapse-Staff-management"
-                             class="collapse"
-                             role="tabpanel"
-                             aria-labelledby="heading-Staff-management"
-                             data-children=".nav-item">
-
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="staff_all.html"
-                                    data-page-url="#">
-
-                                     <span>All Staffs</span>
-                                 </a>
-                             </li>
-
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="staff_new.html"
-                                    data-page-url="#">
-
-                                     <span>New Staff</span>
-                                 </a>
-                             </li>
-
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="staff_group_new.html"
-                                    data-page-url="#">
-
-                                     <span>New Staff Group</span>
-                                 </a>
-                             </li>
-
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="staff_rolls.html"
-                                    data-page-url="#">
-
-                                     <span>Staff Rolls & Permissions</span>
-                                 </a>
-                             </li>
-
-                         </ul>
-                     </li>
-                     <li class="nav-item" role="tab" id="heading-Company-management">
-
-                         <a class="nav-link ripple with-arrow collapsed"
-                            data-toggle="collapse"
-                            data-target="#collapse-Company-management"
-                            href="#"
-                            aria-expanded="false"
-                            aria-controls="collapse-Company-management">
-                             <i class="icon s-5 icon-nature-people"></i>
-                             <span>Company Management</span>
-                         </a>
-
-                         <ul id="collapse-Company-management"
-                             class="collapse"
-                             role="tabpanel"
-                             aria-labelledby="heading-Company-management"
-                             data-children=".nav-item">
-
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="staff_departments.html"
-                                    data-page-url="#">
-
-                                     <span>All Departments</span>
-                                 </a>
-                             </li>
-
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="staff_departments_new.html"
-                                    data-page-url="#">
-
-                                     <span>New Department</span>
-                                 </a>
-                             </li>
-
-                         </ul>
-                     </li>
-
-                     <li class="nav-item">
-                        <a class="nav-link ripple " href="tasks_app.html"
-                           data-page-url="">
-                            <i class="icon s-5 icon-message-bulleted"></i>
-                            <span>Tasks Management</span>
+                        <a class="nav-link ripple with-arrow collapsed"
+                           data-toggle="collapse"
+                           data-target="#collapse-Staff-management"
+                           href="#"
+                           aria-expanded="false"
+                           aria-controls="collapse-Staff-management">
+                            <i class="icon s-5 icon-people"></i>
+                            <span>Staff Management</span>
                         </a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link ripple " href="location_app.html"
+
+                        <ul id="collapse-Staff-management"
+                            class="collapse"
+                            role="tabpanel"
+                            aria-labelledby="heading-Staff-management"
+                            data-children=".nav-item">
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="staff_all.html"
+                                   data-page-url="#">
+
+                                    <span>All Staffs</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="staff_new.html"
+                                   data-page-url="#">
+
+                                    <span>New Staff</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="staff_group_new.html"
+                                   data-page-url="#">
+
+                                    <span>New Staff Group</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="staff_rolls.html"
+                                   data-page-url="#">
+
+                                    <span>Staff Rolls & Permissions</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                               <a class="nav-link ripple " href="staff_rolls.html"
+                                  data-page-url="#">
+
+                                   <span>All Dipartments</span>
+                               </a>
+                           </li>
+                           <li class="nav-item">
+                               <a class="nav-link ripple " href="staff_rolls.html"
+                                  data-page-url="#">
+
+                                   <span>New Dipartment</span>
+                               </a>
+                           </li>
+
+
+                        </ul>
+                    </li>
+                  
+                    <li class="nav-item">
+                       <a class="nav-link ripple " href="location_app.html"
+                          data-page-url="">
+                           <i class="icon s-5 icon-map-marker-radius"></i>
+                           <span>Location Management</span>
+                       </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link ripple " href="staff_profile.html"
                            data-page-url="">
-                            <i class="icon s-5 icon-map-marker-radius"></i>
-                            <span>Location Management</span>
+                            <i class="icon s-5 icon-account"></i>
+                            <span>My Profile</span>
                         </a>
-                     </li>
+                    </li>
 
-                     <li class="nav-item">
-                         <a class="nav-link ripple " href="staff_profile.html"
-                            data-page-url="">
-                             <i class="icon s-5 icon-account"></i>
-                             <span>My Profile</span>
-                         </a>
-                     </li>
+                    <li class="nav-item" role="tab" id="heading-Reports-management">
 
-                     <li class="nav-item" role="tab" id="heading-Reports-management">
+                        <a class="nav-link ripple with-arrow collapsed"
+                           data-toggle="collapse"
+                           data-target="#collapse-Reports-management"
+                           href="#"
+                           aria-expanded="false"
+                           aria-controls="collapse-Reports-management">
+                            <i class="icon s-5 icon-note-multiple"></i>
+                            <span>Reports Management</span>
+                        </a>
 
-                         <a class="nav-link ripple with-arrow collapsed"
-                            data-toggle="collapse"
-                            data-target="#collapse-Reports-management"
-                            href="#"
-                            aria-expanded="false"
-                            aria-controls="collapse-Reports-management">
-                             <i class="icon s-5 icon-note-multiple"></i>
-                             <span>Reports Management</span>
-                         </a>
+                        <ul id="collapse-Reports-management"
+                            class="collapse"
+                            role="tabpanel"
+                            aria-labelledby="heading-Reports-management"
+                            data-children=".nav-item">
 
-                         <ul id="collapse-Reports-management"
-                             class="collapse"
-                             role="tabpanel"
-                             aria-labelledby="heading-Reports-management"
-                             data-children=".nav-item">
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="#"
+                                   data-page-url="#">
 
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="#"
-                                    data-page-url="#">
+                                    <span>Child one</span>
+                                </a>
+                            </li>
 
-                                     <span>Child one</span>
-                                 </a>
-                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="#"
+                                   data-page-url="#">
 
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="#"
-                                    data-page-url="#">
+                                    <span>child two</span>
+                                </a>
+                            </li>
 
-                                     <span>child two</span>
-                                 </a>
-                             </li>
+                        </ul>
+                    </li>
 
-                         </ul>
-                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link ripple " href=""
+                           data-page-url="">
+                            <i class="icon s-5 icon-settings"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
 
-                     <li class="nav-item">
-                         <a class="nav-link ripple " href=""
-                            data-page-url="">
-                             <i class="icon s-5 icon-settings"></i>
-                             <span>Settings</span>
-                         </a>
-                     </li>
-
-                 </ul>
+                </ul>
              </div>
          </div>
      </aside>
@@ -627,39 +541,49 @@
                         <div class="col">
 
                             <div class="row no-gutters align-items-center flex-nowrap">
-
+        
                                 <button type="button" class="toggle-aside-button btn btn-icon d-block d-lg-none"
                                         data-raz-bar-toggle="aside">
                                     <i class="icon icon-menu"></i>
                                 </button>
-
+        
                                 <div class="toolbar-separator d-block d-lg-none"></div>
-                                
+        
                                 <div class="shortcuts-wrapper row no-gutters align-items-center px-0 px-sm-2">
-
+        
                                     <div class="shortcuts row no-gutters align-items-center d-none d-md-flex">
-
-                                        <a href="location_app.html" class="shortcut-button btn btn-icon mx-1">
+        
+                                        <a href="{{URL::route('LocationView')}}" data-toggle="tooltip" title="Location"class="shortcut-button btn btn-icon mx-1">
                                             <i class="icon icon-map-marker-radius"></i>
                                         </a>
-                                        <a href="tasks_app.html" class="shortcut-button btn btn-icon mx-1">
-                                            <i class="icon icon-message-bulleted"></i>
-                                        </a>
-                                        <a href="settings.html" class="shortcut-button btn btn-icon mx-1">
-                                            <i class="icon icon-settings"></i>
-                                        </a>
-
-                                        <a href="staff_profile.html" class="shortcut-button btn btn-icon mx-1">
+        
+                                        <a href="{{URL::route('MyProfile')}}"  data-toggle="tooltip" title="Profile" class="shortcut-button btn btn-icon mx-1">
                                             <i class="icon icon-account-box"></i>
                                         </a>
-
-
-                                    </div>
+                                       
+                                            <a class="shortcut-button btn btn-icon mx-1" href="{{URL::route('CreateLead')}}" data-toggle="tooltip" title="Add New Customer"><i class="icon icon-account-plus"></i></a>
                                     
-                                </div>
+                                            <a class="shortcut-button btn btn-icon mx-1" href="{{URL::route('CreateSeriviceCall')}}" data-toggle="tooltip" title="Add New ServiceCall"><i class="icon icon-wrench"></i></a>
+                                        
+                                            <a class="shortcut-button btn btn-icon mx-1" href="{{URL::route('SeriviceCallSchedule')}}" data-toggle="tooltip" title="ServiceCall Scheduler"><i class="icon icon-account-location"></i></a>
+                                        
+                                            <a  href="{{URL::route('Sales')}}"class="shortcut-button btn btn-icon mx-1" data-toggle="tooltip" title="Add  SalesCall"><i class="icon icon-clipboard-plus"></i></a>
 
+                                            <a href="{{URL::Route('Settings')}}" data-toggle="tooltip" title="Settings" class="shortcut-button btn btn-icon mx-1">
+                                                <i class="icon icon-settings"></i>
+            
+                                            </a>
+                                            <a href="{{ url()->previous()}}" data-toggle="tooltip" title="Go Back" class="shortcut-button btn btn-icon mx-1">
+                                                <i class="icon icon-arrow-left"></i>
+                                            </a>
+                                           
+        
+                                    </div>
+        
+                                </div>
+        
                                 <div class="toolbar-separator"></div>
-                        
+        
                             </div>
                         </div>
 
