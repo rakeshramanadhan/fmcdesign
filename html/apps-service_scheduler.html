@@ -125,514 +125,428 @@
 
                  <ul class="nav flex-column custom-scrollbar" id="sidenav" data-children=".nav-item">
 
-                     <li class="subheader">
-                         <span>Cinzac Sales & Services</span>
-                     </li>
+                    <li class="subheader">
+                        <span>puerflames Sales & Services</span>
+                    </li>
 
-                     <li class="nav-item">
-                         <a class="nav-link ripple " href="dashboard.html"
-                            data-page-url="">
-                             <i class="icon s-5 icon-home"></i>
-                             <span>Dashboard</span>
-                         </a>
-                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link active ripple " href="dashboard.html"
+                           data-page-url="">
+                            <i class="icon s-5 icon-home"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" role="tab" id="heading-ServiceCall-management">
 
-                     <li class="nav-item" role="tab" id="heading-Prospect-management">
+                       <a class="nav-link ripple with-arrow collapsed"
+                          data-toggle="collapse"
+                          data-target="#collapse-ServiceCall-management"
+                          href="#"
+                          aria-expanded="false"
+                          aria-controls="collapse-ServiceCall-management">
+                           <i class="icon s-5 icon-wrench"></i>
+                           <span>Service Call Management</span>
+                       </a>
 
-                         <a class="nav-link ripple with-arrow collapsed"
-                            data-toggle="collapse"
-                            data-target="#collapse-Prospect-management"
-                            href="#"
-                            aria-expanded="false"
-                            aria-controls="collapse-Prospect-management">
-                             <i class="icon s-5 icon-contacts"></i>
-                             <span>Leads Management</span>
-                         </a>
+                       <ul id="collapse-ServiceCall-management"
+                           class="collapse"
+                           role="tabpanel"
+                           aria-labelledby="heading-ServiceCall-management"
+                           data-children=".nav-item">
 
-                         <ul id="collapse-Prospect-management"
-                             class="collapse"
-                             role="tabpanel"
-                             aria-labelledby="heading-Prospect-management"
-                             data-children=".nav-item">
+                           <li class="nav-item">
+                               <a class="nav-link ripple " href="service_calls_card.html"
+                                  data-page-url="#">
 
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="leads_card.html"
-                                    data-page-url="#">
+                                   <span>All Service Calls</span>
+                               </a>
+                           </li>
 
-                                     <span>All Leads</span>
-                                 </a>
-                             </li>
+                           <li class="nav-item">
+                               <a class="nav-link ripple " href="servicecall_new.html"
+                                  data-page-url="#">
 
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="lead_new.html"
-                                    data-page-url="#">
+                                   <span>New Service Call</span>
+                               </a>
+                           </li>
 
-                                     <span>New Lead</span>
-                                 </a>
-                             </li>
+                       </ul>
+                   </li>
+                   <li class="nav-item" role="tab" id="heading-SalesCall-management">
 
-                         </ul>
-                     </li>
+                       <a class="nav-link ripple with-arrow collapsed"
+                          data-toggle="collapse"
+                          data-target="#collapse-SalesCall-management"
+                          href="#"
+                          aria-expanded="false"
+                          aria-controls="collapse-SalesCall-management">
+                           <i class="icon s-5 icon-phone-forward"></i>
+                           <span>Sales Call Management</span>
+                       </a>
 
-                     <li class="nav-item" role="tab" id="heading-SalesCall-management">
+                       <ul id="collapse-SalesCall-management"
+                           class="collapse"
+                           role="tabpanel"
+                           aria-labelledby="heading-SalesCall-management"
+                           data-children=".nav-item">
 
-                         <a class="nav-link ripple with-arrow collapsed"
-                            data-toggle="collapse"
-                            data-target="#collapse-SalesCall-management"
-                            href="#"
-                            aria-expanded="false"
-                            aria-controls="collapse-SalesCall-management">
-                             <i class="icon s-5 icon-phone-forward"></i>
-                             <span>Sales Call Management</span>
-                         </a>
+                           <li class="nav-item">
+                               <a class="nav-link ripple " href="sales_calls_card.html"
+                                  data-page-url="#">
 
-                         <ul id="collapse-SalesCall-management"
-                             class="collapse"
-                             role="tabpanel"
-                             aria-labelledby="heading-SalesCall-management"
-                             data-children=".nav-item">
+                                   <span>All Sales Calls</span>
+                               </a>
+                           </li>
 
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="sales_calls_card.html"
-                                    data-page-url="#">
+                           <li class="nav-item">
+                               <a class="nav-link ripple " href="#"
+                                  data-page-url="#">
 
-                                     <span>All Sales Calls</span>
-                                 </a>
-                             </li>
+                                   <span>New Sales Call</span>
+                               </a>
+                           </li>
 
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="#"
-                                    data-page-url="#">
+                       </ul>
+                   </li>
+                    <li class="nav-item" role="tab" id="heading-Prospect-management">
 
-                                     <span>New Sales Call</span>
-                                 </a>
-                             </li>
-
-                         </ul>
-                     </li>
-
-                     <li class="nav-item" role="tab" id="heading-Machine-management">
-
-                         <a class="nav-link ripple with-arrow collapsed"
-                            data-toggle="collapse"
-                            data-target="#collapse-Machine-management"
-                            href="#"
-                            aria-expanded="false"
-                            aria-controls="collapse-Machine-management">
-                             <i class="icon s-5 icon-robot"></i>
-                             <span>Machine Management</span>
-                         </a>
-
-                         <ul id="collapse-Machine-management"
-                             class="collapse"
-                             role="tabpanel"
-                             aria-labelledby="heading-Machine-management"
-                             data-children=".nav-item">
-
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="machines.html"
-                                    data-page-url="#">
-
-                                     <span>All Machines</span>
-                                 </a>
-                             </li>
-
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="machine_new.html"
-                                    data-page-url="#">
-
-                                     <span>New MAchine (style 1)</span>
-                                 </a>
-                             </li>
-
-                             <li class="nav-item">
-                                <a class="nav-link ripple " href="machine_new_alt.html"
-                                   data-page-url="#">
-
-                                    <span>New Machine (style 2)</span>
-                                </a>
-                            </li>
-
-                         </ul>
-                     </li>
-                     
-                     <li class="nav-item" role="tab" id="heading-ServiceCall-management">
-
-                         <a class="nav-link ripple with-arrow collapsed active"
-                            data-toggle="collapse"
-                            data-target="#collapse-ServiceCall-management"
-                            href="#"
-                            aria-expanded="false"
-                            aria-controls="collapse-ServiceCall-management">
-                             <i class="icon s-5 icon-wrench"></i>
-                             <span>Service Call Management</span>
-                         </a>
-
-                         <ul id="collapse-ServiceCall-management"
-                             class="collapse"
-                             role="tabpanel"
-                             aria-labelledby="heading-ServiceCall-management"
-                             data-children=".nav-item">
-
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="service_calls_card.html"
-                                    data-page-url="#">
-
-                                     <span>All Service Calls</span>
-                                 </a>
-                             </li>
-
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="servicecall_new.html"
-                                    data-page-url="#">
-
-                                     <span>New Service Call</span>
-                                 </a>
-                             </li>
-                             <li class="nav-item">
-                                <a class="nav-link ripple active" href="app_scheduler.html"
-                                   data-page-url="#">
-
-                                    <span>Service Scheduler</span>
-                                </a>
-                            </li>
-
-                         </ul>
-                     </li>
-
-                     <li class="nav-item" role="tab" id="heading-Quotation-management">
-
-                         <a class="nav-link ripple with-arrow collapsed"
-                            data-toggle="collapse"
-                            data-target="#collapse-Quotation-management"
-                            href="#"
-                            aria-expanded="false"
-                            aria-controls="collapse-Quotation-management">
-                             <i class="icon s-5 icon-file-document"></i>
-                             <span>Quotation Management</span>
-                         </a>
-
-                         <ul id="collapse-Quotation-management"
-                             class="collapse"
-                             role="tabpanel"
-                             aria-labelledby="heading-Quotation-management"
-                             data-children=".nav-item">
-
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="quotations_app.html"
-                                    data-page-url="#">
-
-                                     <span>All Quotations</span>
-                                 </a>
-                             </li>
-
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="quotation_new.html"
-                                    data-page-url="#">
-
-                                     <span>New Quotation</span>
-                                 </a>
-                             </li>
-
-                         </ul>
-                     </li>
-
-                     <li class="nav-item" role="tab" id="heading-Billing-management">
-
-                         <a class="nav-link ripple with-arrow collapsed"
-                            data-toggle="collapse"
-                            data-target="#collapse-Billing-management"
-                            href="#"
-                            aria-expanded="false"
-                            aria-controls="collapse-Billing-management">
-                             <i class="icon s-5 icon-receipt"></i>
-                             <span>Billing Management</span>
-                         </a>
-
-                         <ul id="collapse-Billing-management"
-                             class="collapse"
-                             role="tabpanel"
-                             aria-labelledby="heading-Billing-management"
-                             data-children=".nav-item">
-
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="#"
-                                    data-page-url="#">
-
-                                     <span>Child one</span>
-                                 </a>
-                             </li>
-
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="#"
-                                    data-page-url="#">
-
-                                     <span>child two</span>
-                                 </a>
-                             </li>
-
-                         </ul>
-                     </li>
-
-                     <li class="nav-item" role="tab" id="heading-Product-management">
                         <a class="nav-link ripple with-arrow collapsed"
                            data-toggle="collapse"
-                           data-target="#collapse-Product-management"
+                           data-target="#collapse-Prospect-management"
                            href="#"
                            aria-expanded="false"
-                           aria-controls="collapse-Product-management">
-                            <i class="icon s-5 icon-tile-four"></i>
-                            <span>Product Management</span>
+                           aria-controls="collapse-Prospect-management">
+                            <i class="icon s-5 icon-contacts"></i>
+                            <span>Customer Management</span>
                         </a>
 
-                        <ul id="collapse-Product-management"
+                        <ul id="collapse-Prospect-management"
                             class="collapse"
                             role="tabpanel"
-                            aria-labelledby="heading-Product-management"
+                            aria-labelledby="heading-Prospect-management"
                             data-children=".nav-item">
 
                             <li class="nav-item">
-                                <a class="nav-link ripple " href="products.html"
+                                <a class="nav-link ripple " href="leads_card.html"
                                    data-page-url="#">
-                                    <span>Products</span>
+
+                                    <span>All Customers</span>
                                 </a>
                             </li>
+
                             <li class="nav-item">
-                                <a class="nav-link ripple " href="product_new.html"
+                                <a class="nav-link ripple " href="lead_new.html"
                                    data-page-url="#">
+
+                                    <span>New Customer</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item" role="tab" id="heading-Prospect-management">
+
+                       <a class="nav-link ripple with-arrow collapsed"
+                          data-toggle="collapse"
+                          data-target="#collapse-Prospect-management"
+                          href="#"
+                          aria-expanded="false"
+                          aria-controls="collapse-Prospect-management">
+                           <i class="icon s-5 icon-group"></i>
+                           <span>Agent Management</span>
+                       </a>
+
+                       <ul id="collapse-Prospect-management"
+                           class="collapse"
+                           role="tabpanel"
+                           aria-labelledby="heading-Prospect-management"
+                           data-children=".nav-item">
+
+                           <li class="nav-item">
+                               <a class="nav-link ripple " href="leads_card.html"
+                                  data-page-url="#">
+
+                                   <span>All Agents</span>
+                               </a>
+                           </li>
+
+                           <li class="nav-item">
+                               <a class="nav-link ripple " href="lead_new.html"
+                                  data-page-url="#">
+
+                                   <span>New Agent</span>
+                               </a>
+                           </li>
+
+                       </ul>
+                   </li>
+                    
+                   <li class="nav-item" role="tab" id="heading-Prospect-management">
+
+                       <a class="nav-link ripple with-arrow collapsed"
+                          data-toggle="collapse"
+                          data-target="#collapse-Prospect-management"
+                          href="#"
+                          aria-expanded="false"
+                          aria-controls="collapse-Prospect-management">
+                           <i class="icon s-5 icon-sitemap"></i>
+                           <span>Dealer Management</span>
+                       </a>
+
+                       <ul id="collapse-Prospect-management"
+                           class="collapse"
+                           role="tabpanel"
+                           aria-labelledby="heading-Prospect-management"
+                           data-children=".nav-item">
+
+                           <li class="nav-item">
+                               <a class="nav-link ripple " href="leads_card.html"
+                                  data-page-url="#">
+
+                                   <span>All Dealers</span>
+                               </a>
+                           </li>
+
+                           <li class="nav-item">
+                               <a class="nav-link ripple " href="lead_new.html"
+                                  data-page-url="#">
+
+                                   <span>New Dealer</span>
+                               </a>
+                           </li>
+
+                       </ul>
+                   </li>
+                    <li class="nav-item" role="tab" id="heading-Machine-management">
+
+                        <a class="nav-link ripple with-arrow collapsed"
+                           data-toggle="collapse"
+                           data-target="#collapse-Machine-management"
+                           href="#"
+                           aria-expanded="false"
+                           aria-controls="collapse-Machine-management">
+                            <i class="icon s-5 icon-robot"></i>
+                            <span>Product Management</span>
+                        </a>
+
+                        <ul id="collapse-Machine-management"
+                            class="collapse"
+                            role="tabpanel"
+                            aria-labelledby="heading-Machine-management"
+                            data-children=".nav-item">
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="machines.html"
+                                   data-page-url="#">
+
+                                    <span>All Products</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="machine_new.html"
+                                   data-page-url="#">
+
                                     <span>New Product</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link ripple " href="product_categories.html"
-                                   data-page-url="#">
-                                    <span>Product Categories</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link ripple " href="product_category_new.html"
-                                   data-page-url="#">
-                                    <span>New Product Category</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link ripple " href="product_companies.html"
-                                   data-page-url="#">
-                                    <span>Product Companies</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link ripple " href="product_company_new.html"
-                                   data-page-url="#">
-                                    <span>New Product Company</span>
-                                </a>
-                            </li>
+                               <a class="nav-link ripple " href="machine_new.html"
+                                  data-page-url="#">
+
+                                   <span>Product Catogeries</span>
+                               </a>
+                           </li>
+                           <li class="nav-item">
+                               <a class="nav-link ripple " href="machine_new.html"
+                                  data-page-url="#">
+
+                                   <span>New Product Catogery</span>
+                               </a>
+                           </li>
 
                         </ul>
                     </li>
-                    <li class="nav-item">
-                           <a class="nav-link ripple " href="stock.html"
-                              data-page-url="">
-                               <i class="icon s-5 icon-view-module"></i>
-                               <span>Stock Management</span>
-                           </a>
-                       </li>
                     
-                    <li class="nav-item" role="tab" id="heading-Supplier-management">
+                    
+
+                    <li class="nav-item" role="tab" id="heading-Quotation-management">
 
                         <a class="nav-link ripple with-arrow collapsed"
                            data-toggle="collapse"
-                           data-target="#collapse-Supplier-management"
+                           data-target="#collapse-Quotation-management"
                            href="#"
                            aria-expanded="false"
-                           aria-controls="collapse-Supplier-management">
-                            <i class="icon s-5 icon-truck-delivery"></i>
-                            <span>Supplier Management</span>
+                           aria-controls="collapse-Quotation-management">
+                            <i class="icon s-5 icon-file-document"></i>
+                            <span>Inventory Management</span>
                         </a>
 
-                        <ul id="collapse-Supplier-management"
+                        <ul id="collapse-Quotation-management"
                             class="collapse"
                             role="tabpanel"
-                            aria-labelledby="heading-Supplier-management"
+                            aria-labelledby="heading-Quotation-management"
                             data-children=".nav-item">
 
                             <li class="nav-item">
-                                <a class="nav-link ripple " href="suppliers.html"
+                                <a class="nav-link ripple " href="quotations_app.html"
                                    data-page-url="#">
 
-                                    <span>Suppliers</span>
+                                    <span>Live List</span>
                                 </a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link ripple " href="supplier_new.html"
+                                <a class="nav-link ripple " href="quotation_new.html"
                                    data-page-url="#">
 
-                                    <span>New Supplier</span>
+                                    <span>New Item</span>
                                 </a>
                             </li>
 
                         </ul>
                     </li>
 
-                    <li class="nav-item" role="tab" id="heading-Staff-management">
+               
+                   <li class="nav-item">
+                          <a class="nav-link ripple " href="stock.html"
+                             data-page-url="">
+                              <i class="icon s-5 icon-view-module"></i>
+                              <span>Stock Management</span>
+                          </a>
+                      </li>
+                   
+                   
+                   <li class="nav-item" role="tab" id="heading-Staff-management">
 
-                         <a class="nav-link ripple with-arrow collapsed"
-                            data-toggle="collapse"
-                            data-target="#collapse-Staff-management"
-                            href="#"
-                            aria-expanded="false"
-                            aria-controls="collapse-Staff-management">
-                             <i class="icon s-5 icon-people"></i>
-                             <span>Staff Management</span>
-                         </a>
-
-                         <ul id="collapse-Staff-management"
-                             class="collapse"
-                             role="tabpanel"
-                             aria-labelledby="heading-Staff-management"
-                             data-children=".nav-item">
-
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="staff_all.html"
-                                    data-page-url="#">
-
-                                     <span>All Staffs</span>
-                                 </a>
-                             </li>
-
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="staff_new.html"
-                                    data-page-url="#">
-
-                                     <span>New Staff</span>
-                                 </a>
-                             </li>
-
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="staff_group_new.html"
-                                    data-page-url="#">
-
-                                     <span>New Staff Group</span>
-                                 </a>
-                             </li>
-
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="staff_rolls.html"
-                                    data-page-url="#">
-
-                                     <span>Staff Rolls & Permissions</span>
-                                 </a>
-                             </li>
-
-                         </ul>
-                     </li>
-                     <li class="nav-item" role="tab" id="heading-Company-management">
-
-                         <a class="nav-link ripple with-arrow collapsed"
-                            data-toggle="collapse"
-                            data-target="#collapse-Company-management"
-                            href="#"
-                            aria-expanded="false"
-                            aria-controls="collapse-Company-management">
-                             <i class="icon s-5 icon-nature-people"></i>
-                             <span>Company Management</span>
-                         </a>
-
-                         <ul id="collapse-Company-management"
-                             class="collapse"
-                             role="tabpanel"
-                             aria-labelledby="heading-Company-management"
-                             data-children=".nav-item">
-
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="staff_departments.html"
-                                    data-page-url="#">
-
-                                     <span>All Departments</span>
-                                 </a>
-                             </li>
-
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="staff_departments_new.html"
-                                    data-page-url="#">
-
-                                     <span>New Department</span>
-                                 </a>
-                             </li>
-
-                         </ul>
-                     </li>
-
-                     <li class="nav-item">
-                        <a class="nav-link ripple " href="tasks_app.html"
-                           data-page-url="">
-                            <i class="icon s-5 icon-message-bulleted"></i>
-                            <span>Tasks Management</span>
+                        <a class="nav-link ripple with-arrow collapsed"
+                           data-toggle="collapse"
+                           data-target="#collapse-Staff-management"
+                           href="#"
+                           aria-expanded="false"
+                           aria-controls="collapse-Staff-management">
+                            <i class="icon s-5 icon-people"></i>
+                            <span>Staff Management</span>
                         </a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link ripple " href="location_app.html"
+
+                        <ul id="collapse-Staff-management"
+                            class="collapse"
+                            role="tabpanel"
+                            aria-labelledby="heading-Staff-management"
+                            data-children=".nav-item">
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="staff_all.html"
+                                   data-page-url="#">
+
+                                    <span>All Staffs</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="staff_new.html"
+                                   data-page-url="#">
+
+                                    <span>New Staff</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="staff_group_new.html"
+                                   data-page-url="#">
+
+                                    <span>New Staff Group</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="staff_rolls.html"
+                                   data-page-url="#">
+
+                                    <span>Staff Rolls & Permissions</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                               <a class="nav-link ripple " href="staff_rolls.html"
+                                  data-page-url="#">
+
+                                   <span>All Dipartments</span>
+                               </a>
+                           </li>
+                           <li class="nav-item">
+                               <a class="nav-link ripple " href="staff_rolls.html"
+                                  data-page-url="#">
+
+                                   <span>New Dipartment</span>
+                               </a>
+                           </li>
+
+
+                        </ul>
+                    </li>
+                  
+                    <li class="nav-item">
+                       <a class="nav-link ripple " href="location_app.html"
+                          data-page-url="">
+                           <i class="icon s-5 icon-map-marker-radius"></i>
+                           <span>Location Management</span>
+                       </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link ripple " href="staff_profile.html"
                            data-page-url="">
-                            <i class="icon s-5 icon-map-marker-radius"></i>
-                            <span>Location Management</span>
+                            <i class="icon s-5 icon-account"></i>
+                            <span>My Profile</span>
                         </a>
-                     </li>
+                    </li>
 
-                     <li class="nav-item">
-                         <a class="nav-link ripple " href="staff_profile.html"
-                            data-page-url="">
-                             <i class="icon s-5 icon-account"></i>
-                             <span>My Profile</span>
-                         </a>
-                     </li>
+                    <li class="nav-item" role="tab" id="heading-Reports-management">
 
-                     <li class="nav-item" role="tab" id="heading-Reports-management">
+                        <a class="nav-link ripple with-arrow collapsed"
+                           data-toggle="collapse"
+                           data-target="#collapse-Reports-management"
+                           href="#"
+                           aria-expanded="false"
+                           aria-controls="collapse-Reports-management">
+                            <i class="icon s-5 icon-note-multiple"></i>
+                            <span>Reports Management</span>
+                        </a>
 
-                         <a class="nav-link ripple with-arrow collapsed"
-                            data-toggle="collapse"
-                            data-target="#collapse-Reports-management"
-                            href="#"
-                            aria-expanded="false"
-                            aria-controls="collapse-Reports-management">
-                             <i class="icon s-5 icon-note-multiple"></i>
-                             <span>Reports Management</span>
-                         </a>
+                        <ul id="collapse-Reports-management"
+                            class="collapse"
+                            role="tabpanel"
+                            aria-labelledby="heading-Reports-management"
+                            data-children=".nav-item">
 
-                         <ul id="collapse-Reports-management"
-                             class="collapse"
-                             role="tabpanel"
-                             aria-labelledby="heading-Reports-management"
-                             data-children=".nav-item">
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="#"
+                                   data-page-url="#">
 
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="#"
-                                    data-page-url="#">
+                                    <span>Child one</span>
+                                </a>
+                            </li>
 
-                                     <span>Child one</span>
-                                 </a>
-                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="#"
+                                   data-page-url="#">
 
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="#"
-                                    data-page-url="#">
+                                    <span>child two</span>
+                                </a>
+                            </li>
 
-                                     <span>child two</span>
-                                 </a>
-                             </li>
+                        </ul>
+                    </li>
 
-                         </ul>
-                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link ripple " href=""
+                           data-page-url="">
+                            <i class="icon s-5 icon-settings"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
 
-                     <li class="nav-item">
-                         <a class="nav-link ripple " href=""
-                            data-page-url="">
-                             <i class="icon s-5 icon-settings"></i>
-                             <span>Settings</span>
-                         </a>
-                     </li>
-
-                 </ul>
+                </ul>
              </div>
          </div>
      </aside>
@@ -646,39 +560,49 @@
                         <div class="col">
 
                             <div class="row no-gutters align-items-center flex-nowrap">
-
+        
                                 <button type="button" class="toggle-aside-button btn btn-icon d-block d-lg-none"
                                         data-raz-bar-toggle="aside">
                                     <i class="icon icon-menu"></i>
                                 </button>
-
+        
                                 <div class="toolbar-separator d-block d-lg-none"></div>
-                                
+        
                                 <div class="shortcuts-wrapper row no-gutters align-items-center px-0 px-sm-2">
-
+        
                                     <div class="shortcuts row no-gutters align-items-center d-none d-md-flex">
-
-                                        <a href="location_app.html" class="shortcut-button btn btn-icon mx-1">
+        
+                                        <a href="{{URL::route('LocationView')}}" data-toggle="tooltip" title="Location"class="shortcut-button btn btn-icon mx-1">
                                             <i class="icon icon-map-marker-radius"></i>
                                         </a>
-                                        <a href="tasks_app.html" class="shortcut-button btn btn-icon mx-1">
-                                            <i class="icon icon-message-bulleted"></i>
-                                        </a>
-                                        <a href="settings.html" class="shortcut-button btn btn-icon mx-1">
-                                            <i class="icon icon-settings"></i>
-                                        </a>
-
-                                        <a href="staff_profile.html" class="shortcut-button btn btn-icon mx-1">
+        
+                                        <a href="{{URL::route('MyProfile')}}"  data-toggle="tooltip" title="Profile" class="shortcut-button btn btn-icon mx-1">
                                             <i class="icon icon-account-box"></i>
                                         </a>
-
-
-                                    </div>
+                                       
+                                            <a class="shortcut-button btn btn-icon mx-1" href="{{URL::route('CreateLead')}}" data-toggle="tooltip" title="Add New Customer"><i class="icon icon-account-plus"></i></a>
                                     
-                                </div>
+                                            <a class="shortcut-button btn btn-icon mx-1" href="{{URL::route('CreateSeriviceCall')}}" data-toggle="tooltip" title="Add New ServiceCall"><i class="icon icon-wrench"></i></a>
+                                        
+                                            <a class="shortcut-button btn btn-icon mx-1" href="{{URL::route('SeriviceCallSchedule')}}" data-toggle="tooltip" title="ServiceCall Scheduler"><i class="icon icon-account-location"></i></a>
+                                        
+                                            <a  href="{{URL::route('Sales')}}"class="shortcut-button btn btn-icon mx-1" data-toggle="tooltip" title="Add  SalesCall"><i class="icon icon-clipboard-plus"></i></a>
 
+                                            <a href="{{URL::Route('Settings')}}" data-toggle="tooltip" title="Settings" class="shortcut-button btn btn-icon mx-1">
+                                                <i class="icon icon-settings"></i>
+            
+                                            </a>
+                                            <a href="{{ url()->previous()}}" data-toggle="tooltip" title="Go Back" class="shortcut-button btn btn-icon mx-1">
+                                                <i class="icon icon-arrow-left"></i>
+                                            </a>
+                                           
+        
+                                    </div>
+        
+                                </div>
+        
                                 <div class="toolbar-separator"></div>
-                        
+        
                             </div>
                         </div>
 
@@ -799,8 +723,8 @@
 
                                         <tr>
                                             <th></th>
-                                            <th>Reported on</th>
-                                            <th>Task Details</th>
+                                            
+                                            <th>Customer Details</th>
                                             <th class="d-none d-md-table-cell">Proposed Date</th>
                                             <th class="d-none d-sm-table-cell">Assigned To</th>
                                             <th class="d-none d-sm-table-cell">Status</th>
@@ -812,30 +736,27 @@
 
                                     <tbody class="flex-row flex-nowrap">
 
-                                        <tr>
+                                        <tr style="background-color:rgb(236, 236, 236);"> 
 
                                             <td class="service-icon">
                                                 <span class="followup-count bg-primary text-auto">1</span>
                                             </td>
-                                            <td class="type d-none d-md-table-cell">
-                                                <span class="">June 04, 2018</span><br>
-                                                <span class="badge badge-pill badge-primary">Complaint Type</span>
-                                            </td>
+                                           
                                             <td class="name">
-                                                <a class="btn btn-link a-link btn-name">Customer Name <span class="followup-count bg-danger text-auto">1</span></a>
-                                                <a class="btn btn-link a-link btn-product" data-toggle="tooltip" title="Product In Warranty">Product Name <i class="icon icon-wrench s-4 text-success"></i></a>
-                                                <p class="text-muted text-truncate customer-comment-table"><i class="icon icon-alert-circle-outline text-danger"></i> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                                <a class="btn btn-link a-link btn-name">James Anotny <span class="followup-count bg-danger text-auto">1</span></a>
+                                                <a class="btn btn-link a-link btn-product text-muted">June 04, 2018</a>
+                                                <a class="btn btn-link a-link btn-product text-muted"><i class="icon icon-map-marker s-4"></i>Ernakulam</a>
                                             </td>
                                             <td class="owner d-none d-sm-table-cell">
                                                 June 08, 2018
-                                                <p class="text-muted"><i class="icon icon-map-marker s-4"></i>Location</p>
+                                               
                                             </td>
                                             <td class="service-team d-none d-sm-table-cell">
                                                 
                                                 <div class="custom-form-group">
                                                         <select class="servicestaffs" multiple name="state">
                                                                 <option selected>Alice Freeman</option>
-                                                                <option selected>Garry Newman</option>
+                                                                <option>Garry Newman</option>
                                                                 <option>Andrew Green</option>
                                                                 <option>Carl Henderson </option>
                                                                 <option>Jane Dean </option>
@@ -845,9 +766,13 @@
                                                         </select>
                                                 </div>
                                             </td>
-                                            <td class="last-modified d-none d-lg-table-cell"><span class="badge badge-pill badge-danger">Open</span></td>
+                                            <td class="last-modified d-none d-lg-table-cell"><span class="badge badge-pill badge-warning">On Going</span></td>
                                             <td class="size d-none d-sm-table-cell">
-                                                <p class="text-muted customer-comment-table"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                                
+                                                <p class="text-muted m-0">Product: <b>Product name</b></p>
+                                                <p class="text-muted m-0">Product Type: <b>Wty</b></p>
+                                                <p class="text-muted m-0">Complaint Code: <b class="badge badge-pill badge-primary">Motor not Starting</b></p>
+                                                
                                                     
                                             </td>
                                             <td class="d-table-cell">
@@ -862,25 +787,23 @@
                                             </td>
 
                                         </tr>
-                                        <tr>
+                                        <tr >
 
                                             <td class="service-icon">
                                                 <span class="followup-count bg-primary text-auto">2</span>
                                             </td>
-                                            <td class="type d-none d-md-table-cell">
-                                                <span class="">June 04, 2018</span><br>
-                                                <span class="badge badge-pill badge-primary">Complaint Type</span>
-                                            </td>
+                                           
                                             <td class="name">
-                                                <a class="btn btn-link a-link btn-name">Customer Name <span class="followup-count bg-danger text-auto">5</span></a>
-                                                <a class="btn btn-link a-link btn-product" data-toggle="tooltip" title="Product Out of Warranty">Product Name <i class="icon icon-wrench s-4 text-danger"></i></a>
-                                                <p class="text-muted text-truncate customer-comment-table"><i class="icon icon-alert-circle-outline text-danger"></i> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                                <a class="btn btn-link a-link btn-name">James Anotny <span class="followup-count bg-danger text-auto">1</span></a>
+                                                <a class="btn btn-link a-link btn-product text-muted">June 04, 2018</a>
+                                                <a class="btn btn-link a-link btn-product text-muted"><i class="icon icon-map-marker s-4"></i>Ernakulam</a>
                                             </td>
                                             <td class="owner d-none d-sm-table-cell">
                                                 June 08, 2018
-                                                <p class="text-muted"><i class="icon icon-map-marker s-4"></i>Location</p>
+                                               
                                             </td>
                                             <td class="service-team d-none d-sm-table-cell">
+                                                
                                                 <div class="custom-form-group">
                                                         <select class="servicestaffs" multiple name="state">
                                                                 <option>Alice Freeman</option>
@@ -894,9 +817,64 @@
                                                         </select>
                                                 </div>
                                             </td>
-                                            <td class="last-modified d-none d-lg-table-cell"><span class="badge badge-pill badge-warning">Pending</span></td>
+                                            <td class="last-modified d-none d-lg-table-cell"><span class="badge badge-pill badge-danger">Unassigned</span></td>
                                             <td class="size d-none d-sm-table-cell">
-                                                <p class="text-muted customer-comment-table"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                                
+                                                <p class="text-muted m-0">Product: <b>Product name</b></p>
+                                                <p class="text-muted m-0">Product Type: <b>Wty</b></p>
+                                                <p class="text-muted m-0">Complaint Code: <b class="badge badge-pill badge-primary">Motor not Starting</b></p>
+                                                
+                                                    
+                                            </td>
+                                            <td class="d-table-cell">
+                                                <button type="button" class="btn btn-icon"
+                                                        data-raz-bar-toggle="scheduler-panel-sidebar">
+                                                    <i class="icon icon-map-marker"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-icon"
+                                                        data-raz-bar-toggle="service-manager-info-sidebar">
+                                                    <i class="icon icon-information-outline"></i>
+                                                </button>
+                                            </td>
+
+                                        </tr>
+                                        <tr style="background-color:rgb(236, 236, 236);">
+
+                                            <td class="service-icon">
+                                                <span class="followup-count bg-primary text-auto">3</span>
+                                            </td>
+                                           
+                                            <td class="name">
+                                                <a class="btn btn-link a-link btn-name">James Anotny <span class="followup-count bg-danger text-auto">1</span></a>
+                                                <a class="btn btn-link a-link btn-product text-muted">June 04, 2018</a>
+                                                <a class="btn btn-link a-link btn-product text-muted"><i class="icon icon-map-marker s-4"></i>Ernakulam</a>
+                                            </td>
+                                            <td class="owner d-none d-sm-table-cell">
+                                                June 08, 2018
+                                               
+                                            </td>
+                                            <td class="service-team d-none d-sm-table-cell">
+                                                
+                                                <div class="custom-form-group">
+                                                        <select class="servicestaffs" multiple name="state">
+                                                                <option>Alice Freeman</option>
+                                                                <option>Garry Newman</option>
+                                                                <option>Andrew Green</option>
+                                                                <option>Carl Henderson </option>
+                                                                <option>Jane Dean </option>
+                                                                <option>John Deo</option>
+                                                                <option>Juan Carpenter</option>
+                                                                <option>Vincent Munoz</option>
+                                                        </select>
+                                                </div>
+                                            </td>
+                                            <td class="last-modified d-none d-lg-table-cell"><span class="badge badge-pill badge-success">Complited</span></td>
+                                            <td class="size d-none d-sm-table-cell">
+                                                
+                                                <p class="text-muted m-0">Product: <b>Product name</b></p>
+                                                <p class="text-muted m-0">Product Type: <b>Wty</b></p>
+                                                <p class="text-muted m-0">Complaint Code: <b class="badge badge-pill badge-primary">Motor not Starting</b></p>
+                                                
                                                     
                                             </td>
                                             <td class="d-table-cell">
@@ -916,20 +894,18 @@
                                             <td class="service-icon">
                                                 <span class="followup-count bg-primary text-auto">3</span>
                                             </td>
-                                            <td class="type d-none d-md-table-cell">
-                                                <span class="">June 04, 2018</span><br>
-                                                <span class="badge badge-pill badge-primary">Complaint Type</span>
-                                            </td>
+                                           
                                             <td class="name">
-                                                <a class="btn btn-link a-link btn-name">Customer Name <span class="followup-count bg-danger text-auto">2</span></a>
-                                                <a class="btn btn-link a-link btn-product" data-toggle="tooltip" title="Product Out of Warranty">Product Name <i class="icon icon-wrench s-4 text-danger"></i></a>
-                                                <p class="text-muted text-truncate customer-comment-table"><i class="icon icon-alert-circle-outline text-danger"></i> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                                <a class="btn btn-link a-link btn-name">James Anotny <span class="followup-count bg-danger text-auto">1</span></a>
+                                                <a class="btn btn-link a-link btn-product text-muted">June 04, 2018</a>
+                                                <a class="btn btn-link a-link btn-product text-muted"><i class="icon icon-map-marker s-4"></i>Ernakulam</a>
                                             </td>
                                             <td class="owner d-none d-sm-table-cell">
                                                 June 08, 2018
-                                                <p class="text-muted"><i class="icon icon-map-marker s-4"></i>Location</p>
+                                               
                                             </td>
                                             <td class="service-team d-none d-sm-table-cell">
+                                                
                                                 <div class="custom-form-group">
                                                         <select class="servicestaffs" multiple name="state">
                                                                 <option>Alice Freeman</option>
@@ -943,9 +919,13 @@
                                                         </select>
                                                 </div>
                                             </td>
-                                            <td class="last-modified d-none d-lg-table-cell"><span class="badge badge-pill badge-success">Clossed</span></td>
+                                            <td class="last-modified d-none d-lg-table-cell"><span class="badge badge-pill badge-danger">Unassigned</span></td>
                                             <td class="size d-none d-sm-table-cell">
-                                                <p class="text-muted customer-comment-table"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                                
+                                                <p class="text-muted m-0">Product: <b>Product name</b></p>
+                                                <p class="text-muted m-0">Product Type: <b>Wty</b></p>
+                                                <p class="text-muted m-0">Complaint Code: <b class="badge badge-pill badge-primary">Motor not Starting</b></p>
+                                                
                                                     
                                             </td>
                                             <td class="d-table-cell">
@@ -960,7 +940,6 @@
                                             </td>
 
                                         </tr>
-                                        
 
                                     </tbody>
                                 </table>
@@ -1050,7 +1029,7 @@
                                         <tr class="created">
                                             <th class="pl-6">Assigned to</th>
                                             <td>
-                                                <select class="servicestaffs" multiple name="state">
+                                                <select class="servicestaffsReported On: May 8, 2018, 3.49 pm" multiple name="state">
                                                         <option selected>Alice Freeman</option>
                                                         <option selected>Garry Newman</option>
                                                         <option>Andrew Green</option>
@@ -1076,210 +1055,135 @@
                         <!-- SCHEDULER FILTER RIGHT SIDEBAR-->
                         <div class="quick-panel-sidebar scheduler-filter-panel-sidebar custom-scrollbar" raz-cloak data-raz-bar="scheduler-filter-panel-sidebar"
                         data-raz-bar-position="right">
-                        <div  class="view d-flex flex-column no-gutters">
-                            <!-- locations TOOLBAR -->
-                            <div class="toolbar">
-
-                                <!-- TOOLBAR TOP -->
-                                <div class="toolbar-top row no-gutters align-items-center  px-4  bg-primary text-auto">
-
-                                    <button type="button" class="back-to-locations-button btn btn-icon"
-                                            aria-label="back button">
-                                        <i class="icon icon-arrow-left"></i>
-                                    </button>
-
-                                    <span class="h6">Schedule Staffs</span>
-                                </div>
-                                <!-- / TOOLBAR TOP -->
-                          
-                                <!-- TOOLBAR BOTTOM -->
-                                <div class="toolbar-bottom row align-items-center no-gutters px-4  bg-primary">
-
-                                    <!-- SEARCH -->
-                                    <div
-                                        class="search-wrapper md-elevation-1 row no-gutters align-items-center w-100 p-2">
-                                        <i class="icon-magnify s-4"></i>
-                                        <input class="col pl-2" type="text"
-                                               placeholder="Search Staffs">
-                                    </div>
-                                    <!-- / SEARCH -->
-                                </div>
-                                <!-- / TOOLBAR BOTTOM -->
-
-                            </div>
-                            <!-- / locations TOOLBAR -->
-
-                            <!-- locations CONTENT -->
-                            <div class="content custom-scrollbar">
-
-                                <!-- locations LIST-->
-                                <div class="staffs-nearby-list">
-
-                                    <div class="contact ripple flex-wrap flex-sm-nowrap row px-3 py-2 no-gutters align-items-center unread">
-                                        <label class="custom-control custom-checkbox pr-3">
-                                            <input type="checkbox" class="custom-control-input">
-                                            <span class="custom-control-indicator"></span>
-                                        </label>
-                                        <div class="col-auto avatar-wrapper">
-                                            <img src="../assets/images/avatars/james.jpg"
-                                                 class="avatar" alt="Barrera"/>
-                                            <i class="icon- status online s-4"></i>
-                                        </div>
-
-                                        <div class="col px-4">
-                                            <span class="name h6">James Antony</span>
-                                            <p class="staff-role text-truncate text-muted">Service Engineer</p>
-                                            <p class="last-location text-truncate text-muted"><i class="s-4 icon icon-map-marker mr-1"></i>Ravipuram </p>
-                                        </div>
-                                        <span class="followup-count bg-primary text-auto staff-service-count">4</span>
-
-                                    </div>
-
-                                    <div class="divider"></div>
-
-                                    <div class="contact ripple flex-wrap flex-sm-nowrap row px-3 py-2 no-gutters align-items-center unread">
-                                        <label class="custom-control custom-checkbox pr-3">
-                                            <input type="checkbox" class="custom-control-input">
-                                            <span class="custom-control-indicator"></span>
-                                        </label>
-                                        <div class="col-auto avatar-wrapper">
-                                                <img src="../assets/images/avatars/andrew.jpg" 
-                                                 class="avatar" alt="Barrera"/>
-                                            <i class="icon- status online s-4"></i>
-                                        </div>
-
-                                        <div class="col px-4">
-                                            <span class="name h6">Andrew Antony</span>
-                                            <p class="staff-role text-truncate text-muted">Service Engineer</p>
-                                            <p class="last-location text-truncate text-muted"><i class="s-4 icon icon-map-marker mr-1"></i>Ravipuram </p>
-                                        </div>
-                                        <span class="followup-count bg-primary text-auto staff-service-count">4</span>
-
-                                    </div>
-
-                                    <div class="divider"></div>
-
-                                    <div class="contact ripple flex-wrap flex-sm-nowrap row px-3 py-2 no-gutters align-items-center unread">
-                                        <label class="custom-control custom-checkbox pr-3">
-                                            <input type="checkbox" class="custom-control-input">
-                                            <span class="custom-control-indicator"></span>
-                                        </label>
-                                        <div class="col-auto avatar-wrapper">
-                                            <img src="../assets/images/avatars/1.jpg"
-                                                 class="avatar" alt="Barrera"/>
-                                            <i class="icon- status online s-4"></i>
-                                        </div>
-
-                                        <div class="col px-4">
-                                            <span class="name h6">Rakesh Ramanadhan</span>
-                                            <p class="staff-role text-truncate text-muted">Service Engineer</p>
-                                            <p class="last-location text-truncate text-muted"><i class="s-4 icon icon-map-marker mr-1"></i>Ravipuram </p>
-                                        </div>
-                                        <span class="followup-count bg-primary text-auto staff-service-count">4</span>
-
-                                    </div>
-
-                                    <div class="divider"></div>
-
-                                    <div class="contact ripple flex-wrap flex-sm-nowrap row px-3 py-2 no-gutters align-items-center unread">
-                                        <label class="custom-control custom-checkbox pr-3">
-                                            <input type="checkbox" class="custom-control-input">
-                                            <span class="custom-control-indicator"></span>
-                                        </label>
-                                        <div class="col-auto avatar-wrapper">
-                                            <img src="../assets/images/avatars/2.jpg"
-                                                 class="avatar" alt="Barrera"/>
-                                            <i class="icon- status online s-4"></i>
-                                        </div>
-
-                                        <div class="col px-4">
-                                            <span class="name h6">Albin</span>
-                                            <p class="staff-role text-truncate text-muted">Service Engineer</p>
-                                            <p class="last-location text-truncate text-muted"><i class="s-4 icon icon-map-marker mr-1"></i>Ravipuram </p>
-                                        </div>
-                                        <span class="followup-count bg-primary text-auto staff-service-count">4</span>
-
-                                    </div>
-
-                                    <div class="divider"></div>
-                                    <div class="contact ripple flex-wrap flex-sm-nowrap row px-3 py-2 no-gutters align-items-center unread">
-                                        <label class="custom-control custom-checkbox pr-3">
-                                            <input type="checkbox" class="custom-control-input">
-                                            <span class="custom-control-indicator"></span>
-                                        </label>
-                                        <div class="col-auto avatar-wrapper">
-                                            <img src="../assets/images/avatars/3.jpg"
-                                                 class="avatar" alt="Barrera"/>
-                                            <i class="icon- status online s-4"></i>
-                                        </div>
-
-                                        <div class="col px-4">
-                                            <span class="name h6">Dijo George</span>
-                                            <p class="staff-role text-truncate text-muted">Service Engineer</p>
-                                            <p class="last-location text-truncate text-muted"><i class="s-4 icon icon-map-marker mr-1"></i>Ravipuram </p>
-                                        </div>
-                                        <span class="followup-count bg-primary text-auto staff-service-count">4</span>
-
-                                    </div>
-
-                                    <div class="divider"></div>
-
-                                    <div class="contact ripple flex-wrap flex-sm-nowrap row px-3 py-2 no-gutters align-items-center unread">
-                                        <label class="custom-control custom-checkbox pr-3">
-                                            <input type="checkbox" class="custom-control-input">
-                                            <span class="custom-control-indicator"></span>
-                                        </label>
-                                        <div class="col-auto avatar-wrapper">
-                                            <img src="../assets/images/avatars/4.jpg"
-                                                 class="avatar" alt="Barrera"/>
-                                            <i class="icon- status online s-4"></i>
-                                        </div>
-
-                                        <div class="col px-4">
-                                            <span class="name h6">Libin Antony</span>
-                                            <p class="staff-role text-truncate text-muted">Service Engineer</p>
-                                            <p class="last-location text-truncate text-muted"><i class="s-4 icon icon-map-marker mr-1"></i>Ravipuram </p>
-                                        </div>
-                                        <span class="followup-count bg-primary text-auto staff-service-count">4</span>
-
-                                    </div>
-
-                                    <div class="divider"></div>
-
-                                    <div class="contact ripple flex-wrap flex-sm-nowrap row px-3 py-2 no-gutters align-items-center unread">
-                                        <label class="custom-control custom-checkbox pr-3">
-                                            <input type="checkbox" class="custom-control-input">
-                                            <span class="custom-control-indicator"></span>
-                                        </label>
-                                        <div class="col-auto avatar-wrapper">
-                                                <img src="../assets/images/avatars/andrew.jpg" 
-                                                 class="avatar" alt="Barrera"/>
-                                            <i class="icon- status online s-4"></i>
-                                        </div>
-
-                                        <div class="col px-4">
-                                            <span class="name h6">Riyas Abdul Salam</span>
-                                            <p class="staff-role text-truncate text-muted">Service Engineer</p>
-                                            <p class="last-location text-truncate text-muted"><i class="s-4 icon icon-map-marker mr-1"></i>Ravipuram </p>
-                                        </div>
-                                        <span class="followup-count bg-primary text-auto staff-service-count">4</span>
-
-                                    </div>
-
-                                    <div class="divider"></div>
-
-                                    
-
-                                </div>
-                                <!-- / locations LIST-->
-                            </div>
-                            <!-- / locations CONTENT -->
-                            <a class="btn btn-primary btn-block">Assign Staffs</a>
-                            <!-- CONTACTS BUTTON -->
                             
-                            <!-- / CONTACTS BUTTON -->
+                        <div  class="row no-gutters" > 
+                            <div class="list-group" class="date">
+                                <div class="list-group-item subheader">FILTERS</div>
+                            </div>
+                            <div class="px-4 pb-4">
+                                <div class="custom-form-group">
+                                        <label>Reported Date</label>
+                                        <button class="btn btn-secondary btn-date" id="daterangepicker3" data-toggle="tooltip" title="Reported Date">
+                                                <i class="icon-calendar-plus"></i> 
+                                                <span><?php echo date("F j, Y", strtotime('-30 day')); ?> - <?php echo date("F j, Y"); ?></span> <b class="caret"></b>
+                                        </button>
+                                        
+                                </div>
+                                <div class="custom-form-group">
+                                        <label>Proposed Date</label>
+                                        <button class="btn btn-secondary btn-date" id="daterangepicker4" data-toggle="tooltip" title="Proposed Date">
+                                                <i class="icon-calendar-clock"></i> 
+                                                <span><?php echo date("F j, Y", strtotime('-30 day')); ?> - <?php echo date("F j, Y"); ?></span> <b class="caret"></b>
+                                        </button>
+                                </div>
+                                <div class="custom-form-group">
+                                    <label>Complaint Types</label>
+                                    <select id="slim-multiple-sidebar2" multiple>
+                                            <option>Complaint Type 1</option>
+                                            <option>Complaint Type 2</option>
+                                            <option>Complaint Type 3</option>
+                                            <option>Complaint Type 4</option>
+                                            <option>Complaint Type 5</option>
+                                            <option>Complaint Type 6</option>
+                                            <option>Complaint Type 7</option>
+                                    </select>
+                                </div>
+                                <div class="custom-form-group">
+                                        <label>Customers</label>
+                                        <select id="slim-multiple-sidebar1" multiple>
+                                                <option>Alice Freeman</option>
+                                                <option>Garry Newman</option>
+                                                <option>Andrew Green</option>
+                                                <option>Carl Henderson </option>
+                                                <option>Jane Dean </option>
+                                                <option>John Deo</option>
+                                                <option>Juan Carpenter</option>
+                                                <option>Vincent Munoz</option>
+                                        </select>
+                                </div>
+                                
+                                <div class="custom-form-group">
+                                        <label>Filter by Status</label>
+                                        <select id="slim-multiple-sidebar3" multiple>
+                                                <option>Complaint Type 1</option>
+                                                <option>Complaint Type 2</option>
+                                                <option>Complaint Type 3</option>
+                                                <option>Complaint Type 4</option>
+                                                <option>Complaint Type 5</option>
+                                                <option>Complaint Type 6</option>
+                                                <option>Complaint Type 7</option>
+                                        </select>
+                                </div>
+                                <div class="custom-form-group">
+                                    <label>Filter by Priority</label>
+                                    <select id="slim-multiple-sidebar4" multiple>
+                                            <option>Complaint Type 1</option>
+                                            <option>Complaint Type 2</option>
+                                            <option>Complaint Type 3</option>
+                                            <option>Complaint Type 4</option>
+                                            <option>Complaint Type 5</option>
+                                            <option>Complaint Type 6</option>
+                                            <option>Complaint Type 7</option>
+                                    </select>
+                                </div>
+                                
+                            
+                            </div>
+                            <div class="divider"></div>
+            
+                            <div class="list-group">
+            
+                                <div class="list-group-item subheader">Custom Tags 
+                                    <a class="btn btn-primary btn-fab btn-sm ml-auto" data-toggle="modal" href="#new-filter-tag" data-toggle="tooltip" data-placement="left" title="click to add as new custom search tag"><i class="icon icon-plus"></i></a>
+                                </div>
+            
+                                <div class="list-group-item">
+                                    <div class="list-item-content">
+                                        <label class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input"/>
+                                            <span class="custom-control-indicator"></span>
+                                            <span class="custom-control-description">Tag Name 1</span>
+                                        </label>
+                                    </div>
+                                    <div class="secondary-container">
+                                        <a class="btn btn-icon" onclick="deleteSingleTag()" data-toggle="tooltip" data-placement="left" title="Delete this tag"><i class="icon icon-delete"></i></a>
+                                    </div>
+                                </div>
+            
+                                <div class="list-group-item">
+                                    <div class="list-item-content">
+                                        <label class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input"/>
+                                            <span class="custom-control-indicator"></span>
+                                            <span class="custom-control-description">Tag Name 2</span>
+                                        </label>
+                                    </div>
+                                    <div class="secondary-container">
+                                        <a class="btn btn-icon" onclick="deleteSingleTag()" data-toggle="tooltip" data-placement="left" title="Delete this tag"><i class="icon icon-delete"></i></a>
+                                    </div>
+                                </div>
+            
+                                <div class="list-group-item">
+                                    <div class="list-item-content">
+                                        <label class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input"/>
+                                            <span class="custom-control-indicator"></span>
+                                            <span class="custom-control-description">Tag Name 3</span>
+                                        </label>
+                                    </div>
+                                    <div class="secondary-container">
+                                        <a class="btn btn-icon" onclick="deleteSingleTag()" data-toggle="tooltip" data-placement="left" title="Delete this tag"><i class="icon icon-delete"></i></a>
+                                    </div>
+                                </div>
 
+                            </div>
+                            <div class="divider"></div>
+                            <div class="p-5 text-center">
+                                    <a class="btn btn-sm btn-primary" data-toggle="modal" href="#edit-filter-tags">Edit Custom Tags</a>
+                            </div>
                         </div>
+                    
+                    
                             
                         </div>
                         <!-- / SCHEDULER FILTER RIGHT SIDEBAR-->
@@ -1290,299 +1194,214 @@
                             <div class="row no-gutters">
                                 <div class="col-12 col-md-8 col-lg-8">
                                     <div class="service-map" id="customSkinMap"></div>
-                                    <div class="divider"></div>
-                                    <div class="service-nearby">
-                                            <div  class="view d-flex flex-column no-gutters">
-                                                    <!-- service TOOLBAR -->
-                                                    <div class="toolbar">
-
-                                                        <!-- TOOLBAR TOP -->
-                                                        <div class="toolbar-top row no-gutters align-items-center  px-4  bg-primary text-auto">
-
-                                                            <button type="button" class="back-to-locations-button btn btn-icon"
-                                                                    aria-label="back button">
-                                                                <i class="icon icon-wrench"></i>
-                                                            </button>
-
-                                                            <span class="h6">Registered Services</span>
-                                                        </div>
-                                                        <!-- / TOOLBAR TOP -->
-                                                
-
-                                                    </div>
-                                                    <!-- / service TOOLBAR -->
-        
-                                                    <!-- service CONTENT -->
-                                                    <div class="content">
-        
-                                                        <!-- service LIST-->
-                                                        <div class="service-nearby-list mb-10">
-        
-                                                            <div class="contact flex-wrap flex-sm-nowrap row px-3 py-3 no-gutters unread">
-                                                                <label class="custom-control custom-checkbox pr-3 mt-2">
-                                                                    <input type="checkbox" class="custom-control-input">
-                                                                    <span class="custom-control-indicator"></span>
-                                                                </label>
-                                                                <div class="col-auto avatar-wrapper">
-                                                                    <div class="avatar">1</div>
-                                                                    <i class="icon- status online s-4"></i>
-                                                                </div>
-        
-                                                                <div class="col px-4">
-                                                                    <div class="row no-gutters align-items-center justify-content-between">
-                                                                        <span class="name h6">James Antony<span class="followup-count bg-danger text-auto ml-1">1</span></span><p class="last-location text-truncate text-muted"><i class="s-4 icon icon-map-marker mr-1"></i>Ravipuram </p>
-                                                                    </div>
-                                                                    <div class="row no-gutters align-items-center justify-content-between">
-                                                                        <span class="product-name h6">Product Name</span><p class="last-location text-truncate text-green-500"><i class="s-4 icon icon-wrench mr-1"></i>In Warranty </p>
-                                                                    </div>
-                                                                    <p class="customer-comment text-muted">
-                                                                        <i class="s-4 icon icon-alert-circle-outline text-danger mr-1"></i>Customer Comment on 
-                                                                        <i class="s-4 icon icon-calendar-clock  mx-1"></i> July 4, 2018, 2.55pm
-                                                                    </p>
-                                                                    <p class="customer-comment text-muted pb-1"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                                                    
-                                                                    <p class="last-location text-truncate text-muted">
-                                                                        <i class="s-4 icon icon-account-multiple text-primary mr-1"></i>Service Staffs
-                                                                        <i class="s-4 icon icon-calendar-clock  mx-1"></i> July 14, 2018
-                                                                    </p>
-                                                                    <select class="servicestaffs" multiple name="state">
-                                                                            <option selected>Alice Freeman</option>
-                                                                            <option selected>Garry Newman</option>
-                                                                            <option>Andrew Green</option>
-                                                                            <option>Carl Henderson </option>
-                                                                            <option>Jane Dean </option>
-                                                                            <option>John Deo</option>
-                                                                            <option>Juan Carpenter</option>
-                                                                            <option>Vincent Munoz</option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-        
-                                                            <div class="divider"></div>
-        
-                                                            <div class="contact flex-wrap flex-sm-nowrap row px-3 py-3 no-gutters  unread">
-                                                                <label class="custom-control custom-checkbox pr-3 mt-2">
-                                                                    <input type="checkbox" class="custom-control-input">
-                                                                    <span class="custom-control-indicator"></span>
-                                                                </label>
-                                                                <div class="col-auto avatar-wrapper">
-                                                                    <div class="avatar">2</div>
-                                                                    <i class="icon- status offline s-4"></i>
-                                                                </div>
-        
-                                                                <div class="col px-4">
-                                                                    <div class="row no-gutters align-items-center justify-content-between">
-                                                                        <span class="name h6">Rakesh Ramanadhan<span class="followup-count bg-danger text-auto ml-1">3</span></span><p class="last-location text-truncate text-muted"><i class="s-4 icon icon-map-marker mr-1"></i>Pallikkara </p>
-                                                                    </div>
-                                                                    <div class="row no-gutters align-items-center justify-content-between">
-                                                                        <span class="product-name h6">Product Name</span><p class="last-location text-truncate text-danger"><i class="s-4 icon icon-wrench mr-1"></i>Out of Warranty </p>
-                                                                    </div>
-                                                                    <p class="customer-comment text-muted">
-                                                                        <i class="s-4 icon icon-alert-circle-outline text-danger mr-1"></i>Customer Comment on 
-                                                                        <i class="s-4 icon icon-calendar-clock  mx-1"></i> July 4, 2018, 2.55pm
-                                                                    </p>
-                                                                    <p class="customer-comment text-muted pb-1"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                                                    
-                                                                    <p class="last-location text-truncate text-muted">
-                                                                        <i class="s-4 icon icon-account-multiple text-primary mr-1"></i>Service Staffs
-                                                                        <i class="s-4 icon icon-calendar-clock  mx-1"></i> July 14, 2018
-                                                                    </p>
-                                                                    <select class="servicestaffs" multiple name="state">
-                                                                            <option >Alice Freeman</option>
-                                                                            <option >Garry Newman</option>
-                                                                            <option>Andrew Green</option>
-                                                                            <option>Carl Henderson </option>
-                                                                            <option>Jane Dean </option>
-                                                                            <option>John Deo</option>
-                                                                            <option>Juan Carpenter</option>
-                                                                            <option>Vincent Munoz</option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-        
-                                                            <div class="divider"></div>
-        
-                                                            <div class="contact flex-wrap flex-sm-nowrap row px-3 py-3 no-gutters unread">
-                                                                <label class="custom-control custom-checkbox pr-3 mt-2">
-                                                                    <input type="checkbox" class="custom-control-input">
-                                                                    <span class="custom-control-indicator"></span>
-                                                                </label>
-                                                                <div class="col-auto avatar-wrapper">
-                                                                    <div class="avatar">3</div>
-                                                                    <i class="icon- status pending s-4"></i>
-                                                                </div>
-        
-                                                                <div class="col px-4">
-                                                                    <div class="row no-gutters align-items-center justify-content-between">
-                                                                        <span class="name h6">Albin Antony K J<span class="followup-count bg-success text-auto ml-1">3</span></span><p class="last-location text-truncate text-muted"><i class="s-4 icon icon-map-marker mr-1"></i>Ravipuram </p>
-                                                                    </div>
-                                                                    <div class="row no-gutters align-items-center justify-content-between">
-                                                                        <span class="product-name h6">Product Name</span><p class="last-location text-truncate text-green-500"><i class="s-4 icon icon-wrench mr-1"></i>In Warranty </p>
-                                                                    </div>
-                                                                    <p class="customer-comment text-muted">
-                                                                        <i class="s-4 icon icon-alert-circle-outline text-danger mr-1"></i>Customer Comment on 
-                                                                        <i class="s-4 icon icon-calendar-clock  mx-1"></i> July 4, 2018, 2.55pm
-                                                                    </p>
-                                                                    <p class="customer-comment text-muted pb-1"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                                                    
-                                                                    <p class="last-location text-truncate text-muted">
-                                                                        <i class="s-4 icon icon-account-multiple text-primary mr-1"></i>Service Staffs
-                                                                        <i class="s-4 icon icon-calendar-clock  mx-1"></i> July 14, 2018
-                                                                    </p>
-                                                                    <select class="servicestaffs" multiple name="state">
-                                                                            <option >Alice Freeman</option>
-                                                                            <option >Garry Newman</option>
-                                                                            <option>Andrew Green</option>
-                                                                            <option>Carl Henderson </option>
-                                                                            <option>Jane Dean </option>
-                                                                            <option>John Deo</option>
-                                                                            <option>Juan Carpenter</option>
-                                                                            <option>Vincent Munoz</option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-        
-                                                            <div class="divider"></div>
-        
-                                                        
-                                                        </div>
-                                                        <!-- / service LIST-->
-                                                    </div>
-                                                    <!-- / service CONTENT -->
-                                                </div>
-                                        </div>
+                                    
 
                                 </div>
                                 <div class="col-12 col-md-4 col-lg-4 staffs-nearby">
-                                    
-                                        <div >
-                                            <div class="list-group" class="date">
-                                                <div class="list-group-item subheader">FILTERS</div>
+                                    <div  class="view d-flex flex-column no-gutters">
+                                        <!-- locations TOOLBAR -->
+                                        <div class="toolbar">
+            
+                                            <!-- TOOLBAR TOP -->
+                                            <div class="toolbar-top row no-gutters align-items-center  px-4  bg-primary text-auto">
+            
+                                                <button type="button" class="back-to-locations-button btn btn-icon"
+                                                        aria-label="back button">
+                                                    <i class="icon icon-arrow-left"></i>
+                                                </button>
+            
+                                                <span class="h6">Schedule Staffs</span>
                                             </div>
-                                            <div class="px-4 pb-4">
-                                                <div class="custom-form-group">
-                                                        <label>Reported Date</label>
-                                                        <button class="btn btn-secondary btn-date" id="daterangepicker3" data-toggle="tooltip" title="Reported Date">
-                                                                <i class="icon-calendar-plus"></i> 
-                                                                <span><?php echo date("F j, Y", strtotime('-30 day')); ?> - <?php echo date("F j, Y"); ?></span> <b class="caret"></b>
-                                                        </button>
-                                                        
+                                            <!-- / TOOLBAR TOP -->
+                                      
+                                            <!-- TOOLBAR BOTTOM -->
+                                            <div class="toolbar-bottom row align-items-center no-gutters px-4  bg-primary">
+            
+                                                <!-- SEARCH -->
+                                                <div
+                                                    class="search-wrapper md-elevation-1 row no-gutters align-items-center w-100 p-2">
+                                                    <i class="icon-magnify s-4"></i>
+                                                    <input class="col pl-2" type="text"
+                                                           placeholder="Search Staffs">
                                                 </div>
-                                                <div class="custom-form-group">
-                                                        <label>Proposed Date</label>
-                                                        <button class="btn btn-secondary btn-date" id="daterangepicker4" data-toggle="tooltip" title="Proposed Date">
-                                                                <i class="icon-calendar-clock"></i> 
-                                                                <span><?php echo date("F j, Y", strtotime('-30 day')); ?> - <?php echo date("F j, Y"); ?></span> <b class="caret"></b>
-                                                        </button>
-                                                </div>
-                                                <div class="custom-form-group">
-                                                    <label>Complaint Types</label>
-                                                    <select id="slim-multiple-sidebar2" multiple>
-                                                            <option>Complaint Type 1</option>
-                                                            <option>Complaint Type 2</option>
-                                                            <option>Complaint Type 3</option>
-                                                            <option>Complaint Type 4</option>
-                                                            <option>Complaint Type 5</option>
-                                                            <option>Complaint Type 6</option>
-                                                            <option>Complaint Type 7</option>
-                                                    </select>
-                                                </div>
-                                                <div class="custom-form-group">
-                                                        <label>Customers</label>
-                                                        <select id="slim-multiple-sidebar1" multiple>
-                                                                <option>Alice Freeman</option>
-                                                                <option>Garry Newman</option>
-                                                                <option>Andrew Green</option>
-                                                                <option>Carl Henderson </option>
-                                                                <option>Jane Dean </option>
-                                                                <option>John Deo</option>
-                                                                <option>Juan Carpenter</option>
-                                                                <option>Vincent Munoz</option>
-                                                        </select>
-                                                </div>
-                                                
-                                                <div class="custom-form-group">
-                                                        <label>Filter by Status</label>
-                                                        <select id="slim-multiple-sidebar3" multiple>
-                                                                <option>Complaint Type 1</option>
-                                                                <option>Complaint Type 2</option>
-                                                                <option>Complaint Type 3</option>
-                                                                <option>Complaint Type 4</option>
-                                                                <option>Complaint Type 5</option>
-                                                                <option>Complaint Type 6</option>
-                                                                <option>Complaint Type 7</option>
-                                                        </select>
-                                                </div>
-                                                <div class="custom-form-group">
-                                                    <label>Filter by Priority</label>
-                                                    <select id="slim-multiple-sidebar4" multiple>
-                                                            <option>Complaint Type 1</option>
-                                                            <option>Complaint Type 2</option>
-                                                            <option>Complaint Type 3</option>
-                                                            <option>Complaint Type 4</option>
-                                                            <option>Complaint Type 5</option>
-                                                            <option>Complaint Type 6</option>
-                                                            <option>Complaint Type 7</option>
-                                                    </select>
-                                                </div>
-                                                
-                                            
+                                                <!-- / SEARCH -->
                                             </div>
-                                            <div class="divider"></div>
-                            
-                                            <div class="list-group">
-                            
-                                                <div class="list-group-item subheader">Custom Tags 
-                                                    <a class="btn btn-primary btn-fab btn-sm ml-auto" data-toggle="modal" href="#new-filter-tag" data-toggle="tooltip" data-placement="left" title="click to add as new custom search tag"><i class="icon icon-plus"></i></a>
-                                                </div>
-                            
-                                                <div class="list-group-item">
-                                                    <div class="list-item-content">
-                                                        <label class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input"/>
-                                                            <span class="custom-control-indicator"></span>
-                                                            <span class="custom-control-description">Tag Name 1</span>
-                                                        </label>
-                                                    </div>
-                                                    <div class="secondary-container">
-                                                        <a class="btn btn-icon" onclick="deleteSingleTag()" data-toggle="tooltip" data-placement="left" title="Delete this tag"><i class="icon icon-delete"></i></a>
-                                                    </div>
-                                                </div>
-                            
-                                                <div class="list-group-item">
-                                                    <div class="list-item-content">
-                                                        <label class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input"/>
-                                                            <span class="custom-control-indicator"></span>
-                                                            <span class="custom-control-description">Tag Name 2</span>
-                                                        </label>
-                                                    </div>
-                                                    <div class="secondary-container">
-                                                        <a class="btn btn-icon" onclick="deleteSingleTag()" data-toggle="tooltip" data-placement="left" title="Delete this tag"><i class="icon icon-delete"></i></a>
-                                                    </div>
-                                                </div>
-                            
-                                                <div class="list-group-item">
-                                                    <div class="list-item-content">
-                                                        <label class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input"/>
-                                                            <span class="custom-control-indicator"></span>
-                                                            <span class="custom-control-description">Tag Name 3</span>
-                                                        </label>
-                                                    </div>
-                                                    <div class="secondary-container">
-                                                        <a class="btn btn-icon" onclick="deleteSingleTag()" data-toggle="tooltip" data-placement="left" title="Delete this tag"><i class="icon icon-delete"></i></a>
-                                                    </div>
-                                                </div>
-                
-                                            </div>
-                                            <div class="divider"></div>
-                                            <div class="p-5 text-center">
-                                                    <a class="btn btn-sm btn-primary" data-toggle="modal" href="#edit-filter-tags">Edit Custom Tags</a>
-                                            </div>
+                                            <!-- / TOOLBAR BOTTOM -->
+            
                                         </div>
-                                    
-                                    
+                                        <!-- / locations TOOLBAR -->
+            
+                                        <!-- locations CONTENT -->
+                                        <div class="content custom-scrollbar">
+            
+                                            <!-- locations LIST-->
+                                            <div class="staffs-nearby-list">
+            
+                                                <div class="contact ripple flex-wrap flex-sm-nowrap row px-3 py-2 no-gutters align-items-center unread">
+                                                    <label class="custom-control custom-checkbox pr-3">
+                                                        <input type="checkbox" class="custom-control-input">
+                                                        <span class="custom-control-indicator"></span>
+                                                    </label>
+                                                    <div class="col-auto avatar-wrapper">
+                                                        <img src="../assets/images/avatars/james.jpg"
+                                                             class="avatar" alt="Barrera"/>
+                                                        <i class="icon- status online s-4"></i>
+                                                    </div>
+            
+                                                    <div class="col px-4">
+                                                        <span class="name h6">James Antony</span>
+                                                        <p class="staff-role text-truncate text-muted">Service Engineer</p>
+                                                        <p class="last-location text-truncate text-muted"><i class="s-4 icon icon-map-marker mr-1"></i>Ravipuram </p>
+                                                    </div>
+                                                    <span class="followup-count bg-primary text-auto staff-service-count">4</span>
+            
+                                                </div>
+            
+                                                <div class="divider"></div>
+            
+                                                <div class="contact ripple flex-wrap flex-sm-nowrap row px-3 py-2 no-gutters align-items-center unread">
+                                                    <label class="custom-control custom-checkbox pr-3">
+                                                        <input type="checkbox" class="custom-control-input">
+                                                        <span class="custom-control-indicator"></span>
+                                                    </label>
+                                                    <div class="col-auto avatar-wrapper">
+                                                            <img src="../assets/images/avatars/andrew.jpg" 
+                                                             class="avatar" alt="Barrera"/>
+                                                        <i class="icon- status online s-4"></i>
+                                                    </div>
+            
+                                                    <div class="col px-4">
+                                                        <span class="name h6">Andrew Antony</span>
+                                                        <p class="staff-role text-truncate text-muted">Service Engineer</p>
+                                                        <p class="last-location text-truncate text-muted"><i class="s-4 icon icon-map-marker mr-1"></i>Ravipuram </p>
+                                                    </div>
+                                                    <span class="followup-count bg-primary text-auto staff-service-count">4</span>
+            
+                                                </div>
+            
+                                                <div class="divider"></div>
+            
+                                                <div class="contact ripple flex-wrap flex-sm-nowrap row px-3 py-2 no-gutters align-items-center unread">
+                                                    <label class="custom-control custom-checkbox pr-3">
+                                                        <input type="checkbox" class="custom-control-input">
+                                                        <span class="custom-control-indicator"></span>
+                                                    </label>
+                                                    <div class="col-auto avatar-wrapper">
+                                                        <img src="../assets/images/avatars/1.jpg"
+                                                             class="avatar" alt="Barrera"/>
+                                                        <i class="icon- status online s-4"></i>
+                                                    </div>
+            
+                                                    <div class="col px-4">
+                                                        <span class="name h6">Rakesh Ramanadhan</span>
+                                                        <p class="staff-role text-truncate text-muted">Service Engineer</p>
+                                                        <p class="last-location text-truncate text-muted"><i class="s-4 icon icon-map-marker mr-1"></i>Ravipuram </p>
+                                                    </div>
+                                                    <span class="followup-count bg-primary text-auto staff-service-count">4</span>
+            
+                                                </div>
+            
+                                                <div class="divider"></div>
+            
+                                                <div class="contact ripple flex-wrap flex-sm-nowrap row px-3 py-2 no-gutters align-items-center unread">
+                                                    <label class="custom-control custom-checkbox pr-3">
+                                                        <input type="checkbox" class="custom-control-input">
+                                                        <span class="custom-control-indicator"></span>
+                                                    </label>
+                                                    <div class="col-auto avatar-wrapper">
+                                                        <img src="../assets/images/avatars/2.jpg"
+                                                             class="avatar" alt="Barrera"/>
+                                                        <i class="icon- status online s-4"></i>
+                                                    </div>
+            
+                                                    <div class="col px-4">
+                                                        <span class="name h6">Albin</span>
+                                                        <p class="staff-role text-truncate text-muted">Service Engineer</p>
+                                                        <p class="last-location text-truncate text-muted"><i class="s-4 icon icon-map-marker mr-1"></i>Ravipuram </p>
+                                                    </div>
+                                                    <span class="followup-count bg-primary text-auto staff-service-count">4</span>
+            
+                                                </div>
+            
+                                                <div class="divider"></div>
+                                                <div class="contact ripple flex-wrap flex-sm-nowrap row px-3 py-2 no-gutters align-items-center unread">
+                                                    <label class="custom-control custom-checkbox pr-3">
+                                                        <input type="checkbox" class="custom-control-input">
+                                                        <span class="custom-control-indicator"></span>
+                                                    </label>
+                                                    <div class="col-auto avatar-wrapper">
+                                                        <img src="../assets/images/avatars/3.jpg"
+                                                             class="avatar" alt="Barrera"/>
+                                                        <i class="icon- status online s-4"></i>
+                                                    </div>
+            
+                                                    <div class="col px-4">
+                                                        <span class="name h6">Dijo George</span>
+                                                        <p class="staff-role text-truncate text-muted">Service Engineer</p>
+                                                        <p class="last-location text-truncate text-muted"><i class="s-4 icon icon-map-marker mr-1"></i>Ravipuram </p>
+                                                    </div>
+                                                    <span class="followup-count bg-primary text-auto staff-service-count">4</span>
+            
+                                                </div>
+            
+                                                <div class="divider"></div>
+            
+                                                <div class="contact ripple flex-wrap flex-sm-nowrap row px-3 py-2 no-gutters align-items-center unread">
+                                                    <label class="custom-control custom-checkbox pr-3">
+                                                        <input type="checkbox" class="custom-control-input">
+                                                        <span class="custom-control-indicator"></span>
+                                                    </label>
+                                                    <div class="col-auto avatar-wrapper">
+                                                        <img src="../assets/images/avatars/4.jpg"
+                                                             class="avatar" alt="Barrera"/>
+                                                        <i class="icon- status online s-4"></i>
+                                                    </div>
+            
+                                                    <div class="col px-4">
+                                                        <span class="name h6">Libin Antony</span>
+                                                        <p class="staff-role text-truncate text-muted">Service Engineer</p>
+                                                        <p class="last-location text-truncate text-muted"><i class="s-4 icon icon-map-marker mr-1"></i>Ravipuram </p>
+                                                    </div>
+                                                    <span class="followup-count bg-primary text-auto staff-service-count">4</span>
+            
+                                                </div>
+            
+                                                <div class="divider"></div>
+            
+                                                <div class="contact ripple flex-wrap flex-sm-nowrap row px-3 py-2 no-gutters align-items-center unread">
+                                                    <label class="custom-control custom-checkbox pr-3">
+                                                        <input type="checkbox" class="custom-control-input">
+                                                        <span class="custom-control-indicator"></span>
+                                                    </label>
+                                                    <div class="col-auto avatar-wrapper">
+                                                            <img src="../assets/images/avatars/andrew.jpg" 
+                                                             class="avatar" alt="Barrera"/>
+                                                        <i class="icon- status online s-4"></i>
+                                                    </div>
+            
+                                                    <div class="col px-4">
+                                                        <span class="name h6">Riyas Abdul Salam</span>
+                                                        <p class="staff-role text-truncate text-muted">Service Engineer</p>
+                                                        <p class="last-location text-truncate text-muted"><i class="s-4 icon icon-map-marker mr-1"></i>Ravipuram </p>
+                                                    </div>
+                                                    <span class="followup-count bg-primary text-auto staff-service-count">4</span>
+            
+                                                </div>
+            
+                                                <div class="divider"></div>
+            
+                                                
+            
+                                            </div>
+                                            <!-- / locations LIST-->
+                                        </div>
+                                        <!-- / locations CONTENT -->
+                                        <a class="btn btn-primary btn-block">Assign Staffs</a>
+                                        <!-- CONTACTS BUTTON -->
+                                        
+                                        <!-- / CONTACTS BUTTON -->
+            
+                                    </div> 
                                 </div>
                                 
                             </div>
@@ -1910,7 +1729,7 @@
         $(document).ready(function() {
             $('.servicestaffs').select2({
                 closeOnSelect: false,
-                placeholder: "Select Staffs",
+                placeholder: "Select Staffs/Agent/DSC",
                 allowClear: true
             });
         });
