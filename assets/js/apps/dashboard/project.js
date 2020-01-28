@@ -753,7 +753,7 @@
             }
         },
         "widget6"      : {
-            "title"      : "Task Distribution",
+            "title"      : "Top Products",
             "ranges"     : {
                 "TW": "This Week",
                 "LW": "Last Week",
@@ -762,56 +762,56 @@
             "mainChart"  : {
                 "2W": [
                     {
-                        "label": "ServiceCalls",
+                        "label": "LPG Stow",
                         "value": 18
                     },
                     {
-                        "label": "Bills",
+                        "label": "Juice Maker",
                         "value": 17
                     },
                     {
-                        "label": "Quotations",
+                        "label": "Mixker Grinder",
                         "value": 40
                     },
                     {
-                        "label": "Tasks",
+                        "label": "Soda Maker",
                         "value": 25
                     }
                 ],
-                "LW": [
+                "LW":[
                     {
-                        "label": "ServiceCalls",
-                        "value": 19
+                        "label": "LPG Stow",
+                        "value": 34
                     },
                     {
-                        "label": "Bills",
-                        "value": 16
+                        "label": "Juice Maker",
+                        "value": 12
                     },
                     {
-                        "label": "Quotations",
-                        "value": 42
+                        "label": "Mixker Grinder",
+                        "value": 45
                     },
                     {
-                        "label": "Tasks",
-                        "value": 23
+                        "label": "Soda Maker",
+                        "value": 12
                     }
                 ],
                 "TW": [
                     {
-                        "label": "ServiceCalls",
-                        "value": 15
+                        "label": "LPG Stow",
+                        "value": 37
                     },
                     {
-                        "label": "Bills",
-                        "value": 20
+                        "label": "Juice Maker",
+                        "value": 17
                     },
                     {
-                        "label": "Quotations",
-                        "value": 38
+                        "label": "Mixker Grinder",
+                        "value": 23
                     },
                     {
-                        "label": "Tasks",
-                        "value": 27
+                        "label": "Soda Maker",
+                        "value": 40
                     }
                 ]
             },
