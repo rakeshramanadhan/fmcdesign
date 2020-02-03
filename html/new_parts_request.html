@@ -759,30 +759,9 @@
                                     <div class="demo-content">
                                         <form>
                                             <div class="row">
+                                                
                                                     <div class="form-group col-md-4">
-                                                            <label> Quotation Type</label>
-                                                            <select class="form-control" onchange="quotationType(this.value);">
-                                                                <option value="1" selected>Ouotation</option>
-                                                                <option value="2">Quotation + Labour</option>
-                                                                <option value="3">Overhauling Quotation</option>
-                                                            </select>
-                                                            
-                                                    </div>
-                                                    <div class=" col-md-4 pt-4">
-                                                        <label for="" class="col-form-label text-muted">Select Customer</label>
-                                                        <select id="slim-multiple-sidebar1" >
-                                                                <option>Alice Freeman</option>
-                                                                <option>Garry Newman</option>
-                                                                <option>Andrew Green</option>
-                                                                <option>Carl Henderson </option>
-                                                                <option>Jane Dean </option>
-                                                                <option>John Deo</option>
-                                                                <option>Juan Carpenter</option>
-                                                                <option>Vincent Munoz</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="form-group col-md-4">
-                                                        <label for="" class="col-form-label">Quotation Date</label>
+                                                        <label for="" class="col-form-label">Request Date</label>
                                                         <input type="text" class="form-control datepicker" id="" value=""/>
                                                     </div>
                                             </div>
@@ -790,35 +769,12 @@
                                                     <label for="exampleTextarea">Subject</label>
                                                     <textarea class="form-control" id="AddressTextarea" rows="2" placeholder="">Requirement of spares for carrying out Oil service of Your  KVA  Ashok Leyland Engine</textarea>
                                             </div>
-                                            <div class="row">
-                                                    <div class=" col-md-4 pt-4">
-                                                        <label for="" class="col-form-label text-muted">Engine Model</label>
-                                                        <select id="slim-multiple-sidebar2" >
-                                                                <option>AL485DG1</option>
-                                                                <option>AL485TADG3</option>
-                                                                <option>AL485TADG4</option>
-                                                                <option>AL4CTDG1</option>
-                                                                <option>AL4CTDG2</option>
-                                                                <option>AL4CTDG3</option>
-                                                                <option>AL6DTIG1</option>
-                                                                <option>AL6DTIG2</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="form-group col-md-4">
-                                                        <label for="" class="col-form-label">SL No.</label>
-                                                        <input type="text" class="form-control" id="" value=""/>
-                                                    </div>
-                                                    
-                                                    <div class="form-group col-md-4">
-                                                        <label for="" class="col-form-label">Site</label>
-                                                        <input type="text" class="form-control" id="" value=""/>
-                                                    </div>
-                                            </div>
+                                          
                                             <h6 class="pt-1 pt-sm-2 pt-md-3">Spare Details</h6>
                                             <div class="spare-details mb-4">
                                                 <!--spare details single row-->
                                                 <div class="row quotation-row">
-                                                        <div class="form-group col-xl-2 col-lg-2 col-md-3 col-sm-3 col-5 no-gutters">
+                                                        <div class="form-group col-xl-2 col-lg-2 col-md-4 col-sm-3 col-5 no-gutters">
                                                                 <label for="" class="col-form-label">Part No</label><div class="input-group input-group-lg">
                                                                     <span class="input-group-addon" id="sizing-addon1">1</span>
                                                                     <input type="text" class="form-control" placeholder="Username" aria-label="Username"
@@ -829,28 +785,8 @@
                                                                 <label for="" class="col-form-label">Description</label>
                                                                 <input type="text" class="form-control" id="" value=""/>
                                                         </div>
-                                                        <div class="form-group col-xl-1 col-lg-1 col-md-2 col-sm-2 col-3">
+                                                        <div class="form-group col-xl-1 col-lg-1 col-md-3 col-sm-2 col-3">
                                                             <label for="" class="col-form-label">Qty.</label>
-                                                            <input type="text" class="form-control" id="" value=""/>
-                                                        </div>
-                                                        <div class="form-group col-xl-1 col-lg-1 col-md-3 col-sm-3 col-4">
-                                                            <label for="" class="col-form-label">Rate</label>
-                                                            <input type="text" class="form-control" id="" value=""/>
-                                                        </div>
-                                                        <div class="form-group col-xl-1 col-lg-1 col-md-2 col-sm-3 col-5">
-                                                            <label for="" class="col-form-label">Amt</label>
-                                                            <input type="text" class="form-control" id="" value=""/>
-                                                        </div>
-                                                        <div class="form-group col-xl-1 col-lg-1 col-md-2 col-sm-2 col-2">
-                                                            <label for="" class="col-form-label">GST%</label>
-                                                            <input type="text" class="form-control" id="" value=""/>
-                                                        </div>
-                                                        <div class="form-group col-xl-1 col-lg-1 col-md-2 col-sm-3 col-3">
-                                                            <label for="" class="col-form-label">GST</label>
-                                                            <input type="text"  class="form-control" id="" value=""/>
-                                                        </div>
-                                                        <div class="form-group col-xl-1 col-lg-1 col-md-3 col-sm-3 col-5">
-                                                            <label for="" class="col-form-label">Total</label>
                                                             <input type="text" class="form-control" id="" value=""/>
                                                         </div>
                                                         <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-2 ml-md-auto d-flex align-items-center">
@@ -875,26 +811,7 @@
                                                             <label for="" class="col-form-label">Qty.</label>
                                                             <input type="text" class="form-control" id="" value=""/>
                                                         </div>
-                                                        <div class="form-group col-xl-1 col-lg-1 col-md-3 col-sm-3 col-4">
-                                                            <label for="" class="col-form-label">Rate</label>
-                                                            <input type="text" class="form-control" id="" value=""/>
-                                                        </div>
-                                                        <div class="form-group col-xl-1 col-lg-1 col-md-2 col-sm-3 col-5">
-                                                            <label for="" class="col-form-label">Amt</label>
-                                                            <input type="text" class="form-control" id="" value=""/>
-                                                        </div>
-                                                        <div class="form-group col-xl-1 col-lg-1 col-md-2 col-sm-2 col-2">
-                                                            <label for="" class="col-form-label">GST%</label>
-                                                            <input type="text" class="form-control" id="" value=""/>
-                                                        </div>
-                                                        <div class="form-group col-xl-1 col-lg-1 col-md-2 col-sm-3 col-3">
-                                                            <label for="" class="col-form-label">GST</label>
-                                                            <input type="text"  class="form-control" id="" value=""/>
-                                                        </div>
-                                                        <div class="form-group col-xl-1 col-lg-1 col-md-3 col-sm-3 col-5">
-                                                            <label for="" class="col-form-label">Total</label>
-                                                            <input type="text" class="form-control" id="" value=""/>
-                                                        </div>
+                                                       
                                                         <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-2 ml-md-auto d-flex align-items-center">
                                                             <a class="btn btn-icon ml-md-auto " onclick="deleteThisRow($(this))"><i class="icon icon-delete s-5"></i></a>
                                                         </div>
@@ -917,26 +834,7 @@
                                                             <label for="" class="col-form-label">Qty.</label>
                                                             <input type="text" class="form-control" id="" value=""/>
                                                         </div>
-                                                        <div class="form-group col-xl-1 col-lg-1 col-md-3 col-sm-3 col-4">
-                                                            <label for="" class="col-form-label">Rate</label>
-                                                            <input type="text" class="form-control" id="" value=""/>
-                                                        </div>
-                                                        <div class="form-group col-xl-1 col-lg-1 col-md-2 col-sm-3 col-5">
-                                                            <label for="" class="col-form-label">Amt</label>
-                                                            <input type="text" class="form-control" id="" value=""/>
-                                                        </div>
-                                                        <div class="form-group col-xl-1 col-lg-1 col-md-2 col-sm-2 col-2">
-                                                            <label for="" class="col-form-label">GST%</label>
-                                                            <input type="text" class="form-control" id="" value=""/>
-                                                        </div>
-                                                        <div class="form-group col-xl-1 col-lg-1 col-md-2 col-sm-3 col-3">
-                                                            <label for="" class="col-form-label">GST</label>
-                                                            <input type="text"  class="form-control" id="" value=""/>
-                                                        </div>
-                                                        <div class="form-group col-xl-1 col-lg-1 col-md-3 col-sm-3 col-5">
-                                                            <label for="" class="col-form-label">Total</label>
-                                                            <input type="text" class="form-control" id="" value=""/>
-                                                        </div>
+                                                       
                                                         <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-2 ml-md-auto d-flex align-items-center">
                                                             <a class="btn btn-icon ml-md-auto " onclick="deleteThisRow($(this))"><i class="icon icon-delete s-5"></i></a>
                                                         </div>
@@ -959,26 +857,7 @@
                                                             <label for="" class="col-form-label">Qty.</label>
                                                             <input type="text" class="form-control" id="" value=""/>
                                                         </div>
-                                                        <div class="form-group col-xl-1 col-lg-1 col-md-3 col-sm-3 col-4">
-                                                            <label for="" class="col-form-label">Rate</label>
-                                                            <input type="text" class="form-control" id="" value=""/>
-                                                        </div>
-                                                        <div class="form-group col-xl-1 col-lg-1 col-md-2 col-sm-3 col-5">
-                                                            <label for="" class="col-form-label">Amt</label>
-                                                            <input type="text" class="form-control" id="" value=""/>
-                                                        </div>
-                                                        <div class="form-group col-xl-1 col-lg-1 col-md-2 col-sm-2 col-2">
-                                                            <label for="" class="col-form-label">GST%</label>
-                                                            <input type="text" class="form-control" id="" value=""/>
-                                                        </div>
-                                                        <div class="form-group col-xl-1 col-lg-1 col-md-2 col-sm-3 col-3">
-                                                            <label for="" class="col-form-label">GST</label>
-                                                            <input type="text"  class="form-control" id="" value=""/>
-                                                        </div>
-                                                        <div class="form-group col-xl-1 col-lg-1 col-md-3 col-sm-3 col-5">
-                                                            <label for="" class="col-form-label">Total</label>
-                                                            <input type="text" class="form-control" id="" value=""/>
-                                                        </div>
+                                                       
                                                         <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-2 ml-md-auto d-flex align-items-center">
                                                             <a class="btn btn-icon ml-md-auto " onclick="deleteThisRow($(this))"><i class="icon icon-delete s-5"></i></a>
                                                         </div>
@@ -1001,26 +880,7 @@
                                                             <label for="" class="col-form-label">Qty.</label>
                                                             <input type="text" class="form-control" id="" value=""/>
                                                         </div>
-                                                        <div class="form-group col-xl-1 col-lg-1 col-md-3 col-sm-3 col-4">
-                                                            <label for="" class="col-form-label">Rate</label>
-                                                            <input type="text" class="form-control" id="" value=""/>
-                                                        </div>
-                                                        <div class="form-group col-xl-1 col-lg-1 col-md-2 col-sm-3 col-5">
-                                                            <label for="" class="col-form-label">Amt</label>
-                                                            <input type="text" class="form-control" id="" value=""/>
-                                                        </div>
-                                                        <div class="form-group col-xl-1 col-lg-1 col-md-2 col-sm-2 col-2">
-                                                            <label for="" class="col-form-label">GST%</label>
-                                                            <input type="text" class="form-control" id="" value=""/>
-                                                        </div>
-                                                        <div class="form-group col-xl-1 col-lg-1 col-md-2 col-sm-3 col-3">
-                                                            <label for="" class="col-form-label">GST</label>
-                                                            <input type="text"  class="form-control" id="" value=""/>
-                                                        </div>
-                                                        <div class="form-group col-xl-1 col-lg-1 col-md-3 col-sm-3 col-5">
-                                                            <label for="" class="col-form-label">Total</label>
-                                                            <input type="text" class="form-control" id="" value=""/>
-                                                        </div>
+                                                        
                                                         <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-2 ml-md-auto d-flex align-items-center">
                                                             <a class="btn btn-icon ml-md-auto " onclick="deleteThisRow($(this))"><i class="icon icon-delete s-5"></i></a>
                                                         </div>
@@ -1033,7 +893,7 @@
                                                         <h6 class="title font-weight-bold">Total Spares</h6>
                                                 </div>
                                                 <div class="col-6 col-sm-4 text-center">
-                                                        <h6 class="title font-weight-bold">45,00,000/- </h6>
+                                                        <h6 class="title font-weight-bold">450 </h6>
                                                 </div>
                                                     
                                             </div>
@@ -1044,52 +904,6 @@
                                             </div>
                                             <!--add new spare part button ends-->
                                             
-                                            <!--spare packing charges row row-->
-                                            <div class="packing-charges">
-                                                <h6 class="pt-1 pt-sm-2 pt-md-3 text-muted">Packing & Forwarding Charges</h6>
-                                                <div class="row quotation-row no-gutters">
-                                                        <div class="form-group col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
-                                                            <label for="" class="col-form-label">Amt</label>
-                                                            <input type="text" class="form-control" id="" value=""/>
-                                                        </div>
-                                                        <div class="form-group col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2">
-                                                            <label for="" class="col-form-label">GST%</label>
-                                                            <input type="text" class="form-control" id="" value=""/>
-                                                        </div>
-                                                        <div class="form-group col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
-                                                            <label for="" class="col-form-label">GST</label>
-                                                            <input type="text"  class="form-control" id="" value=""/>
-                                                        </div>
-                                                        <div class="form-group col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
-                                                            <label for="" class="col-form-label">Total</label>
-                                                            <input type="text" class="form-control" id="" value=""/>
-                                                        </div>
-                                                </div>
-                                            </div>
-                                            <!--spare packing charges row ends-->
-                                            <!--spare delivery charges row row-->
-                                            <div class="delivery-charges">
-                                                <h6 class="pt-1 pt-sm-2 pt-md-3 text-muted">Delivery Charges</h6>
-                                                <div class="row quotation-row no-gutters">
-                                                        <div class="form-group col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
-                                                            <label for="" class="col-form-label">Amt</label>
-                                                            <input type="text" class="form-control" id="" value=""/>
-                                                        </div>
-                                                        <div class="form-group col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2">
-                                                            <label for="" class="col-form-label">GST%</label>
-                                                            <input type="text" class="form-control" id="" value=""/>
-                                                        </div>
-                                                        <div class="form-group col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
-                                                            <label for="" class="col-form-label">GST</label>
-                                                            <input type="text"  class="form-control" id="" value=""/>
-                                                        </div>
-                                                        <div class="form-group col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
-                                                            <label for="" class="col-form-label">Total</label>
-                                                            <input type="text" class="form-control" id="" value=""/>
-                                                        </div>
-                                                </div>
-                                            </div>
-                                            <!--spare delivery charges row ends-->
                                             <!--spares total amount-->
                                             <div class="row no-gutters spare-grand-total-row mt-4">
                                                     <div class="col-6 col-sm-8 text-right">
@@ -1604,26 +1418,6 @@
             </div>\
             <div class="form-group col-xl-1 col-lg-1 col-md-2 col-sm-2 col-3">\
                 <label for="" class="col-form-label">Qty.</label>\
-                <input type="text" class="form-control" id="" value=""/>\
-            </div>\
-            <div class="form-group col-xl-1 col-lg-1 col-md-3 col-sm-3 col-4">\
-                <label for="" class="col-form-label">Rate</label>\
-                <input type="text" class="form-control" id="" value=""/>\
-            </div>\
-            <div class="form-group col-xl-1 col-lg-1 col-md-2 col-sm-3 col-5">\
-                <label for="" class="col-form-label">Amt</label>\
-                <input type="text" class="form-control" id="" value=""/>\
-            </div>\
-            <div class="form-group col-xl-1 col-lg-1 col-md-2 col-sm-2 col-2">\
-                <label for="" class="col-form-label">GST%</label>\
-                <input type="text" class="form-control" id="" value=""/>\
-            </div>\
-            <div class="form-group col-xl-1 col-lg-1 col-md-2 col-sm-3 col-3">\
-                <label for="" class="col-form-label">GST</label>\
-                <input type="text"  class="form-control" id="" value=""/>\
-            </div>\
-            <div class="form-group col-xl-1 col-lg-1 col-md-3 col-sm-3 col-5">\
-                <label for="" class="col-form-label">Total</label>\
                 <input type="text" class="form-control" id="" value=""/>\
             </div>\
             <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-2 ml-md-auto d-flex align-items-center">\
