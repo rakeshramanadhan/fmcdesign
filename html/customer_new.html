@@ -586,51 +586,42 @@
                         <div class="col">
 
                             <div class="row no-gutters align-items-center flex-nowrap">
-        
+
                                 <button type="button" class="toggle-aside-button btn btn-icon d-block d-lg-none"
                                         data-raz-bar-toggle="aside">
                                     <i class="icon icon-menu"></i>
                                 </button>
-        
+
                                 <div class="toolbar-separator d-block d-lg-none"></div>
-        
+                                
                                 <div class="shortcuts-wrapper row no-gutters align-items-center px-0 px-sm-2">
-        
+
                                     <div class="shortcuts row no-gutters align-items-center d-none d-md-flex">
-        
-                                        <a href="{{URL::route('LocationView')}}" data-toggle="tooltip" title="Location"class="shortcut-button btn btn-icon mx-1">
+
+                                        <a href="location_app.html" class="shortcut-button btn btn-icon mx-1">
                                             <i class="icon icon-map-marker-radius"></i>
                                         </a>
-        
-                                        <a href="{{URL::route('MyProfile')}}"  data-toggle="tooltip" title="Profile" class="shortcut-button btn btn-icon mx-1">
+                                        <a href="tasks_app.html" class="shortcut-button btn btn-icon mx-1">
+                                            <i class="icon icon-message-bulleted"></i>
+                                        </a>
+                                        <a href="settings.html" class="shortcut-button btn btn-icon mx-1">
+                                            <i class="icon icon-settings"></i>
+                                        </a>
+
+                                        <a href="staff_profile.html" class="shortcut-button btn btn-icon mx-1">
                                             <i class="icon icon-account-box"></i>
                                         </a>
-                                       
-                                            <a class="shortcut-button btn btn-icon mx-1" href="{{URL::route('CreateLead')}}" data-toggle="tooltip" title="Add New Customer"><i class="icon icon-account-plus"></i></a>
-                                    
-                                            <a class="shortcut-button btn btn-icon mx-1" href="{{URL::route('CreateSeriviceCall')}}" data-toggle="tooltip" title="Add New ServiceCall"><i class="icon icon-wrench"></i></a>
-                                        
-                                            <a class="shortcut-button btn btn-icon mx-1" href="{{URL::route('SeriviceCallSchedule')}}" data-toggle="tooltip" title="ServiceCall Scheduler"><i class="icon icon-account-location"></i></a>
-                                        
-                                            <a  href="{{URL::route('Sales')}}"class="shortcut-button btn btn-icon mx-1" data-toggle="tooltip" title="Add  SalesCall"><i class="icon icon-clipboard-plus"></i></a>
 
-                                            <a href="{{URL::Route('Settings')}}" data-toggle="tooltip" title="Settings" class="shortcut-button btn btn-icon mx-1">
-                                                <i class="icon icon-settings"></i>
-            
-                                            </a>
-                                            <a href="{{ url()->previous()}}" data-toggle="tooltip" title="Go Back" class="shortcut-button btn btn-icon mx-1">
-                                                <i class="icon icon-arrow-left"></i>
-                                            </a>
-                                           
-        
+
                                     </div>
-        
+                                    
                                 </div>
-        
+
                                 <div class="toolbar-separator"></div>
-        
+                        
                             </div>
                         </div>
+
                         <div class="col-auto">
 
                             <div class="row no-gutters align-items-center justify-content-end">
@@ -709,7 +700,7 @@
 
                             <div class="page-content-card">
                                 <!-- CONTENT TOOLBAR -->
-                                <div class="toolbar p-6">Add new Agent</div>
+                                <div class="toolbar p-6">Add new Customer</div>
                                 <!-- / CONTENT TOOLBAR -->
 
                                 <div class="p-6">
@@ -728,7 +719,7 @@
                                                     <div class="col-md-8">
                                                         <div class="row">
                                                             <div class="form-group col-md-6">
-                                                                    <label>Agent Name</label>
+                                                                    <label>Customer Name</label>
                                                                     <input type="text" class="form-control"/>
                                                                     
                                                             </div>
@@ -753,18 +744,18 @@
                                                 <div class="form-group col-md-4">
                                                     <label for="">State</label>
                                                     <select id="" class="form-control">
-                                                        <option>Kerala</option>
-                                                        <option>Karnataka</option>
-                                                        <option>ThamilNadu</option>
+                                                        <option>State One</option>
+                                                        <option>State Two</option>
+                                                        <option>State Three</option>
                                                     </select>
                                                 </div>
                                                     
                                                     <div class="form-group col-md-4">
                                                             <label for="">District</label>
                                                             <select id="" class="form-control">
-                                                                <option>Ernakulam</option>
-                                                                <option>Kolam</option>
-                                                                <option>Kannoor</option>
+                                                                <option>District One</option>
+                                                                <option>District Two</option>
+                                                                <option>District Three</option>
                                                             </select>
                                                     </div>
                                                     <div class="form-group col-md-4">
@@ -779,26 +770,12 @@
                                                     <input type="text" class="form-control" id="inputWebsite" value=""/>
                                                 </div>
                                             </div>
+
                                             <div class="form-group">
                                                     <label for="exampleTextarea">Address</label>
                                                     <textarea class="form-control" id="AddressTextarea" rows="3" placeholder=""></textarea>
                                             </div>
-                                           <hr>
-                                           <h4>Royalty Percentage</h4>
-                                           <div class="row">
-                                            <div class="form-group col-md-4">
-                                                <label for="inputWebsite" class="col-form-label">Spares</label>
-                                                <input type="text" class="form-control" id="inputWebsite" value=""/>
-                                            </div>
-                                            <div class="form-group col-md-4">
-                                                <label for="inputWebsite" class="col-form-label">Service</label>
-                                                <input type="text" class="form-control" id="inputWebsite" value=""/>
-                                            </div>
-                                            <div class="form-group col-md-4">
-                                                <label for="inputWebsite" class="col-form-label">Installation</label>
-                                                <input type="text" class="form-control" id="inputWebsite" value=""/>
-                                            </div>
-                                        </div>
+                                           
                                             
                                             <button type="submit" class="btn btn-primary">Submit</button>
                                         </form>

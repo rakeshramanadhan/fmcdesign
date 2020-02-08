@@ -126,512 +126,470 @@
 
                  <ul class="nav flex-column custom-scrollbar" id="sidenav" data-children=".nav-item">
 
-                     <li class="subheader">
-                         <span>Cinzac Sales & Services</span>
-                     </li>
+                    <li class="subheader">
+                        <span>puerflames Sales & Services</span>
+                    </li>
 
-                     <li class="nav-item">
-                         <a class="nav-link ripple " href="dashboard.html"
-                            data-page-url="">
-                             <i class="icon s-5 icon-home"></i>
-                             <span>Dashboard</span>
-                         </a>
-                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link active ripple " href="dashboard.html"
+                           data-page-url="">
+                            <i class="icon s-5 icon-home"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" role="tab" id="heading-ServiceCall-management">
 
-                     <li class="nav-item" role="tab" id="heading-Prospect-management">
+                       <a class="nav-link ripple with-arrow collapsed"
+                          data-toggle="collapse"
+                          data-target="#collapse-ServiceCall-management"
+                          href="#"
+                          aria-expanded="false"
+                          aria-controls="collapse-ServiceCall-management">
+                           <i class="icon s-5 icon-wrench"></i>
+                           <span>Service Call Management</span>
+                       </a>
 
-                         <a class="nav-link ripple with-arrow collapsed"
-                            data-toggle="collapse"
-                            data-target="#collapse-Prospect-management"
-                            href="#"
-                            aria-expanded="false"
-                            aria-controls="collapse-Prospect-management">
-                             <i class="icon s-5 icon-contacts"></i>
-                             <span>Leads Management</span>
-                         </a>
+                       <ul id="collapse-ServiceCall-management"
+                           class="collapse"
+                           role="tabpanel"
+                           aria-labelledby="heading-ServiceCall-management"
+                           data-children=".nav-item">
 
-                         <ul id="collapse-Prospect-management"
-                             class="collapse"
-                             role="tabpanel"
-                             aria-labelledby="heading-Prospect-management"
-                             data-children=".nav-item">
+                           <li class="nav-item">
+                            <a class="nav-link ripple " href="servicecall_new.html"
+                               data-page-url="#">
 
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="leads_card.html"
-                                    data-page-url="#">
+                                <span>New Service Call</span>
+                            </a>
+                           </li>
+                           <li class="nav-item">
+                            <a class="nav-link ripple " href="apps-service_scheduler.html"
+                               data-page-url="#">
 
-                                     <span>All Leads</span>
-                                 </a>
-                             </li>
+                                <span>All Service Calls</span>
+                            </a>
+                        </li>
 
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="lead_new.html"
-                                    data-page-url="#">
 
-                                     <span>New Lead</span>
-                                 </a>
-                             </li>
+                       </ul>
+                   </li>
+                   
+                    <li class="nav-item" role="tab" id="heading-Prospect-management">
 
-                         </ul>
-                     </li>
+                        <a class="nav-link ripple with-arrow collapsed"
+                           data-toggle="collapse"
+                           data-target="#collapse-Prospect-management"
+                           href="#"
+                           aria-expanded="false"
+                           aria-controls="collapse-Prospect-management">
+                            <i class="icon s-5 icon-contacts"></i>
+                            <span>Customer Management</span>
+                        </a>
 
-                     <li class="nav-item" role="tab" id="heading-SalesCall-management">
+                        <ul id="collapse-Prospect-management"
+                            class="collapse"
+                            role="tabpanel"
+                            aria-labelledby="heading-Prospect-management"
+                            data-children=".nav-item">
 
-                         <a class="nav-link ripple with-arrow collapsed"
-                            data-toggle="collapse"
-                            data-target="#collapse-SalesCall-management"
-                            href="#"
-                            aria-expanded="false"
-                            aria-controls="collapse-SalesCall-management">
-                             <i class="icon s-5 icon-phone-forward"></i>
-                             <span>Sales Call Management</span>
-                         </a>
-
-                         <ul id="collapse-SalesCall-management"
-                             class="collapse"
-                             role="tabpanel"
-                             aria-labelledby="heading-SalesCall-management"
-                             data-children=".nav-item">
-
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="sales_calls_card.html"
-                                    data-page-url="#">
-
-                                     <span>All Sales Calls</span>
-                                 </a>
-                             </li>
-
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="#"
-                                    data-page-url="#">
-
-                                     <span>New Sales Call</span>
-                                 </a>
-                             </li>
-
-                         </ul>
-                     </li>
-
-                     <li class="nav-item" role="tab" id="heading-Machine-management">
-
-                         <a class="nav-link ripple with-arrow collapsed"
-                            data-toggle="collapse"
-                            data-target="#collapse-Machine-management"
-                            href="#"
-                            aria-expanded="false"
-                            aria-controls="collapse-Machine-management">
-                             <i class="icon s-5 icon-robot"></i>
-                             <span>Machine Management</span>
-                         </a>
-
-                         <ul id="collapse-Machine-management"
-                             class="collapse"
-                             role="tabpanel"
-                             aria-labelledby="heading-Machine-management"
-                             data-children=".nav-item">
-
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="machines.html"
-                                    data-page-url="#">
-
-                                     <span>All Machines</span>
-                                 </a>
-                             </li>
-
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="machine_new.html"
-                                    data-page-url="#">
-
-                                     <span>New MAchine (style 1)</span>
-                                 </a>
-                             </li>
-
-                             <li class="nav-item">
-                                <a class="nav-link ripple " href="machine_new_alt.html"
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="customerlist.html"
                                    data-page-url="#">
 
-                                    <span>New Machine (style 2)</span>
+                                    <span>All Customers</span>
                                 </a>
                             </li>
 
-                         </ul>
-                     </li>
-                     
-                     <li class="nav-item" role="tab" id="heading-ServiceCall-management">
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="customer_new.html"
+                                   data-page-url="#">
 
-                         <a class="nav-link ripple with-arrow collapsed"
-                            data-toggle="collapse"
-                            data-target="#collapse-ServiceCall-management"
-                            href="#"
-                            aria-expanded="false"
-                            aria-controls="collapse-ServiceCall-management">
-                             <i class="icon s-5 icon-wrench"></i>
-                             <span>Service Call Management</span>
-                         </a>
+                                    <span>New Customer</span>
+                                </a>
+                            </li>
 
-                         <ul id="collapse-ServiceCall-management"
-                             class="collapse"
-                             role="tabpanel"
-                             aria-labelledby="heading-ServiceCall-management"
-                             data-children=".nav-item">
+                        </ul>
+                    </li>
 
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="service_calls_card.html"
-                                    data-page-url="#">
+                  
+                    <li class="nav-item" role="tab" id="heading-agent-management">
 
-                                     <span>All Tasks</span>
-                                 </a>
-                             </li>
+                       <a class="nav-link ripple with-arrow collapsed"
+                          data-toggle="collapse"
+                          data-target="#collapse-agent-management"
+                          href="#"
+                          aria-expanded="false"
+                          aria-controls="collapse-agent-management">
+                           <i class="icon s-5 icon-group"></i>
+                           <span>Agent Management</span>
+                       </a>
 
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="servicecall_new.html"
-                                    data-page-url="#">
+                       <ul id="collapse-agent-management"
+                           class="collapse"
+                           role="tabpanel"
+                           aria-labelledby="heading-agent-management"
+                           data-children=".nav-item">
 
-                                     <span>New Service Call</span>
-                                 </a>
-                             </li>
-                             <li class="nav-item">
-                                    <a class="nav-link ripple active" href="app_scheduler.html"
-                                       data-page-url="#">
-                                        <span>Service Scheduler</span>
-                                    </a>
-                                </li>
-                         </ul>
-                     </li>
+                           <li class="nav-item">
+                               <a class="nav-link ripple " href="agent_details.html"
+                                  data-page-url="#">
 
-                     <li class="nav-item" role="tab" id="heading-Quotation-management">
+                                   <span>All Agents</span>
+                               </a>
+                           </li>
 
-                         <a class="nav-link ripple with-arrow collapsed"
-                            data-toggle="collapse"
-                            data-target="#collapse-Quotation-management"
-                            href="#"
-                            aria-expanded="false"
-                            aria-controls="collapse-Quotation-management">
-                             <i class="icon s-5 icon-file-document"></i>
-                             <span>Quotation Management</span>
-                         </a>
+                           <li class="nav-item">
+                               <a class="nav-link ripple " href="agent_new.html"
+                                  data-page-url="#">
 
-                         <ul id="collapse-Quotation-management"
-                             class="collapse"
-                             role="tabpanel"
-                             aria-labelledby="heading-Quotation-management"
-                             data-children=".nav-item">
+                                   <span>New Agent</span>
+                               </a>
+                           </li>
 
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="quotations_app.html"
-                                    data-page-url="#">
+                       </ul>
+                   </li>
+                    
+                   <li class="nav-item" role="tab" id="heading-Dealer-management">
 
-                                     <span>All Quotations</span>
-                                 </a>
-                             </li>
+                       <a class="nav-link ripple with-arrow collapsed"
+                          data-toggle="collapse"
+                          data-target="#collapse-Dealer-management"
+                          href="#"
+                          aria-expanded="false"
+                          aria-controls="collapse-Dealer-management">
+                           <i class="icon s-5 icon-sitemap"></i>
+                           <span>Dealer Management</span>
+                       </a>
 
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="quotation_new.html"
-                                    data-page-url="#">
+                       <ul id="collapse-Dealer-management"
+                           class="collapse"
+                           role="tabpanel"
+                           aria-labelledby="heading-Dealer-management"
+                           data-children=".nav-item">
 
-                                     <span>New Quotation</span>
-                                 </a>
-                             </li>
+                           <li class="nav-item">
+                               <a class="nav-link ripple " href="dealer_details.html"
+                                  data-page-url="#">
 
-                         </ul>
-                     </li>
+                                   <span>All Dealers</span>
+                               </a>
+                           </li>
 
-                     <li class="nav-item" role="tab" id="heading-Billing-management">
+                           <li class="nav-item">
+                               <a class="nav-link ripple " href="dealer_new.html"
+                                  data-page-url="#">
 
-                         <a class="nav-link ripple with-arrow collapsed"
-                            data-toggle="collapse"
-                            data-target="#collapse-Billing-management"
-                            href="#"
-                            aria-expanded="false"
-                            aria-controls="collapse-Billing-management">
-                             <i class="icon s-5 icon-receipt"></i>
-                             <span>Billing Management</span>
-                         </a>
+                                   <span>New Dealer</span>
+                               </a>
+                           </li>
 
-                         <ul id="collapse-Billing-management"
-                             class="collapse"
-                             role="tabpanel"
-                             aria-labelledby="heading-Billing-management"
-                             data-children=".nav-item">
+                       </ul>
+                   </li>
+                   <li class="nav-item">
+                    <a class="nav-link ripple " href="task_app.html"
+                       data-page-url="">
+                        <i class="icon s-5 icon-map-marker-radius"></i>
+                        <span>Task  Management</span>
+                    </a>
+                    </li>
+                    <li class="nav-item" role="tab" id="heading-Machine-management">
 
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="#"
-                                    data-page-url="#">
-
-                                     <span>Child one</span>
-                                 </a>
-                             </li>
-
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="#"
-                                    data-page-url="#">
-
-                                     <span>child two</span>
-                                 </a>
-                             </li>
-
-                         </ul>
-                     </li>
-
-                     <li class="nav-item" role="tab" id="heading-Product-management">
                         <a class="nav-link ripple with-arrow collapsed"
                            data-toggle="collapse"
-                           data-target="#collapse-Product-management"
+                           data-target="#collapse-Machine-management"
                            href="#"
                            aria-expanded="false"
-                           aria-controls="collapse-Product-management">
-                            <i class="icon s-5 icon-tile-four"></i>
+                           aria-controls="collapse-Machine-management">
+                            <i class="icon s-5 icon-robot"></i>
                             <span>Product Management</span>
                         </a>
 
-                        <ul id="collapse-Product-management"
+                        <ul id="collapse-Machine-management"
                             class="collapse"
                             role="tabpanel"
-                            aria-labelledby="heading-Product-management"
+                            aria-labelledby="heading-Machine-management"
                             data-children=".nav-item">
 
                             <li class="nav-item">
                                 <a class="nav-link ripple " href="products.html"
                                    data-page-url="#">
-                                    <span>Products</span>
+
+                                    <span>All Products</span>
                                 </a>
                             </li>
+
                             <li class="nav-item">
                                 <a class="nav-link ripple " href="product_new.html"
                                    data-page-url="#">
+
                                     <span>New Product</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link ripple " href="product_categories.html"
-                                   data-page-url="#">
-                                    <span>Product Categories</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link ripple " href="product_category_new.html"
-                                   data-page-url="#">
-                                    <span>New Product Category</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link ripple " href="product_companies.html"
-                                   data-page-url="#">
-                                    <span>Product Companies</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link ripple " href="product_company_new.html"
-                                   data-page-url="#">
-                                    <span>New Product Company</span>
-                                </a>
-                            </li>
+                               <a class="nav-link ripple " href="product_categories.html"
+                                  data-page-url="#">
+
+                                   <span>Product Catogeries</span>
+                               </a>
+                           </li>
+                           <li class="nav-item">
+                               <a class="nav-link ripple " href="product_category_new.html"
+                                  data-page-url="#">
+
+                                   <span>New Product Catogery</span>
+                               </a>
+                           </li>
 
                         </ul>
                     </li>
-                    <li class="nav-item">
-                           <a class="nav-link ripple " href="stock.html"
-                              data-page-url="">
-                               <i class="icon s-5 icon-view-module"></i>
-                               <span>Stock Management</span>
-                           </a>
-                       </li>
                     
-                    <li class="nav-item" role="tab" id="heading-Supplier-management">
+                    
+
+               
+                    <li class="nav-item">
+                        <a class="nav-link ripple with-arrow collapsed"
+                        data-toggle="collapse"
+                        data-target="#collapse-Stock-management"
+                        href="#"
+                        aria-expanded="false"
+                        aria-controls="collapse-Stock-management">
+                         <i class="icon s-5 icon-file-document"></i>
+                         <span>Stock Management</span>
+                         </a>
+    
+                     <ul id="collapse-Stock-management"
+                         class="collapse"
+                         role="tabpanel"
+                         aria-labelledby="heading-Stock-management"
+                         data-children=".nav-item">
+    
+                         <li class="nav-item">
+                             <a class="nav-link ripple " href="stock.html"
+                                data-page-url="#">
+    
+                                 <span>Stock Warehouse</span>
+                             </a>
+                         </li>
+    
+                         <li class="nav-item">
+                             <a class="nav-link ripple " href="stock_agent.html"
+                                data-page-url="#">
+    
+                                 <span>Stock Agent</span>
+                             </a>
+                         </li>
+                         <li class="nav-item">
+                            <a class="nav-link ripple " href="stock_dsc.html"
+                               data-page-url="#">
+    
+                                <span>Stock DSC</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ripple " href="po_request.html"
+                               data-page-url="#">
+    
+                                <span>PO Requests</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ripple " href="agent_parts_request.html"
+                               data-page-url="#">
+    
+                                <span>Agent Requests</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ripple " href="stock_transfer.html"
+                               data-page-url="#">
+    
+                                <span>Stock Trasfer</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ripple " href="transaction_history.html"
+                               data-page-url="#">
+    
+                                <span>Transaction History</span>
+                            </a>
+                        </li>
+    
+                     </ul>
+                    </li>
+                   
+                   
+                   <li class="nav-item" role="tab" id="heading-Staff-management">
 
                         <a class="nav-link ripple with-arrow collapsed"
                            data-toggle="collapse"
-                           data-target="#collapse-Supplier-management"
+                           data-target="#collapse-Staff-management"
                            href="#"
                            aria-expanded="false"
-                           aria-controls="collapse-Supplier-management">
-                            <i class="icon s-5 icon-truck-delivery"></i>
-                            <span>Supplier Management</span>
+                           aria-controls="collapse-Staff-management">
+                            <i class="icon s-5 icon-people"></i>
+                            <span>Staff Management</span>
                         </a>
 
-                        <ul id="collapse-Supplier-management"
+                        <ul id="collapse-Staff-management"
                             class="collapse"
                             role="tabpanel"
-                            aria-labelledby="heading-Supplier-management"
+                            aria-labelledby="heading-Staff-management"
                             data-children=".nav-item">
 
                             <li class="nav-item">
-                                <a class="nav-link ripple " href="suppliers.html"
+                                <a class="nav-link ripple " href="staff_all.html"
                                    data-page-url="#">
 
-                                    <span>Suppliers</span>
+                                    <span>All Staffs</span>
                                 </a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link ripple " href="supplier_new.html"
+                                <a class="nav-link ripple " href="staff_new.html"
                                    data-page-url="#">
 
-                                    <span>New Supplier</span>
+                                    <span>New Staff</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="staff_group_new.html"
+                                   data-page-url="#">
+
+                                    <span>New Staff Group</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="staff_rolls.html"
+                                   data-page-url="#">
+
+                                    <span>Staff Rolls & Permissions</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                               <a class="nav-link ripple " href="staff_rolls.html"
+                                  data-page-url="#">
+
+                                   <span>All Dipartments</span>
+                               </a>
+                           </li>
+                           <li class="nav-item">
+                               <a class="nav-link ripple " href="staff_rolls.html"
+                                  data-page-url="#">
+
+                                   <span>New Dipartment</span>
+                               </a>
+                           </li>
+
+
+                        </ul>
+                    </li>
+                  
+                    <li class="nav-item">
+                       <a class="nav-link ripple " href="location_app.html"
+                          data-page-url="">
+                           <i class="icon s-5 icon-map-marker-radius"></i>
+                           <span>Location Management</span>
+                       </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link ripple " href="staff_profile.html"
+                           data-page-url="">
+                            <i class="icon s-5 icon-account"></i>
+                            <span>My Profile</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" role="tab" id="heading-Reports-management">
+
+                        <a class="nav-link ripple with-arrow collapsed"
+                           data-toggle="collapse"
+                           data-target="#collapse-Reports-management"
+                           href="#"
+                           aria-expanded="false"
+                           aria-controls="collapse-Reports-management">
+                            <i class="icon s-5 icon-note-multiple"></i>
+                            <span>Finance Management</span>
+                        </a>
+
+                        <ul id="collapse-Reports-management"
+                            class="collapse"
+                            role="tabpanel"
+                            aria-labelledby="heading-Reports-management"
+                            data-children=".nav-item">
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="agent_claim_request.html"
+                                   data-page-url="#">
+
+                                    <span>Agent Claim Requests</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="#"
+                                   data-page-url="staff_claim_request.html">
+
+                                    <span>Staff TA Requests</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="#"
+                                   data-page-url="#">
+
+                                    <span>Collection History</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item" role="tab" id="heading-Reports-management">
+
+                        <a class="nav-link ripple with-arrow collapsed"
+                           data-toggle="collapse"
+                           data-target="#collapse-Reports-management"
+                           href="#"
+                           aria-expanded="false"
+                           aria-controls="collapse-Reports-management">
+                            <i class="icon s-5 icon-note-multiple"></i>
+                            <span>Reports Management</span>
+                        </a>
+
+                        <ul id="collapse-Reports-management"
+                            class="collapse"
+                            role="tabpanel"
+                            aria-labelledby="heading-Reports-management"
+                            data-children=".nav-item">
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="#"
+                                   data-page-url="#">
+
+                                    <span>Child one</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ripple " href="#"
+                                   data-page-url="#">
+
+                                    <span>child two</span>
                                 </a>
                             </li>
 
                         </ul>
                     </li>
 
-                    <li class="nav-item" role="tab" id="heading-Staff-management">
-
-                         <a class="nav-link ripple with-arrow collapsed"
-                            data-toggle="collapse"
-                            data-target="#collapse-Staff-management"
-                            href="#"
-                            aria-expanded="false"
-                            aria-controls="collapse-Staff-management">
-                             <i class="icon s-5 icon-people"></i>
-                             <span>Staff Management</span>
-                         </a>
-
-                         <ul id="collapse-Staff-management"
-                             class="collapse"
-                             role="tabpanel"
-                             aria-labelledby="heading-Staff-management"
-                             data-children=".nav-item">
-
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="staff_all.html"
-                                    data-page-url="#">
-
-                                     <span>All Staffs</span>
-                                 </a>
-                             </li>
-
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="staff_new.html"
-                                    data-page-url="#">
-
-                                     <span>New Staff</span>
-                                 </a>
-                             </li>
-
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="staff_group_new.html"
-                                    data-page-url="#">
-
-                                     <span>New Staff Group</span>
-                                 </a>
-                             </li>
-
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="staff_rolls.html"
-                                    data-page-url="#">
-
-                                     <span>Staff Rolls & Permissions</span>
-                                 </a>
-                             </li>
-
-                         </ul>
-                     </li>
-                     <li class="nav-item" role="tab" id="heading-Company-management">
-
-                         <a class="nav-link ripple with-arrow collapsed"
-                            data-toggle="collapse"
-                            data-target="#collapse-Company-management"
-                            href="#"
-                            aria-expanded="false"
-                            aria-controls="collapse-Company-management">
-                             <i class="icon s-5 icon-nature-people"></i>
-                             <span>Company Management</span>
-                         </a>
-
-                         <ul id="collapse-Company-management"
-                             class="collapse"
-                             role="tabpanel"
-                             aria-labelledby="heading-Company-management"
-                             data-children=".nav-item">
-
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="staff_departments.html"
-                                    data-page-url="#">
-
-                                     <span>All Departments</span>
-                                 </a>
-                             </li>
-
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="staff_departments_new.html"
-                                    data-page-url="#">
-
-                                     <span>New Department</span>
-                                 </a>
-                             </li>
-
-                         </ul>
-                     </li>
-
-                     <li class="nav-item">
-                        <a class="nav-link ripple active" href="tasks_app.html"
+                    <li class="nav-item">
+                        <a class="nav-link ripple " href=""
                            data-page-url="">
-                            <i class="icon s-5 icon-message-bulleted"></i>
-                            <span>Tasks Management</span>
+                            <i class="icon s-5 icon-settings"></i>
+                            <span>Settings</span>
                         </a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link ripple " href="location_app.html"
-                           data-page-url="">
-                            <i class="icon s-5 icon-map-marker-radius"></i>
-                            <span>Location Management</span>
-                        </a>
-                     </li>
+                    </li>
 
-                     <li class="nav-item">
-                         <a class="nav-link ripple " href="staff_profile.html"
-                            data-page-url="">
-                             <i class="icon s-5 icon-account"></i>
-                             <span>My Profile</span>
-                         </a>
-                     </li>
-
-                     <li class="nav-item" role="tab" id="heading-Reports-management">
-
-                         <a class="nav-link ripple with-arrow collapsed"
-                            data-toggle="collapse"
-                            data-target="#collapse-Reports-management"
-                            href="#"
-                            aria-expanded="false"
-                            aria-controls="collapse-Reports-management">
-                             <i class="icon s-5 icon-note-multiple"></i>
-                             <span>Reports Management</span>
-                         </a>
-
-                         <ul id="collapse-Reports-management"
-                             class="collapse"
-                             role="tabpanel"
-                             aria-labelledby="heading-Reports-management"
-                             data-children=".nav-item">
-
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="#"
-                                    data-page-url="#">
-
-                                     <span>Child one</span>
-                                 </a>
-                             </li>
-
-                             <li class="nav-item">
-                                 <a class="nav-link ripple " href="#"
-                                    data-page-url="#">
-
-                                     <span>child two</span>
-                                 </a>
-                             </li>
-
-                         </ul>
-                     </li>
-
-                     <li class="nav-item">
-                         <a class="nav-link ripple " href=""
-                            data-page-url="">
-                             <i class="icon s-5 icon-settings"></i>
-                             <span>Settings</span>
-                         </a>
-                     </li>
-
-                 </ul>
+                </ul>
              </div>
          </div>
      </aside>
@@ -743,143 +701,7 @@
 
                         <div class="page-content-wrapper">
 
-                            <aside class="page-sidebar" data-raz-bar="todo-sidebar" data-raz-bar-media-step="md">
-                                <!-- HEADER -->
-                                <div class="header d-flex flex-column justify-content-between p-6 bg-primary text-auto">
-
-                                    <div class="logo d-flex align-items-center pt-7">
-                                        <i class="icon-clipboard-text mr-4"></i>
-                                        <span class="logo-text h4">Tasks</span>
-                                    </div>
-
-                                    <div class="account">
-                                        <div class="title"></div>
-                                    </div>
-
-                                </div>
-                                <!-- / HEADER -->
-
-                                <div>
-
-                                    <div class="p-6">
-                                        <a data-toggle="modal" href="#addTask" class="btn btn-primary btn-block">ADD TASK</a>
-                                    </div>
-
-                                    <ul class="nav flex-column">
-
-                                        <li class="nav-item">
-                                            <a class="nav-link ripple" href="#">
-                                                <i class="icon s-4 icon-view-headline"></i>
-                                                <span>All Tasks</span>
-                                            </a>
-                                        </li>
-
-                                        <li class="divider"></li>
-                                        <li class="subheader subheader-label">
-                                                Added by
-                                        </li>
-                                        <select id="slim-multiple-sidebar1" multiple>
-                                                <option>Alice Freeman</option>
-                                                <option>Garry Newman</option>
-                                                <option>Andrew Green</option>
-                                                <option>Carl Henderson </option>
-                                                <option>Jane Dean </option>
-                                                <option>John Deo</option>
-                                                <option>Juan Carpenter</option>
-                                                <option>Vincent Munoz</option>
-                                        </select>
-                                        <li class="subheader subheader-label">
-                                                Assigned To 
-                                        </li>
-                                        <select  id="slim-multiple-sidebar2" multiple>
-                                                <option>Alice Freeman</option>
-                                                <option>Garry Newman</option>
-                                                <option>Andrew Green</option>
-                                                <option>Carl Henderson </option>
-                                                <option>Jane Dean </option>
-                                                <option>John Deo</option>
-                                                <option>Juan Carpenter</option>
-                                                <option>Vincent Munoz</option>
-                                        </select>
-
-                                        <li class="subheader">
-                                            Filters
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a class="nav-link ripple" href="#">
-                                                <i class="icon s-4 icon-check"></i>
-                                                <span>Completed</span>
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a class="nav-link ripple" href="#">
-                                                <i class="icon s-4 icon-alert"></i>
-                                                <span>Pending</span>
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a class="nav-link ripple" href="#">
-                                                <i class="icon s-4 icon-clock"></i>
-                                                <span>Re-scheduled</span>
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                                <a class="nav-link ripple" href="#">
-                                                    <i class="icon s-4 icon-alert-circle"></i>
-                                                    <span>Cancelled</span>
-                                                </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a class="nav-link ripple" href="#">
-                                                <i class="icon s-4 icon-delete"></i>
-                                                <span>Deleted</span>
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                                <a class="nav-link ripple" href="#">
-                                                    <i class="icon s-4 icon-calendar-today"></i>
-                                                    <span>Today</span>
-                                                </a>
-                                        </li>
-
-                                        <li class="divider"></li>
-
-                                        <li class="subheader">
-                                            Categories
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a class="nav-link ripple" href="#">
-                                                <i class="icon s-4 icon-label" ></i>
-                                                <span>Finance</span>
-                                            </a>
-                                        </li>
-
-                                         <li class="nav-item">
-                                            <a class="nav-link ripple" href="#">
-                                                <i class="icon s-4 icon-label" ></i>
-                                                <span>Service</span>
-                                            </a>
-                                        </li>
-
-                                         <li class="nav-item">
-                                            <a class="nav-link ripple" href="#">
-                                                <i class="icon s-4 icon-label" ></i>
-                                                <span>Courtesy Call</span>
-                                            </a>
-                                        </li>
-
-                                        
-
-                                    </ul>
-                                </div>
-                            </aside>
+                            
 
                             <!-- CONTENT -->
                             <div class="page-content">
@@ -928,6 +750,9 @@
                                                     <button id="deal-summery" type="button" class="btn btn-icon" data-toggle="tooltip" title="View Deals Summery">
                                                         <i class="icon icon-format-list-bulleted"></i>
                                                     </button>
+                                                    <button type="button" class="btn btn-icon raz-ripple-ready" data-raz-bar-toggle="scheduler-filter-panel-sidebar">
+                                                <i class="icon icon-filter-outline"></i>
+                                            </button>
                                                 </div>
                                                 <!-- / TOOLBAR TOP -->
                                         
@@ -945,7 +770,7 @@
                                                             <span class="custom-control-indicator"></span>
                                                         </label>
                                                         <div class="list-item-content ml-3">
-                                                            <h3 class="quotation-no p-0">Product name</h3>
+                                                            <h3 class="quotation-no p-0">SER123</h3>
                                                             <h4 class="quotation-date m-0">25 June 2018</h4>
                                                                 <ul class="steps">
                                                                         <li class="task-done" >
@@ -974,7 +799,7 @@
                                                             <span class="custom-control-indicator"></span>
                                                         </label>
                                                         <div class="list-item-content ml-3">
-                                                            <h3 class="quotation-no p-0">Product name</h3>
+                                                            <h3 class="quotation-no p-0">SER123</h3>
                                                             <h4 class="quotation-date m-0">25 June 2018</h4>
                                                                <ul class="steps">
                                                                         <li class="task-done" >
@@ -1003,7 +828,7 @@
                                                             <span class="custom-control-indicator"></span>
                                                         </label>
                                                         <div class="list-item-content ml-3">
-                                                            <h3 class="quotation-no p-0">Machine name</h3>
+                                                            <h3 class="quotation-no p-0">SER123</h3>
                                                             <h4 class="quotation-date m-0">25 June 2018</h4>
                                                             <ul class="steps">
                                                                 <li class="task-done" >
@@ -1032,7 +857,7 @@
                                                             <span class="custom-control-indicator"></span>
                                                         </label>
                                                         <div class="list-item-content ml-3">
-                                                            <h3 class="quotation-no p-0">Machine name</h3>
+                                                            <h3 class="quotation-no p-0">SER123</h3>
                                                             <h4 class="quotation-date m-0">25 June 2018</h4>
                                                             <ul class="steps">
                                                                 <li class="task-done" >
@@ -1061,7 +886,7 @@
                                                             <span class="custom-control-indicator"></span>
                                                         </label>
                                                         <div class="list-item-content ml-3">
-                                                            <h3 class="quotation-no p-0">Machine name</h3>
+                                                            <h3 class="quotation-no p-0">SER123</h3>
                                                             <h4 class="quotation-date m-0">25 June 2018</h4>
                                                                 <ul class="steps">
                                                                         <li class="task-done" >
@@ -1090,7 +915,7 @@
                                                             <span class="custom-control-indicator"></span>
                                                         </label>
                                                         <div class="list-item-content ml-3">
-                                                            <h3 class="quotation-no p-0">Machine name</h3>
+                                                            <h3 class="quotation-no p-0">SER123</h3>
                                                             <h4 class="quotation-date m-0">25 June 2018</h4>
                                                                 <ul class="steps">
                                                                         <li class="task-done" >
@@ -1119,7 +944,7 @@
                                                             <span class="custom-control-indicator"></span>
                                                         </label>
                                                         <div class="list-item-content ml-3">
-                                                            <h3 class="quotation-no p-0">Machine name</h3>
+                                                            <h3 class="quotation-no p-0">SER123</h3>
                                                             <h4 class="quotation-date m-0">25 June 2018</h4>
                                                                 <ul class="steps">
                                                                         <li class="task-done" >
@@ -1600,14 +1425,7 @@
                                     <form>
                                         
                                         <div class="row">
-                                            <div class="form-group col-md-4">
-                                                <label for="exampleSelect1">Task Category</label>
-                                                <select class="form-control" id="exampleSelect1">
-                                                    <option>Hot</option>
-                                                    <option>Warm</option>
-                                                    <option>Cold</option>
-                                                </select>
-                                            </div>
+                                           
                                             <div class="form-group col-md-4">
                                                 <label for="exampleSelect1">Task Priority</label>
                                                 <select class="form-control" id="exampleSelect1">
@@ -1615,14 +1433,7 @@
                                                     <option>Normal</option>
                                                 </select>
                                             </div>
-                                            <div class="form-group col-md-4">
-                                                <label for="exampleSelect1">Type Category</label>
-                                                <select class="form-control" id="exampleSelect1">
-                                                    <option>Ms</option>
-                                                    <option>AMC-R</option>
-                                                    <option>SP</option>
-                                                </select>
-                                            </div>
+                                            
                                         </div>
                                         <div class="form-group">
                                                 <label for="message-text" class="form-control-label">Message:</label>
@@ -1630,16 +1441,15 @@
                                         </div>
                                         <div class="row">
                                             <div class="form-group col-md-4 col-sm-12">
-                                                <label for="slim-multiple-sidebar3" class="col-form-label">Customer</label>
+                                                <label for="slim-multiple-sidebar3" class="col-form-label">Service Call</label>
                                                 <select id="slim-multiple-sidebar3" >
-                                                        <option>Alice Freeman</option>
-                                                        <option>Garry Newman</option>
-                                                        <option>Andrew Green</option>
-                                                        <option>Carl Henderson </option>
-                                                        <option>Jane Dean </option>
-                                                        <option>John Deo</option>
-                                                        <option>Juan Carpenter</option>
-                                                        <option>Vincent Munoz</option>
+                                                        <option>SRM134</option>
+                                                        <option>SRM364</option>
+                                                        <option>SRM674</option>
+                                                        <option>SRM894 </option>
+                                                        <option>SRM789 </option>
+                                                        <option>SRM134</option>
+                                                       
                                                 </select>
                                             </div>
                                             <div class="form-group col-md-4 col-sm-12">
@@ -1867,7 +1677,145 @@
        </div>
 
         </div>
+<!-- SCHEDULER FILTER RIGHT SIDEBAR-->
+<div class="quick-panel-sidebar scheduler-filter-panel-sidebar custom-scrollbar" raz-cloak data-raz-bar="scheduler-filter-panel-sidebar"
+data-raz-bar-position="right">
+    
+<aside class="page-sidebar" data-raz-bar="todo-sidebar" data-raz-bar-media-step="md">
+    <!-- HEADER -->
+    <div class="header d-flex flex-column justify-content-between p-6 bg-primary text-auto">
 
+        <div class="logo d-flex align-items-center pt-7">
+            <i class="icon-clipboard-text mr-4"></i>
+            <span class="logo-text h4">Tasks</span>
+        </div>
+
+        <div class="account">
+            <div class="title"></div>
+        </div>
+
+    </div>
+    <!-- / HEADER -->
+
+    <div>
+
+        <div class="p-6">
+            <a data-toggle="modal" href="#addTask" class="btn btn-primary btn-block">ADD TASK</a>
+        </div>
+
+        <ul class="nav flex-column">
+
+            <li class="nav-item">
+                <a class="nav-link ripple" href="#">
+                    <i class="icon s-4 icon-view-headline"></i>
+                    <span>All Tasks</span>
+                </a>
+            </li>
+
+            <li class="divider"></li>
+            <li class="subheader subheader-label">
+                    Added by
+            </li>
+            <select id="slim-multiple-sidebar1" multiple>
+                    <option>Alice Freeman</option>
+                    <option>Garry Newman</option>
+                    <option>Andrew Green</option>
+                    <option>Carl Henderson </option>
+                    <option>Jane Dean </option>
+                    <option>John Deo</option>
+                    <option>Juan Carpenter</option>
+                    <option>Vincent Munoz</option>
+            </select>
+            <li class="subheader subheader-label">
+                    Assigned To 
+            </li>
+            <select  id="slim-multiple-sidebar2" multiple>
+                    <option>Alice Freeman</option>
+                    <option>Garry Newman</option>
+                    <option>Andrew Green</option>
+                    <option>Carl Henderson </option>
+                    <option>Jane Dean </option>
+                    <option>John Deo</option>
+                    <option>Juan Carpenter</option>
+                    <option>Vincent Munoz</option>
+            </select>
+
+            <li class="subheader">
+                Filters
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link ripple" href="#">
+                    <i class="icon s-4 icon-check"></i>
+                    <span>Completed</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link ripple" href="#">
+                    <i class="icon s-4 icon-alert"></i>
+                    <span>Pending</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link ripple" href="#">
+                    <i class="icon s-4 icon-clock"></i>
+                    <span>Re-scheduled</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                    <a class="nav-link ripple" href="#">
+                        <i class="icon s-4 icon-alert-circle"></i>
+                        <span>Cancelled</span>
+                    </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link ripple" href="#">
+                    <i class="icon s-4 icon-delete"></i>
+                    <span>Deleted</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                    <a class="nav-link ripple" href="#">
+                        <i class="icon s-4 icon-calendar-today"></i>
+                        <span>Today</span>
+                    </a>
+            </li>
+
+            <li class="divider"></li>
+
+            <li class="subheader">
+                Categories
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link ripple" href="#">
+                    <i class="icon s-4 icon-label" ></i>
+                    <span>Installation</span>
+                </a>
+            </li>
+
+             <li class="nav-item">
+                <a class="nav-link ripple" href="#">
+                    <i class="icon s-4 icon-label" ></i>
+                    <span>Service</span>
+                </a>
+            </li>
+
+             
+
+        </ul>
+    </div>
+</aside>
+
+
+    
+</div>
+<!-- / SCHEDULER FILTER RIGHT SIDEBAR-->
     </body>
     <script>
         //deals div toggle
