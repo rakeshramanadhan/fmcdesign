@@ -808,7 +808,7 @@
                                                         </select>
                                                 </div>
                                             </td>
-                                            <td class="last-modified d-none d-lg-table-cell"><span class="badge badge-pill badge-warning">On Going</span></td>
+                                            <td class="last-modified d-none d-lg-table-cell"><span class="badge badge-pill badge-warning">Pending</span></td>
                                             <td class="size d-none d-sm-table-cell">
                                                 
                                                 <p class="text-muted m-0">Product: <b>Juice Maker</b></p>
@@ -1153,7 +1153,30 @@
                                                 <option>Vincent Munoz</option>
                                         </select>
                                 </div>
-                                
+                                <div class="custom-form-group">
+                                    <label>State</label>
+                                    <select id="slim-multiple-sidebar5" multiple>
+                                            <option>Kerala</option>
+                                            <option>ThamilNadu</option>
+                                            <option>Goa</option>
+                                            <option>Karnadaka</option>
+                                            <option>Andrhapradesh</option>
+                                            <option>ArunachalPradesh</option>
+                                            <option>Assam</option>
+                                    </select>
+                            </div>
+                            <div class="custom-form-group">
+                                <label>District</label>
+                                <select id="slim-multiple-sidebar6" multiple>
+                                        <option>Ernakulam</option>
+                                        <option>Kollam</option>
+                                        <option>Kozhikode</option>
+                                        <option>Kollam</option>
+                                        <option>Kannoor</option>
+                                        <option>Kazharkode</option>
+                                        <option>Selam</option>
+                                </select>
+                        </div>
                                 <div class="custom-form-group">
                                         <label>Location</label>
                                         <select id="slim-multiple-sidebar3" multiple>
@@ -1877,6 +1900,16 @@
                 })
             new SlimSelect({
                 select: '#slim-multiple-sidebar4',
+                closeOnSelect: false,
+                placeholder: 'Select Complaint Priorities',
+                })
+                new SlimSelect({
+                select: '#slim-multiple-sidebar5',
+                closeOnSelect: false,
+                placeholder: 'Select Complaint Priorities',
+                })
+                new SlimSelect({
+                select: '#slim-multiple-sidebar6',
                 closeOnSelect: false,
                 placeholder: 'Select Complaint Priorities',
                 })
