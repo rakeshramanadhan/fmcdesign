@@ -782,7 +782,24 @@
                                                     <label for="exampleTextarea">Specs</label>
                                                     <textarea class="form-control" id="AddressTextarea" rows="3" placeholder=""></textarea>
                                             </div>
-                                           
+                                           <div class="row product_component_row" >
+
+                                                <div class="form-group col-md-4 product_component_col">
+                                                    <label for="inputTel" class="col-form-label">Component</label>
+
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon">1</span> <input name="product_component[]" type="text" class="form-control" aria-label="Amount (to the nearest dollar)"/>
+                                                        <a class="btn btn-icon ml-md-auto" onclick="deleteThisRow($(this))"><i class="icon icon-delete s-5"></i></a>
+
+                                                    </div>
+                                                </div>
+
+
+
+                                            </div>
+                                            <div class="row no-gutters spare-add-btn-row">
+                                                <a class="btn btn-fab btn-primary btn-sm ml-auto" onclick="newProductComponent();" data-toggle="tooltip" data-placement="left" title="New MAchine Component"><i class="icon icon-plus"></i></a>
+                                            </div>
                                             
                                             <button type="submit" class="btn btn-primary">Submit</button>
                                         </form>
@@ -936,6 +953,32 @@
 
     </body>
     <script>
+     function deleteThisRow(dhis){
+          dhis.parent().parent().remove();
+      }
+
+      function newProductComponent(){
+          var numItems = $('div.product_component_col').length;
+          numItems =numItems+1;
+
+
+          $('div.product_component_row').last().append(' <div class="form-group col-md-4 product_component_col">\
+          <label for="inputTel" class="col-form-label">Component</label>\
+              <div class="input-group">\
+              <span class="input-group-addon">'+numItems+'</span>\
+               <input name="product_component[]" type="text" class="form-control" aria-label="Amount (to the nearest dollar)"/>\
+               <a class="btn btn-icon ml-md-auto" onclick="deleteThisRow($(this))"><i class="icon icon-delete s-5"></i></a>\
+              </div>\
+              </div>');
+          $(".datepicker").datepicker({
+              minDate: 0,
+              todayHighlight: true,
+              autoclose: true,
+              format: 'dd/mm/yyyy',
+
+          });
+
+      }
     window.addEventListener('DOMContentLoaded', function () {
       var avatar = document.getElementById('avatar');
       var image = document.getElementById('image');
